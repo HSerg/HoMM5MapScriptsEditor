@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<lib name="3.1 СТРАТЕГИЧЕСКИЕ [RU]">
+  <function name="AddHeroCreatures" category="" short_description="Добавить отряд существ в армию героя">  <param name="heroname" category="" short_description="Имя героя"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="quantity" category="" short_description="Количество существ"></param>
+    <param name="desiredSlot = -1" category="" short_description="Номер слота, для которого желательно совершить действие (если оно возможно)"></param>
+  </function>
+  <function name="AddObjectCreatures" category="" short_description="Добавить отряд существ в армию объекта">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="quantity" category="" short_description="Количество существ"></param>
+    <param name="desiredSlot = -1" category="" short_description="Номер слота, для которого желательно совершить действие (если оно возможно)"></param>
+  </function>
+  <function name="AllowHeroHiringByRaceInTown" category="" short_description="Управляет возможностью найма героев определенной расы в указанном городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="townTypeID" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить найм, &quot;nil&quot; — запретить"></param>
+  </function>
+  <function name="AllowHeroHiringByRaceForAI" category="" short_description="Управляет возможностью найма героев указанных рас (для AI)">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="townTypeID" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить найм, &quot;nil&quot; — запретить"></param>
+  </function>
+  <function name="AllowHiringOfHeroInTown" category="" short_description="Управляет возможностью найма определенных героев в указанном городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить найм, &quot;nil&quot; — запретить"></param>
+  </function>
+  <function name="AllowHiringOfHeroForAI" category="" short_description="Управляет возможностью найма указанных героев (для AI)">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить найм, &quot;nil&quot; — запретить"></param>
+  </function>
+  <function name="AllowOpenFogOfWarForAlly" category="" short_description="Позволяет запрещать отображение открытых частей карты союзным игрокам">  <param name="actingPlayer" category="playerID" short_description="Идентификатор игрока (игрок, снимающий &quot;туман войны&quot;)"></param>
+    <param name="fogSeeAllyPlayer" category="playerID" short_description="Идентификатор игрока (союзные игроки)"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить, &quot;nil&quot; - запретить"></param>
+  </function>
+  <function name="AllowPlayerTavernHero" category="" short_description="Позволяет запретить появление указанных героев в тавернах, принадлежащих определенному игроку">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="allow" category="" short_description="&quot;true&quot; - разрешить появление , &quot;nil&quot; - запретить"></param>
+  </function>
+  <function name="AllowPlayerTavernRace" category="" short_description="Позволяет запретить появление героев указанной расы в тавернах, которые принадлежат определенному игроку">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="townTypeID" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+    <param name="allow" category="" short_description="Параметр, определяющий генерацию героев в тавернах (&quot;true&quot; чтобы генерировать их, или &quot;nil&quot;,чтобы не генерировать)"></param>
+  </function>
+  <function name="BlockGame" category="" short_description="Блокирует интерфейс пользователя и работу AI"></function>
+  <function name="BlockTownGarrisonForAI" category="" short_description="Позволяет блокировать доступ AI к гарнизону города">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="isBlocked" category="" short_description="&quot;true&quot; - блокировать, &quot;nil&quot; - не блокировать"></param>
+  </function>
+  <function name="CalcAverageMonstersTier|CalcAverageTier" category="" short_description="Вычисляет средний уровень существ, стоящих на карте">  <param name="floorID = -1" category="" short_description="Номер уровня, на котором производится подсчет (-1 для подсчета на всех уровнях)"></param>
+  </function>
+  <function name="CalcHeroMoveCost" category="" short_description="Вычисляет стоимость передвижения героя в заданную точку">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="CanMoveHero" category="" short_description="Определяет, возможно ли передвижение героя в заданную точку">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="ChangeHeroStat" category="" short_description="Меняет параметры героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="statID" category="statID" short_description="Идентификатор параметра героя"></param>
+    <param name="delta" category="" short_description="Значение параметра"></param>
+  </function>
+  <function name="ChangeResource" category="" short_description="Изменяет количество ресурсов указанного вида  для игрока, обладающего указанным героем. При этом от данного героя появляется «отлетающее» сообщение, указывая на изменение ресурса">  <param name="resourceKindID" category="resourceKindID" short_description="Идентификатор типа ресурса"></param>
+    <param name="quantity" category="" short_description="Количество (не может быть отрицательным значением)"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="ControlHeroCustomAbility" category="" short_description="Позволяет управлять особыми умениями указанного героя, посредством триггера">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="customAbilityID" category="customAbilityID" short_description="Идентификатор особых умений героя"></param>
+    <param name="customAbilityMode" category="" short_description="Режим отображения особых умений"></param>
+  </function>
+  <function name="CreateArtifact" category="" short_description="Создает артефакт на карте">  <param name="artifactName" category="" short_description="Имя артефакта"></param>
+    <param name="artifactTypeID" category="artifactTypeID" short_description="Идентификатор артефакта"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="CreateCaravan" category="" short_description="Создает пустой караван на карте">  <param name="caravanName" category="" short_description="Имя каравана"></param>
+    <param name="caravanPlayer" category="playerID" short_description="Идентификатор игрока (которому принадлежит караван)"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор стартового уровня карты"></param>
+    <param name="x" category="" short_description="Координата стартового Х тайла"></param>
+    <param name="y" category="" short_description="Координата стартового Y тайла"></param>
+    <param name="destFloorID" category="floorID" short_description="Идентификатор целевого уровня карты"></param>
+    <param name="destX" category="" short_description="Координата целевого Х тайла"></param>
+    <param name="destY" category="" short_description="Координата целевого Y тайла"></param>
+  </function>
+  <function name="CreateDwelling" category="" short_description="Создает жилище на карте">  <param name="scriptName" category="" short_description="Скриптовое имя жилища, которое может использоваться в других скритовых командах"></param>
+    <param name="townTypeID" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+    <param name="creaturesTier" category="" short_description="Уровень существ (1-3, 4-7, 8)"></param>
+    <param name="ownerPlayer" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="rotation = 0" category="" short_description="Угол вращения жилища, установленный в градусах (равен 0 по умолчанию, и должен быть кратен 90)"></param>
+  </function>
+  <function name="CreateMonster|CreateMob" category="" short_description="Создает монстра на карте">  <param name="monsterName" category="" short_description="Имя монстра"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="creaturesCount" category="" short_description="Численность существ"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="moodID" category="moodID" short_description="Идентификатор настроения монстра"></param>
+    <param name="courageID" category="courageID" short_description="Идентификатор храбрости монстра"></param>
+    <param name="rotation = 0" category="" short_description="Угол поворота монстра (в градусах, по умолчанию = 0)"></param>
+  </function>
+  <function name="CreateStatic" category="" short_description="Добавляет статический объект, упомянутый в файле данных, в точке с заданными координатами">  <param name="scriptName" category="" short_description="Скриптовое имя объекта"></param>
+    <param name="DataFile" category="" short_description="Указатель на тип объекта в ресурсной базе"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="CreateTreasure" category="" short_description="Создает сокровище соответствующего скриптового имени в указанной позиции с заданным поворотом">  <param name="name" category="" short_description="Имя сокровища"></param>
+    <param name="treasure_type" category="resourceKindID" short_description="Идентификатор типа ресурса"></param>
+    <param name="quant" category="" short_description="Количество ресурса (если это золото, то число умножается на 100)"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floor" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="rot" category="" short_description="Угол поворота в градусах"></param>
+  </function>
+  <function name="DenyAIHeroFlee" category="" short_description="Запрещает герою AI сбегать из боя">  <param name="heroName" category="" short_description="Имя для которого ставится или снимается запрет"></param>
+    <param name="isDenied" category="" short_description="Значение 1 запрещает сбегать из боев, значение 0 — удаляет запрет (а не&#xA;разрешает сбегать)"></param>
+    <param name="enemyHeroName = &quot;&quot;" category="" short_description="Имя героя противника, для боя с которым ставится или снимается запрет на сбегание"></param>
+  </function>
+  <function name="DenyAIHeroesFlee" category="" short_description="Запрещает всем героям AI сбегать из боя">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="isDenied" category="" short_description="Значение 1 запрещает сбегать из боев, значение 0 — удаляет запрет (а не&#xA;разрешает сбегать)"></param>
+    <param name="enemyHeroName = &quot;&quot;" category="" short_description="Имя героя противника, для боя с которым ставится или снимается&#xA;запрет на сбегание"></param>
+  </function>
+  <function name="DenyGarrisonCreaturesTakeAway" category="" short_description="Предусматривает запрещение или разрешение изъятия существ в гарнизоне">  <param name="garrisonName" category="" short_description="Имя гарнизона"></param>
+    <param name="deny" category="" short_description="1 - разрешено, 0 - запрещено"></param>
+  </function>
+  <function name="DeployReserveHero" category="" short_description="Ставит на карту героя, находящегося в резерве у игрока">  <param name="heroName" category="" short_description="Имя зарезервированного за игроком героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="isUnique" category="" short_description="значение 1 выключает общие запреты передвижения камеры, значение 0 - включает передвижение камеры обратно"></param>
+  </function>
+  <function name="DestroyTownBuildingToLevel" category="" short_description="Демонтирует возведенное строение в городе до указанного уровня и может устанавливать этот уровень в качестве предельного для строения">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+    <param name="level" category="" short_description="Уровень, до которого демонтируется строение"></param>
+    <param name="canRebuild = 1" category="" short_description="Если значение &quot;canRebuild&quot; будет = 0, то новый предельный уровень для строения будет соответствовать &quot;level&quot;"></param>
+  </function>
+  <function name="DisableAutoEnterTown" category="" short_description="Выключает автоматическое появление городского экрана, когда герой входит в город">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="disable" category="" short_description="При &quot;true&quot; - городской экран не будет вызван"></param>
+  </function>
+  <function name="DisableCameraFollowHeroes" category="" short_description="Выключает передвижение камеры при передвижении героев">  <param name="disableOwn" category="" short_description="Значение 1 выключает движение камеры за героями игрока, значение 0 — включает обратно"></param>
+    <param name="disableAlly" category="" short_description="Значение 1 выключает движение камеры за героями союзников, значение&#xA;0 — включает обратно"></param>
+    <param name="disableEnemy" category="" short_description="Значение 1 выключает движение камеры за героями врагов, значение 0 — включает обратно"></param>
+  </function>
+  <function name="DoNotGiveTurnToPlayerAIIfNoTownsAndActiveHeroes" category="" short_description="Позволяет запрещать передачу хода игроку AI, если у него нет городов или активных героев">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="enable" category="" short_description="Параметр, запрещающий (&quot;true&quot;) передачу хода игроку AI, либо разрешающий (&quot;nil&quot;) ее"></param>
+  </function>
+  <function name="EnableAIHeroHiring" category="" short_description="Включает/выключает покупку AI героев в таверне города">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="townName" category="" short_description="Имя города"></param>
+    <param name="enable" category="" short_description="&quot;true&quot; для включения, &quot;nil&quot; для выключения"></param>
+  </function>
+  <function name="EnableHeroAI" category="" short_description="Включает/выключает контроль AI над заданным героем">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="enable" category="" short_description="&quot;true&quot; для включения управления AI, &quot;nil&quot; для выключения"></param>
+  </function>
+  <function name="GenerateMonsters|GenerateMobs" category="" short_description="Генерирует существ на карте">  <param name="сreatureID" category="сreatureID" short_description="Идентификатор типа существ"></param>
+    <param name="nQuantityGroupsMin" category="" short_description="Минимальное число групп"></param>
+    <param name="nQuantityGroupsMax" category="" short_description="Максимальное число групп"></param>
+    <param name="nQuantityInGroupMin" category="" short_description="Минимальная численность существ в группе"></param>
+    <param name="nQuantityInGroupMax" category="" short_description="Максимальная численность существ в группе"></param>
+  </function>
+  <function name="GetAllNames|names" category="" short_description="Выдает список имен объектов в игре (на карте)">  <param name="filter = 0" category="" short_description="Значения filter: 0 — имена героев активных игроков"></param>
+  </function>
+  <function name="GetArtifactSetItemsCount" category="" short_description="Позволяет выяснить - сколько артефактов указанного типа герой имеет в наличии (их общее количество, или сколько из них он в настоящее время использует)">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="artifactSetID" category="artifactSetID" short_description="Идентификатор составных артефактов"></param>
+    <param name="onlyCombined=1" category="" short_description="Параметр, определяющий части составного артефакта, надетыми (равен 1) героем, либо хранящимися в его инвентаре (равен 0)"></param>
+  </function>
+  <function name="GetCurrentMoonWeek" category="" short_description="Позволяет выяснить текущий тип недели в игре"></function>
+  <function name="GetCurrentPlayer" category="" short_description="Определяет текущего игрока"></function>
+  <function name="GetDate" category="" short_description="Возвращает текущее игровое время (день, неделю, месяц или день недели)">  <param name="dateTypeID" category="dateTypeID" short_description="Идентификатор текущего игрового времени"></param>
+  </function>
+  <function name="GetHeroCreatures" category="" short_description="Определяет количество существ заданного вида, находящихся под&#xA;командованием героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+  </function>
+  <function name="GetHeroLevel" category="" short_description="Определяет уровень героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="GetHeroCreaturesTypes" category="" short_description="Возвращает массив типов существ в армии героя (независимо от того, какие слоты они занимают)">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="GetHeroSkillMastery" category="" short_description="Возвращает уровень владения героя навыком">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="skillID" category="skillID" short_description="Идентификатор навыка героя"></param>
+  </function>
+  <function name="GetHeroStat" category="" short_description="Определяет параметры героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="statlID" category="statlID" short_description="Идентификатор параметра героя"></param>
+  </function>
+  <function name="GetHeroTown" category="" short_description="Определяет город, в котором находится герой">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="GetMaxFloor" category="" short_description="Возвращает 0, если у карты есть только один уровень;  возвращает 1, если у карты есть и поверхность и подземелье"></function>
+  <function name="GetObjectArmySlotCreature" category="" short_description="Возвращает тип и количество кричей в слоте slotIndex объекта objName">  <param name="objName" category="" short_description="Скриптовое имя объекта"></param>
+    <param name="slotIndex" category="" short_description="Номер слота"></param>
+  </function>
+  <function name="GetObjectCreatures" category="" short_description="Определяет количество существ заданного вида, содержащихся в армии объекта">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+  </function>
+  <function name="GetObjectCreaturesTypes" category="" short_description="Возвращает массив типов существ в армии объекта (независимо от того, какие слоты они занимают)">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetObjectDwellingCreatures" category="" short_description="Возвращает стэки существ, доступных для найма в данном городе для указанного уровня. Функция возвратит -1, если соответствующего жилища существ  в указанном городе не имеется">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="Dwelling_Tier" category="" short_description="Уровень стэков существ в жилищах (диапазон от 2 до 15)"></param>
+  </function>
+  <function name="GetObjectsFromPath" category="" short_description="Возвращает массив объектов, мимо которых  проследует герой от текущего местоположения до заданной точки выбранного уровня">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="GetObjectiveProgress" category="" short_description="Определяет прогресс выполнения задания">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetObjectiveState" category="" short_description="Определяет состояние задания">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetObjectOwner" category="" short_description="Определяет принадлежность находящихся на карте объекта">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetObjectsInRegion" category="" short_description="Определяет, какие объекты находятся в заданной области (регионе)">  <param name="regionName" category="" short_description="Имя области (региона)"></param>
+    <param name="objectTypeID" category="objectTypeID" short_description="Идентификатор объектов"></param>
+  </function>
+  <function name="GetObjectPosition|GetObjectPos" category="" short_description="Определяет положение объекта на карте">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetPlayerHeroes" category="" short_description="Возвращает имена героев принадлежащих игроку">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetPlayerNecroEnergy" category="" short_description="Возвращает количество тёмной энергии у игрока (для расы некромантов)">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetPlayerRace" category="" short_description="Возвращает расу игрока по его идентификатору">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetPlayerResource" category="" short_description="Выясняет количество ресурсов у игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="resourceKindID" category="resourceKindID" short_description="Идентификатор типа ресурса"></param>
+  </function>
+  <function name="GetPlayerSelectedCampaignBonusIndex" category="" short_description="Позволяет выяснять бонус, выбранный  игроком на старте карты в кампании">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetPlayerState" category="" short_description="Выясняет текущее состояние игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetPlayerTeam" category="" short_description="Возвращает номер команды (team) игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="GetSoundTimeInSleeps" category="" short_description="Определяет длину указанного звукового файла и возвращает число секунд длительности его звучания">  <param name="soundName" category="" short_description="Имя проигрываемого звукового эффекта в ресурсах"></param>
+  </function>
+  <function name="GetStandState" category="" short_description="Определяет текущее состояния &quot;стенда&quot; на карте">  <param name="standName" category="" short_description="Имя &quot;стенда&quot;"></param>
+  </function>
+  <function name="GetStandStatesCount" category="" short_description="Определяет количество возможных состояний &quot;стенда&quot; на карте">  <param name="standName" category="" short_description="Имя &quot;стенда&quot;"></param>
+  </function>
+  <function name="GetTerrainSize" category="" short_description="Возвращает размер текущей карты в тайлах"></function>
+  <function name="GetTownBuildingLevel" category="" short_description="Определяет уровень постройки здания в городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+  </function>
+  <function name="GetTownBuildingLimitLevel" category="" short_description="Определяет ограничение на уровень постройки здания в городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+  </function>
+  <function name="GetTownBuildingMaxLevel" category="" short_description="Определяет максимальный уровень постройки здания в городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+  </function>
+  <function name="GetTownHero" category="" short_description="Возвращает героя, находящегося в гарнизоне города">  <param name="townName" category="" short_description="Имя города"></param>
+  </function>
+  <function name="GetTownRace" category="" short_description="Возвращает расу города">  <param name="townName" category="" short_description="Имя города"></param>
+  </function>
+  <function name="GiveArtefact|GiveArtifact" category="" short_description="Выдает герою артефакт с возможностью привязки (т.е. сделать артефакт непередаваемым)">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="artifactTypeID" category="artifactTypeID" short_description="Идентификатор артефакта"></param>
+    <param name="bindToHero = 0" category="" short_description="0 - не привязывать / 1 - привязать"></param>
+  </function>
+  <function name="GiveBorderguardKey" category="" short_description="Дает игроку ключ определенного цвета">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="colorID" category="colorID" short_description="Идентификатор цвета ключа"></param>
+  </function>
+  <function name="GiveHeroBattleBonus" category="" short_description="Даёт герою heroName бонус на следующую битву вида bonusType, в количестве amount">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="bonusType" category="bonusTypeID" short_description="Тип бонуса"></param>
+    <param name="amount" category="" short_description="Количественное значение бонуса"></param>
+  </function>
+  <function name="GiveHeroSkill" category="" short_description="Дает герою заданный базовый навык">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="skillID" category="skillID" short_description="Идентификатор навыка героя"></param>
+  </function>
+  <function name="GiveHeroWarMachine" category="" short_description="Дает герою машину заданного типа">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="warMachineTypeID" category="warMachineTypeID" short_description="Идентификатор типа боевой машины"></param>
+  </function>
+  <function name="HasArtefact" category="" short_description="Выясняет, есть ли у героя артефакт">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="artifactTypeID" category="artifactTypeID" short_description="Идентификатор артефакта"></param>
+  </function>
+  <function name="HasBorderguardKey" category="" short_description="Определяет, есть ли у игрока ключ определенного цвета">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="colorID" category="colorID" short_description="Идентификатор цвета ключа"></param>
+  </function>
+  <function name="HasHeroSkil" category="" short_description="Проверяет наличие навыка у героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="skillID" category="skillID" short_description="Идентификатор навыка героя"></param>
+  </function>
+  <function name="HasHeroWarMachine" category="" short_description="Определяет, есть ли у героя боевая машина заданного типа">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="warMachineTypeID" category="warMachineTypeID" short_description="Идентификатор типа боевой машины"></param>
+  </function>
+  <function name="IsHeroAlive" category="" short_description="Выясняет, жив ли герой">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="IsHeroInBoat" category="" short_description="Выясняет, находится ли герой в настоящее время на корабле">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="IsHeroInTown" category="" short_description="Проверяет, находится ли указанный герой в определенном городе (с возможностью исследования городских ворот и гарнизона города)">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="townName" category="" short_description="Имя города"></param>
+    <param name="checkGate=1" category="" short_description="Параметр, исследующий (равен 1) городские ворота города, либо игнорирующий (&quot;nil&quot;) их"></param>
+    <param name="checkGarrison=1" category="" short_description="Параметр, исследующий (равен 1) гарнизон города, либо игнорирующий (&quot;nil&quot;) его"></param>
+  </function>
+  <function name="IsHeroLootable" category="" short_description="Определяет, можно ли отобрать у героя артефакты, победив его">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="IsObjectEnabled" category="" short_description="Определяет, взаимодействует ли интерактивный объект с героем&#xA;стандартным образом">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsObjectExists|Exists" category="" short_description="Определяет, существует ли данный объект на карте">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsObjectInRegion" category="" short_description="Определяет, находится ли объект в заданной области">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="regionName" category="" short_description="Имя региона"></param>
+  </function>
+  <function name="IsObjectiveVisible" category="" short_description="Определяет, отображается ли задание в интерфейсе конкретного игрока">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="IsObjectVisible" category="" short_description="Определяет, виден ли объект игроку">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsAIPlayer" category="" short_description="Выясняет, управляется ли игрок искусственным интеллектом (возвращает 1, если игрок - AI, 0 - если человек)">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="IsRegionBlocked" category="" short_description="Определяет, заблокирован ли регион для прохождения героями определенного игрока">  <param name="regionName" category="" short_description="Имя региона"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="KillMobs|RemoveAllMonsters" category="" short_description="Удаляет существ с карты">  <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+  </function>
+  <function name="KnowHeroSpell" category="" short_description="Проверяет знание заклинания героем">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="spellID" category="spellID" short_description="Идентификатор заклинания"></param>
+  </function>
+  <function name="LevelUpHero|GiveExpToLevel" category="" short_description="Дает герою столько очков опыта, сколько необходимо для получения следующего уровня">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="Loose" category="" short_description="При вызове функции игрок-человек проигрывает"></function>
+  <function name="LockMinHeroSkillsAndAttributes" category="" short_description="Позволяет устанавливать минимальные навыки и прописывает уровни герою">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="MakeHeroInteractWithObject" category="" short_description="Заставляет героя взаимодействовать с указанным объектом незамедлительно, даже, если герой находится в удалении от объекта">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="MakeHeroNecromancer" category="" short_description="Разрешает герою поднимать  undead-существ после боя в соответствии с  указанным уровнем Некромантии">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="necromancyLevel" category="" short_description="уровень навыка Некромантии"></param>
+  </function>
+  <function name="MakeHeroReturnToTavernAfterDeath" category="" short_description="Делает так, чтобы после поражения, герой всегда помещался в таверну игрока и ожидал в ней дальнейшего найма">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="enable" category="" short_description="&quot;true&quot; - разрешает помещение героя в таверну / &quot;nil&quot; - запрещает"></param>
+    <param name="heroShouldStayAtTavernUntilHired = 0" category="" short_description="Параметр, определяющий пребывание героя в таверне неограниченный промежуток времени, в ожидании последующего найма  игроком (если он не равен 0)"></param>
+  </function>
+  <function name="MakeTownMovable" category="" short_description="Позволяет перемещать и вращать город по скрипту команды">  <param name="townName" category="" short_description="Имя города"></param>
+  </function>
+  <function name="MarkObjectAsVisited" category="" short_description="Помечает выключенный интерактивный объект как использованный данным героем">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="MessageBox" category="" short_description="Выводит на экран сообщение">  <param name="messageName" category="" short_description="Путь к файлу с текстом сообщения"></param>
+    <param name="callback = &quot;&quot;" category="" short_description="имя функции, которая будет вызвана после нажатия на &quot;OK&quot;"></param>
+  </function>
+  <function name="MoveCamera" category="" short_description="Перемещает камеру в заданную точку карты">  <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="zoom" category="" short_description="Параметр определяет насколько далеко будет расположена камера от заданной клетки"></param>
+    <param name="pitch" category="" short_description="Угол наклона камеры (0 - камера смотрит вдоль горизонта, pi/2 — вертикально вниз)"></param>
+    <param name="yaw" category="" short_description="Угол поворота камеры (0 - север)"></param>
+    <param name="noZoom" category="" short_description="Установить в 1, чтобы камера не меняла zoom (приближение) при движении"></param>
+    <param name="noRotate" category="" short_description="Установить в 1, чтобы камера не вращалась при движении"></param>
+  </function>
+  <function name="MoveHero" category="" short_description="Отдает герою приказ двигаться в определенную точку">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID = -1" category="floorID" short_description="Идентификатор уровня карты (по умолчанию = -1, что означает &quot;уровень на котором расположен герой&quot;)"></param>
+  </function>
+  <function name="MoveHeroRealTime" category="" short_description="Заставляет героя немедленно двигаться в определенную точку">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID = -1" category="floorID" short_description="Идентификатор уровня карты (по умолчанию = -1, что означает &quot;уровень на котором расположен герой&quot;)"></param>
+  </function>
+  <function name="OpenCircleFog" category="" short_description="Открывает туман войны в заданном круге">  <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="range" category="" short_description="Радиус круга (в тайлах)"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="OpenPuzzleMap" category="" short_description="&quot;Виртуально&quot; посещает заданное количество обелисков для данного игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="numObelisks" category="" short_description="Количество &quot;виртуально&quot; посещаемых обелисков"></param>
+  </function>
+  <function name="OpenRegionFog" category="" short_description="Открывает туман войны в заданном регионе">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="regionName" category="" short_description="Имя региона"></param>
+  </function>
+  <function name="OverrideAdvMapDialogPos" category="" short_description="Отменяет указанные значения для данного индекса диалогов">  <param name="DialogIndex" category="" short_description="Индекс диалогов в ресурсах игры"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="z" category="" short_description="Координата Z тайла"></param>
+  </function>
+  <function name="OverrideObjectTooltipNameAndDescription" category="" short_description="Позволяет задавать другое название и описание для большинства объектов на карте (но для некоторых объектов подобное невозможно)">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="name" category="" short_description="Путь к файлу с текстом сообщения (новое имя объекта)"></param>
+    <param name="desc" category="" short_description="Путь к файлу с текстом сообщения (новое описание объекта)"></param>
+  </function>
+  <function name="Play2DSound" category="" short_description="Проигрывает 2D-звук">  <param name="soundName" category="" short_description="Имя проигрываемого звукового эффекта в ресурсах"></param>
+  </function>
+  <function name="Play3DSound" category="" short_description="Проигрывает 3D-звук">  <param name="soundName" category="" short_description="Имя проигрываемого звукового эффекта в ресурсах"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="PlayObjectAnimation" category="" short_description="Проигрывает анимацию на объекте карты">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="animName" category="" short_description="Имя анимации"></param>
+    <param name="AnimationActionTypesID" category="AnimationActionTypesID" short_description="Идентификатор проигрывания анимации"></param>
+  </function>
+  <function name="PlayVisualEffect" category="" short_description="Проигрывает заданный визуальный эффект (без звука) на карте">  <param name="effectName" category="" short_description="Имя эффекта"></param>
+    <param name="objectName=&quot;&quot;" category="" short_description="Имя объекта"></param>
+    <param name="tagName=&quot;&quot;" category="" short_description="Параметр, дающий возможность остановить проигывание эффекта"></param>
+    <param name="x=0" category="" short_description="Смещение по оси X"></param>
+    <param name="y=0" category="" short_description="Смещение по оси Y"></param>
+    <param name="z=0" category="" short_description="Смещение по оси Z"></param>
+    <param name="rot=0" category="" short_description="Смещение относительно угла объекта"></param>
+    <param name="floorID=0" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="QuestionBox" category="" short_description="Выводит на экран сообщение, требующее подтверждения (функция немодальна)">  <param name="messageName" category="" short_description="Путь к файлу с текстом сообщения"></param>
+    <param name="callbackYes" category="" short_description="Имя функции вызываемой при нажатии на &quot;OK&quot;"></param>
+    <param name="callbackNo" category="" short_description="Имя функции вызываемой при нажатии на &quot;Отмена&quot;"></param>
+  </function>
+  <function name="RazeBuilding" category="" short_description="Разрушает объект на карте">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="RazeTown" category="" short_description="Разрушает город на карте">  <param name="townName" category="" short_description="Имя города"></param>
+  </function>
+  <function name="RegionToPoint" category="" short_description="Определяет координаты и номер уровня точечного региона">  <param name="regionName" category="" short_description="Имя региона (состоящего из единственного тайла)"></param>
+  </function>
+  <function name="RemoveArtefact" category="" short_description="Забирает артефакт у героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="artifactTypeID" category="artifactTypeID" short_description="Идентификатор артефакта"></param>
+  </function>
+  <function name="RemoveHeroCreatures" category="" short_description="Убирает существ из армии героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="quantity" category="" short_description="Количество существ"></param>
+    <param name="desiredSlot = -1" category="" short_description="Номер слота, для которого желательно совершить действие (если оно возможно)"></param>
+  </function>
+  <function name="RemoveHeroWarMachine" category="" short_description="Отнимает у героя машину заданного типа">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="warMachineTypeID" category="warMachineTypeID" short_description="Идентификатор типа боевой машины"></param>
+  </function>
+  <function name="RemoveObject" category="" short_description="Удаляет объект с игровой карты">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="RemoveObjectCreatures" category="" short_description="Убирает существ из армии объекта">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="creatureID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="quantity" category="" short_description="Количество существ"></param>
+    <param name="desiredSlot = -1" category="" short_description="Номер слота, для которого желательно совершить действие (если оно возможно)"></param>
+  </function>
+  <function name="ReplaceDwelling" category="" short_description="Заменяет одно жилище другим жилищем выбранной расы, соответствующей типу существ, которые могут быть наняты в этом жилище /!\ If the creatures are not specified, the standard creatures of the corresponding level and race will be sold in the dwelling.">  <param name="name" category="" short_description="Имя жилища"></param>
+    <param name="newtownType" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+    <param name="creatureId1 = nil" category="" short_description="Тип существ 1"></param>
+    <param name="creatureId2 = nil" category="" short_description="Тип существ 2"></param>
+    <param name="creatureId3 = nil" category="" short_description="Тип существ 3"></param>
+    <param name="creatureId4 = nil" category="" short_description="Тип существ 4"></param>
+  </function>
+  <function name="ResetHeroCombatScript" category="" short_description="Сбрасывает скрипт, который был бы запущен при бое с данным героем">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="ResetObjectFlashlight" category="" short_description="Убирает с объекта карты точечный источник света">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="SetAIHeroAttractor" category="" short_description="Устанавливает цель для заданного AI героя">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="priority" category="" short_description="Приоритеты цели для AI"></param>
+  </function>
+  <function name="SetAIHeroFleeControl" category="" short_description="Выключает передвижение камеры при передвижении героев">  <param name="heroName" category="" short_description="Герой, которому включается/выключается следование общим запретам"></param>
+  </function>
+  <function name="SetAIPlayerAttractor" category="" short_description="Устанавливает приоритет объекта для всех героев AI игрока (только для неподвижных объектов)">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="priority" category="" short_description="min: -1; std: 0; inc: 1; max: 2"></param>
+  </function>
+  <function name="SetAmbientLight|SetLight" category="" short_description="Меняет освещение на заданном уровне карты">  <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+    <param name="lightName" category="" short_description="Имя источника рассеянного света"></param>
+    <param name="fade = false" category="" short_description="&quot;true&quot; - постепенное изменение освещенности / &quot;nil&quot; — мгновенное"></param>
+    <param name="time = 1" category="" short_description="время изменения (time = 0 - мгновенно)"></param>
+  </function>
+  <function name="SetCombatLight|SetCombatAmbientLight" category="" short_description="Меняет освещение на всех боевых аренах карты">  <param name="lightName" category="" short_description="Указатель на ресурс источника рассеянного света в ресурсной базе"></param>
+  </function>
+  <function name="SetDisabledObjectMode" category="" short_description="Позволяет определить, что отобразится под курсором на  выключенном интерактивном объекте">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="disabledMode" category="DisabledInteractiveObjectsModesID" short_description="Идентификатор выключенного интерактивного объекта"></param>
+  </function>
+  <function name="SetHeroCombatScript" category="" short_description="Указывает скрипт, который будет запущен при бое с данным героем">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="scriptName" category="" short_description="Указатель на файл скрипта (*.lua)"></param>
+  </function>
+  <function name="SetHeroLootable" category="" short_description="Задает, можно ли отобрать у героя артефакты, победив его">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="enable" category="" short_description="&quot;true&quot; - отбираются / &quot;nil&quot; - нет"></param>
+  </function>
+  <function name="SetHeroBiography" category="" short_description="Предоставляет возможность  изменения биографии героя в ходе игры">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="newBioTextFileRef" category="" short_description="Путь к файлу с текстом сообщения (новой биографии героя)"></param>
+  </function>
+  <function name="SetHeroRoleMode" category="" short_description="Устанавливает определенное управление «распределением ролей» между героями AI">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="roleModeID" category="roleModeID" short_description="Идентификатор ролевого режима"></param>
+  </function>
+  <function name="SetHeroesExpCoef" category="" short_description="Позволяет устанавливать коэффициент для опыта, получаемого героями">  <param name="fCoef" category="" short_description="Коэффициент для опыта, получаемого героями"></param>
+  </function>
+  <function name="SetMonsterCourageAndMood" category="" short_description="Позволяет задавать храбрость (&quot;Courage&quot;) существ и их настроение (&quot;Mood&quot;) по отношению к указанному игроку">  <param name="monsterName" category="" short_description="Имя существа"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="moodID" category="moodID" short_description="Идентификатор настроения монстра"></param>
+    <param name="courageID" category="courageID" short_description="Идентификатор храбрости монстра"></param>
+  </function>
+  <function name="SetMonsterNames" category="" short_description="Позволяет менять имена стэка существ и армии существ (может быть полезным для названий, которые относятся к основной сюжетной линии)">  <param name="monsterName" category="" short_description="Имя существа"></param>
+    <param name="monsterNamesFilterID" category="monsterNamesFilterID" short_description="Идентификатор (фильтр) устанавливаемых имен"></param>
+    <param name="nameFileRef" category="" short_description="Путь к файлу с текстом сообщения (новое имя)"></param>
+  </function>
+  <function name="SetMonsterSelectionType" category="" short_description="Позволяет настраивать метку выбора, расположенную под монстром на вкл. или выкл.">  <param name="monsterName" category="" short_description="Имя существа"></param>
+    <param name="selectionType" category="" short_description="Тип метки выбора (от -1 до 2)"></param>
+  </function>
+  <function name="SetObjectDwellingCreatures" category="" short_description="Устанавливает стэки существ и их количество, доступное для найма в данном городе. Функция не позволяет изменить тип нанимаемых существ, с ее помощью можно управлять только их количеством">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="Tier" category="" short_description="Уровень стэков существ в жилищах (диапазон от 2 до 15)"></param>
+    <param name="quantity" category="" short_description="Численность существ"></param>
+  </function>
+  <function name="SetObjectEnabled" category="" short_description="Позволяет включать и выключать взаимодействие интерактивного объекта с героем стандартным образом">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="enable" category="" short_description="&quot;true&quot; - включение, &quot;nil&quot; - отключение"></param>
+  </function>
+  <function name="SetObjectFlashlight" category="" short_description="Цепляет к объекту карты точечный источник света">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="lightName" category="" short_description="Имя источника света (задается в свойствах карты)"></param>
+  </function>
+  <function name="SetObjectiveProgress" category="" short_description="Задает прогресс выполнения задания">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="step" category="" short_description="Шаг выполнения задания"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока  (для принадлежащих конкретному игроку заданий игнорируется, по умолчанию равен PLAYER_1)"></param>
+  </function>
+  <function name="SetObjectOwner" category="" short_description="Меняет принадлежность находящихся на карте объектов">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="SetObjectPosition|SetObjectPos" category="" short_description="Перемещает объект">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты (по умолчанию равен -1, что означает &quot;тот же уровень&quot;)"></param>
+    <param name="fx = -1" category="" short_description="Только для героев! Задаёт номер эффекта телепортации (-1 = по-умолчанию, 0 - выключен, 1 - warp, 2 - teleport, 3 - dimension door, 4 - town portal)"></param>
+  </function>
+  <function name="SetObjectRotation" category="" short_description="Вращает заданный объект на карте">  <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="rotation" category="" short_description="Угол вращения (против часовой стрелки), 0 – объект лицом повернут на юг"></param>
+  </function>
+  <function name="SetObjectiveState" category="" short_description="Меняет состояние задания">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="state" category="Objective_state`sID" short_description="Cостояние, в которое нужно установить задание"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока  (для принадлежащих конкретному игроку заданий игнорируется, по умолчанию равен PLAYER_1)"></param>
+  </function>
+  <function name="SetObjectiveVisible" category="" short_description="Отображает / скрывает задание в интерфейсе конкретного игрока">  <param name="objectiveName" category="" short_description="Имя задания (объективы)"></param>
+    <param name="enable" category="" short_description="Параметр, определяющий, будет ли задание  отображаться в интерфейсе игрока (&quot;true&quot;), либо будет скрыто (&quot;nil&quot;)"></param>
+    <param name="playerID = PLAYER_1" category="playerID" short_description="Идентификатор игрока (для заданий, принадлежащих конкретному игроку, параметр игнорируется, по умолчанию равен PLAYER_1)"></param>
+  </function>
+  <function name="SetPlayerHeroesCountNotForHire" category="" short_description="Устанавливает количество героев, заблокированных для найма определенный игроком заданным количеством">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="quantity" category="" short_description="Количество героев, заблокированных для найма"></param>
+  </function>
+  <function name="SetPlayerResource" category="" short_description="Устанавливает количество ресурсов у игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="resourceKindID" category="resourceKindID" short_description="Идентификатор типа ресурса"></param>
+    <param name="quantity" category="" short_description="Количество (не может быть отрицательным значением)"></param>
+  </function>
+  <function name="SetPlayerStartResources" category="" short_description="Устанавливает стартовое количество ресурсов у игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="wood" category="" short_description="Древесина"></param>
+    <param name="ore" category="" short_description="Руда"></param>
+    <param name="mercury" category="" short_description="Ртуть"></param>
+    <param name="crystal" category="" short_description="Кристаллы"></param>
+    <param name="sulfur" category="" short_description="Сера"></param>
+    <param name="gem" category="" short_description="Самоцветы"></param>
+    <param name="gold" category="" short_description="Золото"></param>
+  </function>
+  <function name="SetPlayerTeam" category="" short_description="Устанавливает команду (team) игрока">  <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+    <param name="team" category="teamID" short_description="Номер команды (число от 1 до 8)"></param>
+  </function>
+  <function name="SetRegionAutoObjectEnable" category="" short_description="Автоматически включает \ выключает объекты или блокирует \ разблокирует  регион, когда герои входят в, либо покидают данный регион">  <param name="regionName" category="" short_description="Имя региона"></param>
+    <param name="autoModeID" category="RegionAutoActionModesID" short_description="Идентификатор действий игрока"></param>
+    <param name="herotownTypeID = -1" category="townTypeID" short_description="Идентификатор принадлежности города (расы) (по умолчанию, не проверятся: -1)"></param>
+    <param name="heroPlayerID = -1" category="playerID" short_description="Идентификатор игрока (по умолчанию не проверяется: -1)"></param>
+    <param name="heroName" category="" short_description="Имя героя (не проверяется, если значение не введено)"></param>
+    <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="enableType" category="" short_description="Тип действия, 0 - выключает объект (блокирует регион), 1 - включает объект (разблокирует регион), -1-  ничего не делает"></param>
+  </function>
+  <function name="SetRegionBlocked" category="" short_description="Устанавливает/снимает блокировку прохождения региона героями">  <param name="regionName" category="" short_description="Имя региона"></param>
+    <param name="status" category="" short_description="&quot;true&quot; - ставится блокировка / &quot;nil&quot; - снимается"></param>
+    <param name="playerID = -1" category="playerID" short_description="Идентификатор игрока (по умолчанию равен -1, что означает - все игроки)"></param>
+  </function>
+  <function name="SetStandState" category="" short_description="Меняет состояние &quot;стенда&quot; на карте">  <param name="standName" category="" short_description="Имя &quot;стенда&quot;"></param>
+    <param name="stateID" category="stateID" short_description="Идентификатор состояния &quot;стенда&quot;"></param>
+  </function>
+  <function name="SetTownBuildingLimitLevel" category="" short_description="Задает ограничение на уровень постройки здания в городе">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+    <param name="limit" category="" short_description="Ограничение на постройку здания в городе (предельный уровень)"></param>
+  </function>
+  <function name="SetWarfogBehaviour" category="" short_description="Включяет/выключает снятие тумана войны героями игрока">  <param name="onLand" category="" short_description="Будет ли герой игрока, перемещаясь по суше, снимать туман (1/ 0)"></param>
+    <param name="onSea" category="" short_description="Будет ли герой игрока, перемещаясь по воде, снимать туман (1/ 0)"></param>
+  </function>
+  <function name="ShowFlyingSign|ShowFlyMessage" category="" short_description="Отображает отлетающее от объекта сообщение">  <param name="messageName" category="" short_description="Путь к файлу с текстом сообщения"></param>
+    <param name="objectName" category="" short_description="Имя объекта"></param>
+    <param name="target PlayerID = -1" category="playerID" short_description="Идентификатор игрока (по умолчанию равен -1, что означает - сообщение увидят все игроки)"></param>
+    <param name="TimeSec = 1.0" category="" short_description="Время в секундах, на которое появляется сообщение"></param>
+  </function>
+  <function name="SiegeTown" category="" short_description="Инициирует осаду города">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="townName" category="" short_description="Имя города"></param>
+    <param name="arenaName = &quot;&quot;" category="" short_description="Указатель на ресурс арены, на которой должен происходить бой (по умолчанию - &quot;&quot;, что означает что бой будет проходить на стандартной для города арене)"></param>
+  </function>
+  <function name="SinkHero" category="" short_description="Затапливает корабль, и герой исчезает, если он находится в нем">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="StartAdvMapDialog" category="" short_description="Стартует сцену мини-диалога">  <param name="dialogIndex" category="" short_description="Индекс мини-диалога"></param>
+    <param name="callback = &quot;&quot;" category="" short_description="Имя функции, которое будет вызвано после окончания сцены мини-диалога"></param>
+  </function>
+  <function name="StartCombat" category="" short_description="Запускает сражение с заданными параметрами">  <param name="sHeroName" category="" short_description="Имя героя"></param>
+    <param name="sEnemyHeroName" category="" short_description="Имя вражеского героя (&quot;nil&quot; - если вражеского героя нет и бой идет только с существами)"></param>
+    <param name="nEnemyIDCount" category="" short_description="Количество существ, с которыми будет производиться сражение. После параметра &quot;количество существ&quot; должно следовать creaturesCount пар вида"></param>
+    <param name="nCreatureID1" category="creatureID" short_description="Идентификатор типа существ (стэк 1)"></param>
+    <param name="nQuantity1" category="" short_description="Количество существ данного типа"></param>
+    <param name="nCreatureID2" category="creatureID" short_description="Идентификатор типа существ (стэк 2)"></param>
+    <param name="nQuantity2" category="" short_description="Количество существ данного типа"></param>
+    <param name="…" category="" short_description=""></param>
+    <param name="spScriptXDB" category="" short_description="Имя скрипта, который будет запущен в начале сражения (по умолчанию — &quot;nil&quot;, что означает, что ни один скрипт запущен не будет)"></param>
+    <param name="sFinishProc" category="" short_description="Имя функции (скрипта карты), которая будет запущена в конце сражения. Функция должна принимать два параметра (имя сражающегося героя и результат сражения (&quot;nil&quot; — если герой проиграл и not &quot;nil&quot; — если герой победил))"></param>
+    <param name="spAdventureFlybySceneXDB = &quot;nil&quot;" category="" short_description="Указатель на ресурс арены, на которой должен происходить бой (по умолчанию — &quot;nil&quot;, что означает что арена будет определяться по типу местности на которой стоит герой)"></param>
+    <param name="allowQuickCombat" category="" short_description="Если не &quot;nil&quot;, то сражение будет запущено в режиме быстрого боя, если этот режим включен в опциях игры и у героя heroName не отключена возможность быстрого боя (по умолчанию — &quot;nil&quot;, то есть запускается обычное сражение)"></param>
+  </function>
+  <function name="StartCutScene" category="" short_description="Запускает ролик">  <param name="cutSceneName" category="" short_description="Указатель на ролик в базе ресурсов"></param>
+    <param name="callback = &quot;&quot;" category="" short_description="Имя функции, которая будет вызвана после проигрывания ролика"></param>
+    <param name="saveName = &quot;&quot;" category="" short_description="Имя save-файла (см. команду Save) который будет сделан перед проигрыванием ролика"></param>
+  </function>
+  <function name="StartDialogScene" category="" short_description="Запускает диалоговую сцену">  <param name="dialogSceneName" category="" short_description="Указатель на диалоговую сцену в базе ресурсов"></param>
+    <param name="callback = &quot;&quot;" category="" short_description="Имя функции, которая будет вызвана после проигрывания диалоговой сцены"></param>
+    <param name="saveName = &quot;&quot;" category="" short_description="Имя save-файла (см. команду Save) который будет сделан перед диалоговой сценой"></param>
+  </function>
+  <function name="StopPlaySound" category="" short_description="Останавливает проигрывание зацикленного звука">  <param name="loopingSoundID" category="loopingSoundID" short_description="Идентификатор звука, возвращается функциями Play2DSound /Play3DSound для циклических звуков"></param>
+  </function>
+  <function name="StopVisualEffects" category="" short_description="Останавливает проигрывание визуального эффекта на карте">  <param name="tagName=&quot;&quot;" category="" short_description="Имя для управления эффектом, необязательный параметр — по умолчанию имя пустое (остановить все эффекты)"></param>
+  </function>
+  <function name="TakeAwayHeroExp" category="" short_description="Отнимает указанное количество опыта у героя, случайным образом удаляет навыки">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="exp" category="" short_description="Количество отнимаемого у героя опыта"></param>
+  </function>
+  <function name="TalkBoxForPlayers" category="" short_description="Открывает для выбранных игроков (playersFilter) диалог с несколькими вариантами ответа (от 1 до 5).&#xA;Функция не выдаёт сообщений об ошибке т.к. если параметры не верны, то используются значения по-умолчанию">  <param name="playersFilter" category="PlayersFilteringConstantsID" short_description="Идентификатор выбранных игроков"></param>
+    <param name="iconRef" category="" short_description="Ссылка на текстуру иконки"></param>
+    <param name="iconTooltipRef" category="" short_description="Путь к тексту тултипа иконки"></param>
+    <param name="textRef" category="" short_description="Путь к тексту диалога"></param>
+    <param name="addTextRef" category="" short_description="Путь к тексту диалога (дополнительному)"></param>
+    <param name="callback" category="" short_description="Строка с именем lua-функции, через первый параметр которой сообщается ответ игрока (число: 0 - отмена, -1 - закрыт игрой, 1.. - номер выбранного игроком ответа)"></param>
+    <param name="mode" category="" short_description="Тип режима: 0 - с кнопкой ОК, 1 - ОК/Закрыть"></param>
+    <param name="titleTextRef" category="" short_description="Путь к тексту заголовка окна"></param>
+    <param name="selectTextRef" category="" short_description="Путь к тексту заголовка перед опциями выбора"></param>
+    <param name="defaultOption" category="" short_description="Номер ответа, подсвеченного по-умолчанию (число: 0 - нет, 1.. - номер ответа)"></param>
+    <param name="optionTextRef" category="" short_description="путь к тексту ответа № 1"></param>
+    <param name="[ optionTextRef]" category="" short_description="Путь к тексту ответа № ..."></param>
+    <param name="…" category="" short_description="[Номер ответа]"></param>
+  </function>
+  <function name="TeachHeroSpell" category="" short_description="Выдает герою заданное заклинание">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="spellID" category="spellID" short_description="Идентификатор заклинания"></param>
+  </function>
+  <function name="Trigger|SetTrigger" category="" short_description="Позволяет устанавливать и снимать функции-обработчики событий, происходящих в мире">  <param name="triggerTypeID" category="triggerTypeID" short_description="Идентификатор события игрового мира"></param>
+    <param name="..." category="" short_description=""></param>
+    <param name="functionName" category="" short_description="Устанавливает функцию-обработчик с указанным именем на заданное событие игрового мира"></param>
+  </function>
+  <function name="TransformTown" category="" short_description="Меняет тип города на карте">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="townTypeID" category="townTypeID" short_description="Идентификатор принадлежности города (расы)"></param>
+  </function>
+  <function name="UnblockGame" category="" short_description="Разблокирует интерфейс пользователя и работу AI"></function>
+  <function name="UnreserveHero" category="" short_description="Делает зарезервированного для определенного игрока героя снова доступным для остальных игроков">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="UpgradeTownBuilding" category="" short_description="Модернизирует (либо возводит) в указанном городе заданное городское строение. Если выбранное строение недоступно - генерируется ошибка">  <param name="townName" category="" short_description="Имя города"></param>
+    <param name="buildingID" category="buildingID" short_description="Идентификатор типа городского строения"></param>
+  </function>
+  <function name="WarpHeroExp" category="" short_description="Устанавливает количество опыта (experience) героя (а значит и его уровень), не влияет на умения и пр.">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="exp" category="" short_description="Количественное значение опыта"></param>
+  </function>
+  <function name="WarpToMap" category="" short_description="Запускает другую карту, где игрок будет играть за игрока playerId (только для single player)">  <param name="mapdbid" category="" short_description="Идентификатор карты в базе данных"></param>
+    <param name="playerID" category="playerID" short_description="Идентификатор игрока"></param>
+  </function>
+  <function name="Win" category="" short_description="При вызове функции игрок-человек выигрывает"></function>
+  <function name="IsTilePassable" category="" short_description="Проверяет, проходим ли для героев тайл с координатами x, y на этаже floorID.">  <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="IsTileReachable" category="" short_description="Проверяет, достижим ли для героя тайл с координатами x, y на этаже floorID.">  <param name="heroName" category="" short_description="Имя героя"></param>
+    <param name="x" category="" short_description="Координата Х тайла"></param>
+    <param name="y" category="" short_description="Координата Y тайла"></param>
+    <param name="floorID" category="floorID" short_description="Идентификатор уровня карты"></param>
+  </function>
+  <function name="GetGuardsTier" category="" short_description="Возвращает массив целых чисел — уровней охраны объекта (захваченные и охраняемые гарнизоном объекты на карте)">  <param name="objectName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetHeroMovePoints" category="" short_description="Получает количество MovePoints (в которых измеряется стоимость пути по карте)">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="GetMonsterTier" category="" short_description="Возвращает целое число — уровень существа. На самом деле возвращается не совсем tier, а tier*2+ upgraded)">  <param name="monsterName" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="GetObjectNamesByType" category="" short_description="Получает все объекты заданного типа">  <param name="objectTypeName" category="" short_description="Тип объектов (для каждой категории объектов - свой индентификатор)"></param>
+  </function>
+</lib>

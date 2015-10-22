@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<lib name="3.1 ТАКТИЧЕСКИЕ [RU]">
+  <function name="addUnit" category="" short_description="Добавляет существо (отряд существ)">  <param name="unitID" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="side" category="SideID" short_description="Идентификатор стороны боя"></param>
+    <param name="tileX" category="" short_description="Координата Х тайла"></param>
+    <param name="tileY" category="" short_description="Координата Y тайла"></param>
+    <param name="quantity" category="" short_description="Количество существ"></param>
+    <param name="name" category="" short_description="Имя для обращения из скрипта"></param>
+  </function>
+  <function name="AddCreature" category="" short_description="Добавляет одной из сторон существ заданного типа. Если параметры x и y заданы существо возникает в ближайшей свободной к (x, y) клетке, в противном случае существо появляется в случайной точке арены">  <param name="side" category="SideID" short_description="Идентификатор стороны боя"></param>
+    <param name="type" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="number" category="" short_description="Количество существ"></param>
+    <param name="x = -1" category="" short_description="Координата x"></param>
+    <param name="y = -1" category="" short_description="Координата y"></param>
+  </function>
+  <function name="AttackerCreatureDeath" category="" short_description="Гибель существа атакующей стороны">  <param name="creatureName" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="AttackerCreatureMove" category="" short_description="Ход существа атакующей стороны">  <param name="creatureName" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="AttackerHeroMove" category="" short_description="Ход героя атакующей стороны">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="AttackerWarMachineDeath" category="" short_description="Разрушение осадной машины атакующей стороны">  <param name="warMachineName" category="" short_description="Имя боевой машины"></param>
+  </function>
+  <function name="AttackerWarMachineMove" category="" short_description="Ход осадной машины атакующей стороны">  <param name="warMachineName" category="" short_description="Имя осадной машины"></param>
+  </function>
+  <function name="Break" category="" short_description="Прерывает бой"></function>
+  <function name="changeSubject" category="" short_description="Сменить субъект презентации">  <param name="unitID" category="" short_description="creatureID"></param>
+  </function>
+  <function name="combatEnableFinish" category="" short_description="Включить/выключить штатное завершение боя при полном уничтожении одной из армий">  <param name="enable" category="" short_description="Включает (&quot;true&quot;) /выключает (&quot;false&quot;)"></param>
+  </function>
+  <function name="combatSetPause" category="" short_description="Установить или снять паузу в бою">  <param name="pause" category="" short_description="&quot;true&quot; - установить, &quot;nil&quot; - снять"></param>
+  </function>
+  <function name="combatPlayEmotion" category="" short_description="Отыграть &quot;эмоцию&quot; победы или поражения какой-либо армией">  <param name="side" category="SideID" short_description="Идентификатор стороны боя"></param>
+    <param name="victory" category="" short_description="&quot;true&quot;, если надо отыграть победу, &quot;false&quot; - поражение"></param>
+  </function>
+  <function name="combatReadyPerson" category="" short_description="Выдает существо готовое к действию или &quot;nil&quot; если такого существа нет"></function>
+  <function name="combatStarted" category="" short_description="Возвращает &quot;not nil&quot; если комбат уже стартовал и &quot;nil&quot; - если еще не стартовал"></function>
+  <function name="commandDefend" category="" short_description="Дать существу команду стать в оборону">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="use-game-logiclimits = nil" category="" short_description="Использовать ли внутриигровые ограничения (&quot;nil&quot; - нет)"></param>
+  </function>
+  <function name="commandDoSpecial" category="" short_description="Дает существу команду применить специальное свойство/ возможность">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="abilityID" category="customAbilityID" short_description="Идентификатор особых умений/ специальных свойств"></param>
+    <param name="targetX = -1" category="" short_description="Координата X центра области, на которую подействует заклинание"></param>
+    <param name="targetY = -1" category="" short_description="Координата Y центра области, на которую подействует заклинание"></param>
+    <param name="use-game-logiclimits = nil" category="" short_description="Использовать ли внутриигровые ограничения (&quot;nil&quot; - нет)"></param>
+  </function>
+  <function name="commandDoSpell" category="" short_description="Дать существу команду сотворить заклинание">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="spellID" category="spellID" short_description="Идентификатор заклинания"></param>
+    <param name="targetX = -1" category="" short_description="Координата X центра области, на которую подействует заклинание"></param>
+    <param name="targetY = -1" category="" short_description="Координата Y центра области, на которую подействует заклинание"></param>
+  </function>
+  <function name="commandMove" category="" short_description="Дать существу команду идти в другое место">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="tileX" category="" short_description="Координата Х тайла"></param>
+    <param name="tileY" category="" short_description="Координата Y тайла"></param>
+    <param name="use-game-logiclimits = nil" category="" short_description="Использовать ли внутриигровые ограничения (&quot;nil&quot; - нет)"></param>
+  </function>
+  <function name="commandMoveAttack" category="" short_description="Дать существу команду атаковать ближней атакой">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="targetName" category="" short_description="Имя цели для атаки"></param>
+    <param name="use-game-logiclimits = nil" category="" short_description="Использовать ли внутриигровые ограничения (&quot;nil&quot; - нет)"></param>
+  </function>
+  <function name="commandShot" category="" short_description="Дать существу команду атаковать дальней атакой">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="targetName" category="" short_description="Имя цели для атаки"></param>
+    <param name="use-game-logiclimits = nil" category="" short_description="Использовать ли внутриигровые ограничения (&quot;nil&quot; - нет)"></param>
+  </function>
+  <function name="DefenderBuildingDeath" category="" short_description="Разрушение строения защищающейся стороны">  <param name="buildingName" category="" short_description="Имя здания"></param>
+  </function>
+  <function name="DefenderBuildingMove" category="" short_description="Ход здания защищающейся стороны">  <param name="buildingName" category="" short_description="Имя здания"></param>
+  </function>
+  <function name="DefenderCreatureDeath" category="" short_description="Гибель существа защищающейся стороны">  <param name="creatureName" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="DefenderCreatureMove" category="" short_description="Ход существа защищающейся стороны">  <param name="creatureName" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="DefenderWarMachineDeath" category="" short_description="Разрушение осадной машины защищающейся стороны">  <param name="warMachineName" category="" short_description="Имя осадной машины"></param>
+  </function>
+  <function name="DefenderWarMachineMove" category="" short_description="Ход осадной машины защищающейся стороны">  <param name="warMachineName" category="" short_description="Имя осадной машины"></param>
+  </function>
+  <function name="DefenderHeroMove" category="" short_description="Ход героя защищающейся стороны">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+  <function name="displace" category="" short_description="Переставить юнит на другое место арены">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="tileX" category="" short_description="Координата Х тайла"></param>
+    <param name="tileY" category="" short_description="Координата Y тайла"></param>
+  </function>
+  <function name="EnableAutoFinish" category="" short_description="Включает/выключает стандартный механизм проверки окончания боя">  <param name="enable" category="" short_description="Активация (&quot;true&quot;), либо деактивация (&quot;nil&quot;) стандартной проверки окончания боя"></param>
+  </function>
+  <function name="EnableCinematicCamera" category="" short_description="Отключение/включение кинематографической камеры в бою">  <param name="enable" category="" short_description="Параметр, включающий (&quot;true&quot;) кинематографическую камеру в бою, либо отключающий (&quot;nil&quot;) ее"></param>
+  </function>
+  <function name="EnableDynamicBattleMode" category="" short_description="Включение/отключение режима «Dynamic Battle»">  <param name="enable" category="" short_description="Активация (&quot;true&quot;), либо деактивация (&quot;nil&quot;) динамического режима боя"></param>
+  </function>
+  <function name="EnableRealtime" category="" short_description="Устанавливает режим боя (turnbased или realtime)">  <param name="enable" category="" short_description="Устанавливает режим боя &quot;realtime&quot;, если параметр равен &quot;true&quot;, и &quot;turnbased&quot;, если парамент равен &quot;nil&quot;."></param>
+  </function>
+  <function name="exist" category="" short_description="Выясняет, имеется ли указанное существо на арене">  <param name="name" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="Finish" category="" short_description="Заканчивает бой">  <param name="winnerSide" category="SideID" short_description="Идентификатор стороны боя"></param>
+  </function>
+  <function name="GetAttackerCreatures" category="" short_description="Возвращяет существ атакующей стороны"></function>
+  <function name="GetAttackerHero" category="" short_description="Возвращяет героя атакующей стороны или &quot;nil&quot; - если его нет"></function>
+  <function name="GetAttackerWarMachine" category="" short_description="Возвращяет осадную машину атакующей стороны заданного типа">  <param name="type" category="warMachineTypeID" short_description="Идентификатор типа боевой машины"></param>
+  </function>
+  <function name="GetAttackerWarMachines" category="" short_description="Возвращяет осадные машины атакующей стороны"></function>
+  <function name="GetBuildings" category="" short_description="Возвращает строения заданной стороны боя">  <param name="SideID" category="SideID" short_description="Идентификатор стороны боя"></param>
+  </function>
+  <function name="GetBuildingType" category="" short_description="Возвращяет тип строения (DefenderBuildingTypeID)">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetCreatureNumber" category="" short_description="Возвращяет количество существ в группе">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetCreatures" category="" short_description="Возвращает существ заданной стороны боя">  <param name="SideID" category="SideID" short_description="Идентификатор стороны боя"></param>
+  </function>
+  <function name="GetCreatureType" category="" short_description="Возвращяет тип существа (creatureID)">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetDefenderBuilding" category="" short_description="Возвращяет строение защищающейся стороны заданного типа">  <param name="type" category="DefenderBuildingTypeID" short_description="Идентификатор строения защищающейся стороны"></param>
+  </function>
+  <function name="GetDefenderBuildings" category="" short_description="Возвращяет строения защищающейся стороны"></function>
+  <function name="GetDefenderCreatures" category="" short_description="Возвращяет существ защищающейся стороны"></function>
+  <function name="GetDefenderHero" category="" short_description="Возвращяет героя защищающейся стороны или &quot;nil&quot; - если его нет"></function>
+  <function name="GetDefenderWarMachine" category="" short_description="Возвращяет осадную машину защищающейся стороны">  <param name="type" category="warMachineTypeID" short_description="Идентификатор типа боевой машины"></param>
+  </function>
+  <function name="GetDefenderWarMachines" category="" short_description="Возвращяет осадные машины защищающейся стороны"></function>
+  <function name="GetHeroName" category="" short_description="Возвращяет имя героя">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetHero" category="" short_description="Возвращает имя героя заданной строны боя">  <param name="sideID" category="SideID" short_description="Идентификатор стороны боя"></param>
+  </function>
+  <function name="GetLastSavedCombatIndex" category="" short_description="Возвращает индекс последнего произошедшего боя"></function>
+  <function name="GetSavedCombatArmyCreatureInfo" category="" short_description="Получает информацию о существах, сражавшихся в бою">  <param name="combatIndex" category="CombatResultsID" short_description="Идентификатор исхода боя"></param>
+    <param name="forWinner" category="" short_description="1 - для победителя боя; 0 - для проигравшего"></param>
+    <param name="creatureIndex" category="creatureID" short_description="Идентификатор типа существ"></param>
+  </function>
+  <function name="GetSavedCombatArmyCreaturesCount" category="" short_description="Получает информацию о стеках существ, сражавшихся в бою">  <param name="combatIndex" category="CombatResultsID" short_description="Идентификатор исхода боя"></param>
+    <param name="forWinner" category="" short_description="Если параметр &quot;forWinner&quot; равняется 1, это означает победителя боя; если &quot;forWinner&quot; равняется 0, это – проигравший"></param>
+  </function>
+  <function name="GetSavedCombatArmyHero" category="" short_description="Получает информацию о героях, сражавшихся в бою.">  <param name="combatIndex" category="CombatResultsID" short_description="Идентификатор исхода боя"></param>
+    <param name="forWinner" category="" short_description="1 - для победителя боя; 0 - для проигравшего"></param>
+  </function>
+  <function name="GetSavedCombatArmyPlayer" category="" short_description="Получает информацию об игроках, сражавшихся в бою">  <param name="combatIndex" category="CombatResultsID" short_description="Идентификатор исхода боя"></param>
+    <param name="forWinner" category="" short_description="1 - для победителя боя; 0 - для проигравшего"></param>
+  </function>
+  <function name="GetSavedCombatResult" category="" short_description="Получает информацию о результатах боев сражавшихся сторон.">  <param name="combatIndex" category="CombatResultsID" short_description="Идентификатор исхода боя"></param>
+  </function>
+  <function name="GetUnitManaPoints" category="" short_description="Возвращает количество очков маны объекта">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetUnitMaxManaPoints" category="" short_description="Возвращает максимальное возможное количество очков маны&#xA;объекта">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetUnitPosition" category="" short_description="Возвращяет координаты объекта (координаты x и y)">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="GetWarMachines" category="" short_description="Возвращает осадные машины заданной стороны боя">  <param name="sideID" category="SideID" short_description="Идентификатор стороны боя"></param>
+  </function>
+  <function name="GetWarMachineType" category="" short_description="Возвращяет тип осадной машины (warMachineTypeID)">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsAttacker" category="" short_description="Возвращяет not nil если объект принадлежит к атакующей стороне и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsBuilding" category="" short_description="Возвращяет not nil если объект является строением и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsCombatRealtime" category="" short_description="Выясняет текущий режим боя (turnbased или realtime)"></function>
+  <function name="IsComputer" category="" short_description="Определяет играет ли за определенную сторону компьютер">  <param name="side" category="PlayerSideID" short_description="Идентификатор игрока боя"></param>
+  </function>
+  <function name="IsCreature" category="" short_description="Возвращяет not nil если объект является существом и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsDefender" category="" short_description="Возвращяет not nil если объект принадлежит к защищающейся стороне и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsHero" category="" short_description="Возвращяет not nil если объект является героем и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="IsHuman" category="" short_description="Определяет играет ли за определенную сторону человек">  <param name="side" category="PlayerSideID" short_description="Идентификатор игрока боя"></param>
+  </function>
+  <function name="IsWarMachine" category="" short_description="Возвращяет not nil если объект является осадной машиной и &quot;nil&quot; - если нет">  <param name="unitName" category="" short_description="Имя объекта"></param>
+  </function>
+  <function name="playAnimation" category="" short_description="Проигрывает анимацию на существе">  <param name="unitName" category="" short_description="Имя существа"></param>
+    <param name="animName" category="" short_description="Имя анимации"></param>
+    <param name="action" category="AnimationActionTypesID" short_description="Идентификатор типа анимации"></param>
+  </function>
+  <function name="Prepare" category="" short_description="Подготовка к сражению (расстановка войск)"></function>
+  <function name="pos" category="" short_description="Выясняет координаты существа на арене по его имени">  <param name="name" category="" short_description="Имя существа"></param>
+  </function>
+  <function name="RemoveAllUnits" category="" short_description="Убирает все существа с арены"></function>
+  <function name="removeUnit" category="" short_description="Убрать с арены заданный отряд существ">  <param name="name" category="" short_description="Имя отряда существ"></param>
+  </function>
+  <function name="setATB" category="" short_description="Установить ATB-значение для существа">  <param name="name" category="" short_description="Имя существа"></param>
+    <param name="newATB" category="" short_description="Новая позиция существа на ATB-шкале"></param>
+  </function>
+  <function name="SetControlMode" category="" short_description="Задает режим управления боем для стороны игрока-человека">  <param name="sideID" category="SideID" short_description="Идентификатор стороны боя"></param>
+    <param name="mode" category="BattleModeID" short_description="Идентификатор режима боя"></param>
+  </function>
+  <function name="SetUnitManaPoints" category="" short_description="Устанавливает количество очков маны объекта">  <param name="unitName" category="" short_description="Имя объекта"></param>
+    <param name="manaPoints" category="" short_description="Количество очков маны"></param>
+  </function>
+  <function name="shots" category="" short_description="Выводит в консоль список кадров текущей презентации"></function>
+  <function name="showGrid" category="" short_description="Включить/выключить отображение сетки тайлов в бою">  <param name="enable = 1" category="" short_description="&quot;true&quot; - включить, &quot;nil&quot; - отключить"></param>
+  </function>
+  <function name="showHighlighting" category="" short_description="Включить/выключить подсветку возможного хода">  <param name="enable = 1" category="" short_description="&quot;true&quot; - включить, &quot;nil&quot; - отключить"></param>
+  </function>
+  <function name="shotsNumber" category="" short_description="Определяет количество кадров текущей презентации"></function>
+  <function name="Start" category="" short_description="Начало сражения"></function>
+  <function name="subject" category="" short_description="Выводит в консоль текущий субъект презентации"></function>
+  <function name="SummonCreature" category="" short_description="Призывает существ заданного типа">  <param name="side" category="SideID" short_description="Идентификатор стороны боя"></param>
+    <param name="type" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="number" category="" short_description="Количество существ"></param>
+    <param name="x = -1" category="" short_description="Если параметры x и y заданы существо возникает в ближайшей свободной к (x, y) клетке, в противном случае существо появляется в случайной точке арены"></param>
+    <param name="y = -1" category="" short_description="Если параметры x и y заданы существо возникает в ближайшей свободной к (x, y) клетке, в противном случае существо появляется в случайной точке арены"></param>
+  </function>
+  <function name="UnitCastAimedSpell" category="" short_description="Колдует заклинание действующее на определенный объект на поля боя">  <param name="unitName" category="" short_description="Имя объекта"></param>
+    <param name="spell" category="spellID" short_description="Идентификатор заклинания"></param>
+    <param name="targetUnit" category="" short_description="Имя объекта, который будет подвергнут воздействию заклинания"></param>
+  </function>
+  <function name="UnitCastAreaSpell" category="" short_description="Колдует заклинание действующее на определенную область поля боя">  <param name="unitName" category="" short_description="Имя объекта"></param>
+    <param name="spell" category="spellID" short_description="Идентификатор заклинания"></param>
+    <param name="x" category="" short_description="Координата X центра области, на которую подействует заклинание"></param>
+    <param name="y" category="" short_description="Координата Y центра области, на которую подействует заклинание"></param>
+  </function>
+  <function name="UnitCastGlobalSpell" category="" short_description="Колдует ненаправленное заклинание">  <param name="unitName" category="" short_description="Имя объекта"></param>
+    <param name="spell" category="spellID" short_description="Идентификатор заклинания"></param>
+  </function>
+  <function name="unitNames" category="" short_description="Выдает список имён существ на арене"></function>
+  <function name="wait" category="" short_description="Дождаться выполнения всех текущих действий"></function>
+</lib>

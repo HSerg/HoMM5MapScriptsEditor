@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<lib name="2.x ID">
+  <variable name="HUMAN" category="ID_СТОРОНЫ" short_description="человек">Игрок-человек.</variable>
+  <variable name="COMPUTER" category="ID_СТОРОНЫ" short_description="компьютер">Игрок-компьютер.</variable>
+  <variable name="DIFFICULTY_EASY" category="ID_УРОВНЯ_СЛОЖНОСТИ_ИГРЫ" short_description="рекрут">Нет.</variable>
+  <variable name="DIFFICULTY_NORMAL" category="ID_УРОВНЯ_СЛОЖНОСТИ_ИГРЫ" short_description="воин">Нет.</variable>
+  <variable name="DIFFICULTY_HARD" category="ID_УРОВНЯ_СЛОЖНОСТИ_ИГРЫ" short_description="ветеран">Нет.</variable>
+  <variable name="DIFFICULTY_HEROIC" category="ID_УРОВНЯ_СЛОЖНОСТИ_ИГРЫ" short_description="герой">Нет.</variable>
+  <variable name="CREATURE_UNKNOWN" category="ID_СУЩЕСТВА" short_description="неизвестное существо">Нет.</variable>
+  <variable name="CREATURE_PEASANT" category="ID_СУЩЕСТВА" short_description="крестьянин">Налогоплательщик.</variable>
+  <variable name="CREATURE_MILITIAMAN" category="ID_СУЩЕСТВА" short_description="ополченец">Оглушающий удар.</variable>
+  <variable name="CREATURE_ARCHER" category="ID_СУЩЕСТВА" short_description="лучник">Стрелок. Стрельба навесом.</variable>
+  <variable name="CREATURE_MARKSMAN" category="ID_СУЩЕСТВА" short_description="арбалетчик">Стрелок. Точный выстрел.</variable>
+  <variable name="CREATURE_FOOTMAN" category="ID_СУЩЕСТВА" short_description="мечник">Большой щит. Оглушающий удар. Ярость.</variable>
+  <variable name="CREATURE_SWORDSMAN" category="ID_СУЩЕСТВА" short_description="латник">Большой щит. Оглушающий удар. Защита союзников. Ярость.</variable>
+  <variable name="CREATURE_GRIFFIN" category="ID_СУЩЕСТВА" short_description="грифон">Летающее существо. Большое существо. Бесконечный отпор. Невосприимчивость к ослеплению.</variable>
+  <variable name="CREATURE_ROYAL_GRIFFIN" category="ID_СУЩЕСТВА" short_description="королевский грифон">Летающее существо. Большое существо. Бесконечный отпор. Невосприимчивость к ослеплению. Удар с небес.</variable>
+  <variable name="CREATURE_PRIEST" category="ID_СУЩЕСТВА" short_description="монах">Стрелок. Нет штрафа в ближнем бою.</variable>
+  <variable name="CREATURE_CLERIC" category="ID_СУЩЕСТВА" short_description="инквизитор">Стрелок. Нет штрафа в ближнем бою. Колдун.</variable>
+  <variable name="CREATURE_CAVALIER" category="ID_СУЩЕСТВА" short_description="рыцарь">Рыцарский разбег. Большое существо.</variable>
+  <variable name="CREATURE_PALADIN" category="ID_СУЩЕСТВА" short_description="паладин">Рыцарский разбег. Большое существо. Возложение рук.</variable>
+  <variable name="CREATURE_ANGEL" category="ID_СУЩЕСТВА" short_description="ангел">Летающее существо. Большое существо.</variable>
+  <variable name="CREATURE_ARCHANGEL" category="ID_СУЩЕСТВА" short_description="архангел">Летающее существо. Большое существо. Воскрешение союзников.</variable>
+  <variable name="CREATURE_FAMILIAR" category="ID_СУЩЕСТВА" short_description="бес">Поглотитель маны.</variable>
+  <variable name="CREATURE_IMP" category="ID_СУЩЕСТВА" short_description="черт">Крадущий ману.</variable>
+  <variable name="CREATURE_DEMON" category="ID_СУЩЕСТВА" short_description="демон">Ярость.</variable>
+  <variable name="CREATURE_HORNED_DEMON" category="ID_СУЩЕСТВА" short_description="огненный демон">Взрыв. Ярость.</variable>
+  <variable name="CREATURE_HELL_HOUND" category="ID_СУЩЕСТВА" short_description="адская гончая">Нет умений.</variable>
+  <variable name="CREATURE_CERBERI" category="ID_СУЩЕСТВА" short_description="цербер">Атака в три головы. Враг не сопротивляется.</variable>
+  <variable name="CREATURE_SUCCUBUS" category="ID_СУЩЕСТВА" short_description="суккуб">Стрелок. Ответный выстрел.</variable>
+  <variable name="CREATURE_INFERNAL_SUCCUBUS" category="ID_СУЩЕСТВА" short_description="демонесса">Стрелок. Ответный выстрел. Выстрел по цепочке.</variable>
+  <variable name="CREATURE_NIGHTMARE" category="ID_СУЩЕСТВА" short_description="адский жеребец">Большое существо. Атака страхом.</variable>
+  <variable name="CREATURE_FRIGHTFUL_NIGHTMARE" category="ID_СУЩЕСТВА" short_description="кошмар">Большое существо. Атака страхом. Аура ужаса.</variable>
+  <variable name="CREATURE_PIT_FIEND" category="ID_СУЩЕСТВА" short_description="пещерный демон">Большое существо. Колдун.</variable>
+  <variable name="CREATURE_BALOR" category="ID_СУЩЕСТВА" short_description="пещерный владыка">Большое существо. Стрижающий меч. Колдун.</variable>
+  <variable name="CREATURE_DEVIL" category="ID_СУЩЕСТВА" short_description="дьявол">Большое существо. Телепорт.</variable>
+  <variable name="CREATURE_ARCHDEVIL" category="ID_СУЩЕСТВА" short_description="архидьявол">Большое существо. Телепорт. Призыв пещерных владык.</variable>
+  <variable name="CREATURE_SKELETON" category="ID_СУЩЕСТВА" short_description="костяной воин">Нежить.</variable>
+  <variable name="CREATURE_SKELETON_ARCHER" category="ID_СУЩЕСТВА" short_description="костяной лучник">Нежить. Стрелок.</variable>
+  <variable name="CREATURE_WALKING_DEAD" category="ID_СУЩЕСТВА" short_description="зомби">Нежить. Ярость.</variable>
+  <variable name="CREATURE_ZOMBIE" category="ID_СУЩЕСТВА" short_description="чумной зомби">Нежить. Ослабляющий удар. Ярость.</variable>
+  <variable name="CREATURE_MANES" category="ID_СУЩЕСТВА" short_description="привидение">Летающее существо. Нежить. Бестелесность.</variable>
+  <variable name="CREATURE_GHOST" category="ID_СУЩЕСТВА" short_description="призрак">Летающее существо. Нежить. Бестелесность. Истощение маны.</variable>
+  <variable name="CREATURE_VAMPIRE" category="ID_СУЩЕСТВА" short_description="вампир">Нежить. Враг не сопротивляется. Осушение.</variable>
+  <variable name="CREATURE_VAMPIRE_LORD" category="ID_СУЩЕСТВА" short_description="высший вампир">Нежить. Враг не сопротивляется. Осушение. Телепорт.</variable>
+  <variable name="CREATURE_LICH" category="ID_СУЩЕСТВА" short_description="лич">Большое существо. Нежить. Стрелок. Смертоносное облако.</variable>
+  <variable name="CREATURE_DEMILICH" category="ID_СУЩЕСТВА" short_description="архилич">Большое существо. Нежить. Стрелок. Смертоносное облако. Колдун.</variable>
+  <variable name="CREATURE_WIGHT" category="ID_СУЩЕСТВА" short_description="умертвие">Большое существо. Нежить.</variable>
+  <variable name="CREATURE_WRAITH" category="ID_СУЩЕСТВА" short_description="вестник смерти">Большое существо. Нежить. Губительная хватка.</variable>
+  <variable name="CREATURE_BONE_DRAGON" category="ID_СУЩЕСТВА" short_description="костяной дракон">Большое существо. Нежить. Летающее существо.</variable>
+  <variable name="CREATURE_SHADOW_DRAGON" category="ID_СУЩЕСТВА" short_description="призрачный дракон">Большое существо. Нежить. Летающее существо. Наложение проклятия.</variable>
+  <variable name="CREATURE_PIXIE" category="ID_СУЩЕСТВА" short_description="фея">Летающее существо. Враг не сопротивляется. Убийственные брызги.</variable>
+  <variable name="CREATURE_SPRITE" category="ID_СУЩЕСТВА" short_description="дриада">Летающее существо. Враг не сопротивляется. Убийственные брызги. Колдун.</variable>
+  <variable name="CREATURE_BLADE_JUGGLER" category="ID_СУЩЕСТВА" short_description="танцующий с клинками">Нет умений.</variable>
+  <variable name="CREATURE_WAR_DANCER" category="ID_СУЩЕСТВА" short_description="танцующий со смертью">Боевое па</variable>
+  <variable name="CREATURE_WOOD_ELF" category="ID_СУЩЕСТВА" short_description="эльфийский лучник">Стрелок. Двойной выстрел.</variable>
+  <variable name="CREATURE_GRAND_ELF" category="ID_СУЩЕСТВА" short_description="мастер лука">Стрелок. Двойной выстрел. Останавливающие стрелы.</variable>
+  <variable name="CREATURE_DRUID" category="ID_СУЩЕСТВА" short_description="друид">Стрелок. Колдун.</variable>
+  <variable name="CREATURE_DRUID_ELDER" category="ID_СУЩЕСТВА" short_description="верховный друид">Стрелок. Колдун. Передача маны</variable>
+  <variable name="CREATURE_UNICORN" category="ID_СУЩЕСТВА" short_description="единорог">Большое существо. Аура магического сопротивления.</variable>
+  <variable name="CREATURE_WAR_UNICORN" category="ID_СУЩЕСТВА" short_description="боевой единорог">Большое существо. Аура магического сопротивления. Ослепление.</variable>
+  <variable name="CREATURE_TREANT" category="ID_СУЩЕСТВА" short_description="энт">Большое существо. Оплетающие корни. Ярость.</variable>
+  <variable name="CREATURE_TREANT_GUARDIAN" category="ID_СУЩЕСТВА" short_description="древний энт">Большое существо. Оплетающие корни. Укоренение. Ярость.</variable>
+  <variable name="CREATURE_GREEN_DRAGON" category="ID_СУЩЕСТВА" short_description="зеленый дракон">Большое существо. Летающее существо. Кислотный выдох.</variable>
+  <variable name="CREATURE_GOLD_DRAGON" category="ID_СУЩЕСТВА" short_description="изумрудный дракон">Большое существо. Летающее существо. Кислотный выдох. Невосприимчивость к стихии Земли.</variable>
+  <variable name="CREATURE_GREMLIN" category="ID_СУЩЕСТВА" short_description="гремлин">Стрелок.</variable>
+  <variable name="CREATURE_MASTER_GREMLIN" category="ID_СУЩЕСТВА" short_description="старший гремлин">Стрелок. Починка.</variable>
+  <variable name="CREATURE_STONE_GARGOYLE" category="ID_СУЩЕСТВА" short_description="каменная горгулья">Летающее существо. Элементаль. Иммунитет к молниям. Ярость.</variable>
+  <variable name="CREATURE_OBSIDIAN_GARGOYLE" category="ID_СУЩЕСТВА" short_description="обсидиановая горгулья">Летающее существо. Элементаль. Невосприимчивость к молниям. Невосприимчивость к стихии Огня. Невосприимчивость к холоду. Ярость.</variable>
+  <variable name="CREATURE_IRON_GOLEM" category="ID_СУЩЕСТВА" short_description="железный голем">Механизм. Невосприимчивость к замедлению. Непробиваемость магией.</variable>
+  <variable name="CREATURE_STEEL_GOLEM" category="ID_СУЩЕСТВА" short_description="стальной голем">Механизм. Невосприимчивость к замедлению. Бесконечный отпор. Непробиваемость магией.</variable>
+  <variable name="CREATURE_MAGI" category="ID_СУЩЕСТВА" short_description="маг">Стрелок. Стрельба без штрафа. Магическая атака. Колдун.</variable>
+  <variable name="CREATURE_ARCH_MAGI" category="ID_СУЩЕСТВА" short_description="архимаг">Стрелок. Стрельба без штрафа. Магическая атака. Колдун. Энергетический канал.</variable>
+  <variable name="CREATURE_GENIE" category="ID_СУЩЕСТВА" short_description="джинн">Большое существо. Летающее существо. Случайное заклинание.</variable>
+  <variable name="CREATURE_MASTER_GENIE" category="ID_СУЩЕСТВА" short_description="султан джиннов">Большое существо. Летающее существо. Случайное заклинание.</variable>
+  <variable name="CREATURE_RAKSHASA" category="ID_СУЩЕСТВА" short_description="принцесса ракшас">Большое существо. Враг не сопротивляется.</variable>
+  <variable name="CREATURE_RAKSHASA_RUKH" category="ID_СУЩЕСТВА" short_description="раджа ракшас">Большое существо. Враг не сопротивляется. Натиск.</variable>
+  <variable name="CREATURE_GIANT" category="ID_СУЩЕСТВА" short_description="колосс">Большое существо. Невосприимчивость к управлению разумом.</variable>
+  <variable name="CREATURE_TITAN" category="ID_СУЩЕСТВА" short_description="титан">Большое существо. Невосприимчивость к управлению разумом. Стрелок. Нет штрафа в ближнем бою. Удар молнией.</variable>
+  <variable name="CREATURE_SCOUT" category="ID_СУЩЕСТВА" short_description="лазутчик">Стрелок. Нет штрафа в ближнем бою. Штраф за стрельбу.</variable>
+  <variable name="CREATURE_ASSASSIN" category="ID_СУЩЕСТВА" short_description="ассасин">Стрелок. Нет штрафа в ближнем бою. Отравление. Штраф за стрельбу.</variable>
+  <variable name="CREATURE_WITCH" category="ID_СУЩЕСТВА" short_description="бестия">Удар и возврат.</variable>
+  <variable name="CREATURE_BLOOD_WITCH" category="ID_СУЩЕСТВА" short_description="фурия">Удар и возврат. Враг не сопротивляется.</variable>
+  <variable name="CREATURE_MINOTAUR" category="ID_СУЩЕСТВА" short_description="минотавр">Храбрость.</variable>
+  <variable name="CREATURE_MINOTAUR_KING" category="ID_СУЩЕСТВА" short_description="минотавр-страж">Храбрость. Двойная атака.</variable>
+  <variable name="CREATURE_RIDER" category="ID_СУЩЕСТВА" short_description="наездник на ящерах">Большое существо. Удар с разбега.</variable>
+  <variable name="CREATURE_RAVAGER" category="ID_СУЩЕСТВА" short_description="темный всадник">Большое существо. Удар с разбега. Укус ящера.</variable>
+  <variable name="CREATURE_HYDRA" category="ID_СУЩЕСТВА" short_description="гидра">Большое существо. Атака в три головы. Враг не сопротивляется. Ярость.</variable>
+  <variable name="CREATURE_CHAOS_HYDRA" category="ID_СУЩЕСТВА" short_description="пещерная гидра">Большое существо. Атака шестью головами. Враг не сопротивляется. Регенерация. Ярость.</variable>
+  <variable name="CREATURE_MATRON" category="ID_СУЩЕСТВА" short_description="сумеречная ведьма">Стрелок. Колдун.</variable>
+  <variable name="CREATURE_MATRIARCH" category="ID_СУЩЕСТВА" short_description="владычица тени">Стрелок. Колдун. Удар хлыстом.</variable>
+  <variable name="CREATURE_DEEP_DRAGON" category="ID_СУЩЕСТВА" short_description="сумеречный дракон">Большое существо. Летающее существо. Дыхание дракона.</variable>
+  <variable name="CREATURE_BLACK_DRAGON" category="ID_СУЩЕСТВА" short_description="черный дракон">Большое существо. Летающее существо. Невосприимчивость к магии. Дыхание дракона.</variable>
+  <variable name="CREATURE_FIRE_ELEMENTAL" category="ID_СУЩЕСТВА" short_description="огненный элементал">Элементаль. Невосприимчивость к стихии Огня. Огненный щит. Стрелок.</variable>
+  <variable name="CREATURE_WATER_ELEMENTAL" category="ID_СУЩЕСТВА" short_description="водный элементал">Элементаль. Невосприимчивость к холоду. Колдун.</variable>
+  <variable name="CREATURE_EARTH_ELEMENTAL" category="ID_СУЩЕСТВА" short_description="земной элементал">Элементаль. Невосприимчивость к стихии Земли. Непробиваемость магией. Бесконечный отпор.</variable>
+  <variable name="CREATURE_AIR_ELEMENTAL" category="ID_СУЩЕСТВА" short_description="воздушный элементал">Элементаль. Невосприимчивость к молниям. Летающее существо. Враг не сопротивляется.</variable>
+  <variable name="CREATURE_BLACK_KNIGHT" category="ID_СУЩЕСТВА" short_description="рыцарь смерти">Большое существо. Нежить. Наложение проклятия.</variable>
+  <variable name="CREATURE_PHOENIX" category="ID_СУЩЕСТВА" short_description="феникс">Большое существо. Летающее существо. Огненный щит. Невосприимчивость к стихии Огня. Возрождение.</variable>
+  <variable name="CREATURE_DEFENDER" category="ID_СУЩЕСТВА" short_description="защитник гор">Ярость. Броня. Большой щит.</variable>
+  <variable name="CREATURE_STOUT_DEFENDER" category="ID_СУЩЕСТВА" short_description="воитель">Ярость. Броня. Большой щит. Стена из щитов.</variable>
+  <variable name="CREATURE_AXE_FIGHTER" category="ID_СУЩЕСТВА" short_description="метатель копья">Стрелок. Калечащее ранение.</variable>
+  <variable name="CREATURE_AXE_THROWER" category="ID_СУЩЕСТВА" short_description="мастер копья">Стрелок. Нет штрафа в ближнем бою. Калечащее ранение.</variable>
+  <variable name="CREATURE_BEAR_RIDER" category="ID_СУЩЕСТВА" short_description="наездник на медведях">Ярость. Большое существо.</variable>
+  <variable name="CREATURE_BLACKBEAR_RIDER" category="ID_СУЩЕСТВА" short_description="хозяин медведей">Ярость. Большое существо. Броня. Удар лапой.</variable>
+  <variable name="CREATURE_BROWLER" category="ID_СУЩЕСТВА" short_description="костолом">Невосприимчивость к управлению разумом.</variable>
+  <variable name="CREATURE_BERSERKER" category="ID_СУЩЕСТВА" short_description="берсерк">Невосприимчивость к управлению разумом. Ярость берсерка.</variable>
+  <variable name="CREATURE_RUNE_MAGE" category="ID_СУЩЕСТВА" short_description="жрец Рун">Стрелок. Колдун. Непробиваемость магией. Знак Огня.</variable>
+  <variable name="CREATURE_FLAME_MAGE" category="ID_СУЩЕСТВА" short_description="жрец Арката">Стрелок. Колдун. Непробиваемость магией. Знак Огня. Перекрестная атака.</variable>
+  <variable name="CREATURE_THANE" category="ID_СУЩЕСТВА" short_description="тан">Большое существо. Телепорт. Удар бури. Иммунитет к молниям.</variable>
+  <variable name="CREATURE_WARLORD" category="ID_СУЩЕСТВА" short_description="ярл">Большое существо. Телепорт. Удар бури. Нежданная буря. Иммунитет к молниям.</variable>
+  <variable name="CREATURE_FIRE_DRAGON" category="ID_СУЩЕСТВА" short_description="огненный дракон">Дыхание дракона. Огненный щит. Элементаль. Невосприимчивость к стихии Огня.</variable>
+  <variable name="CREATURE_MAGMA_DRAGON" category="ID_СУЩЕСТВА" short_description="лавовый дракон">Дыхание дракона. Лавовый щит. Элементаль. Невосприимчивость к стихии Огня.</variable>
+  <variable name="CREATURE_LANDLORD" category="ID_СУЩЕСТВА" short_description="лендлорд">Налогоплательщик. Оглушающий удар.</variable>
+  <variable name="CREATURE_LONGBOWMAN" category="ID_СУЩЕСТВА" short_description="стрелок">Стрелок. Стрельба без штрафа.</variable>
+  <variable name="CREATURE_VINDICATOR" category="ID_СУЩЕСТВА" short_description="ревнитель веры">Колдун</variable>
+  <variable name="CREATURE_BATTLE_GRIFFIN" category="ID_СУЩЕСТВА" short_description="боевой грифон">Большое существо. Летающее существо. Бесконечный отпор. Боевое безумие.</variable>
+  <variable name="CREATURE_ZEALOT" category="ID_СУЩЕСТВА" short_description="адепт">Стрелок. Нет штрафа в ближнем бою. Колдун.</variable>
+  <variable name="CREATURE_CHAMPION" category="ID_СУЩЕСТВА" short_description="рыцарь Изабель">Большое существо. Турнирный удар.</variable>
+  <variable name="CREATURE_SERAPH" category="ID_СУЩЕСТВА" short_description="падший ангел">Большое существо. Летающее существо. Осушение.</variable>
+  <variable name="CREATURE_WOLF" category="ID_СУЩЕСТВА" short_description="волк">Охота стаей. Вой.</variable>
+  <variable name="CREATURE_MANTICORE" category="ID_СУЩЕСТВА" short_description="мантикора">Большое существо. Летающее существо. Отравление.</variable>
+  <variable name="CREATURE_MUMMY" category="ID_СУЩЕСТВА" short_description="мумия">Нежить. Колдовской удар. Колдун</variable>
+  <variable name="CREATURES_COUNT" category="ID_СУЩЕСТВА" short_description="численность существ">Нет.</variable>
+  <variable name="WAR_MACHINE_BALLISTA" category="ID_БОЕВОЙ_МАШИНЫ" short_description="баллиста">Механизм. Боевая машина. Стрелок.</variable>
+  <variable name="WAR_MACHINE_CATAPULT" category="ID_БОЕВОЙ_МАШИНЫ" short_description="катапульта">Механизм. Боевая машина. Уничтожение замковых стен.</variable>
+  <variable name="WAR_MACHINE_FIRST_AID_TENT" category="ID_БОЕВОЙ_МАШИНЫ" short_description="палатка первой помощи">Механизм. Боевая машина. Исцеление немеханических существ.</variable>
+  <variable name="WAR_MACHINE_AMMO_CART" category="ID_БОЕВОЙ_МАШИНЫ" short_description="тележка с боеприпасами">Механизм. Боевая машина. Снабжение стрелков боеприпасами.</variable>
+  <variable name="SPELL_NONE" category="ID_SPELL_COMBAT" short_description="нет заклинания">Нет.</variable>
+  <variable name="SPELL_MAGIC_ARROW" category="ID_SPELL_COMBAT" short_description="магическая стрела">Волшебная стрела наносит отрядам противника магический урон.</variable>
+  <variable name="SPELL_MAGIC_FIST" category="ID_SPELL_COMBAT" short_description="волшебный кулак">Создает волшебный кулак, который наносит существам противника физический урон. Это заклинание игнорирует магическую защиту и сопротивление магии.</variable>
+  <variable name="SPELL_LIGHTNING_BOLT" category="ID_SPELL_COMBAT" short_description="молния">Поражает вражеский отряд молнией.</variable>
+  <variable name="SPELL_ICE_BOLT" category="ID_SPELL_COMBAT" short_description="ледяная глыба">Это заклинание обрушивает на вражеский отряд ледяные глыбы.</variable>
+  <variable name="SPELL_FIREBALL" category="ID_SPELL_COMBAT" short_description="огненный шар">Наносит урон огнем всем существам в целевой области.</variable>
+  <variable name="SPELL_FROST_RING" category="ID_SPELL_COMBAT" short_description="кольцо холода">Заклинание наносит урон льдом всем существам, окружающим его область действия.</variable>
+  <variable name="SPELL_CHAIN_LIGHTNING" category="ID_SPELL_COMBAT" short_description="цепь молний">Молния наносит удар по целевому отряду, а затем перекидывается на соседний, нанося ему половину урона от причиненного ранее. Это заклинание может поразить до четырех целей. Молнии могут перекинуться и на отряды героя, сотворившего заклинание.</variable>
+  <variable name="SPELL_METEOR_SHOWER" category="ID_SPELL_COMBAT" short_description="метеоритный дождь">Заклинание наносит серьезный урон всем существам в целевой области с помощью стихии Земли.</variable>
+  <variable name="SPELL_IMPLOSION" category="ID_SPELL_COMBAT" short_description="шок земли">Наносит вражескому отряду урон с помощью стихии Земли.</variable>
+  <variable name="SPELL_ARMAGEDDON" category="ID_SPELL_COMBAT" short_description="армагеддон">Наносит урон всем существам и боевым машинам на поле сражения.</variable>
+  <variable name="SPELL_CURSE" category="ID_SPELL_COMBAT" short_description="ослабление">Заклинание уменьшает величину максимального урона, который может нанести отряд. Время действия определяется «Колдовством».</variable>
+  <variable name="SPELL_SLOW" category="ID_SPELL_COMBAT" short_description="замедление">Уменьшает «Инициативу» вражеского отряда, заставляя его реже действовать.</variable>
+  <variable name="SPELL_DISRUPTING_RAY" category="ID_SPELL_COMBAT" short_description="разрушающий луч">Заклинание уничтожает доспех целевого вражеского отряда, уменьшая его защиту. Заклинание можно насылать на один и тот же отряд несколько раз, но защита последнего не может быть меньше нуля.</variable>
+  <variable name="SPELL_PLAGUE" category="ID_SPELL_COMBAT" short_description="чума">Заклинание насылает чуму на отряд противника. Существа несут урон каждый раз, когда предпринимают какое-либо действие. Заклинание не действует на нежить, элементалей и механических существ.</variable>
+  <variable name="SPELL_WEAKNESS" category="ID_SPELL_COMBAT" short_description="немощность">Заклинание ослабляет вражеских существ, уменьшая их «Нападение».</variable>
+  <variable name="SPELL_ABILITY_WEAKNING_STRIKE" category="ID_Creature_Abilities" short_description="ослабляющий удар">Ослабляющий удар уменьшает «Нападение» и «Защиту» отряда.</variable>
+  <variable name="SPELL_FORGETFULNESS" category="ID_SPELL_COMBAT" short_description="рассеянность">Заклинание заставляет отряд существ забыть, что они делают на поле боя. Некоторые из существ забудут выстрелить или нанести ответный удар. Заклинание не действует на нежить, элементалей и механических существ.</variable>
+  <variable name="SPELL_BERSERK" category="ID_SPELL_COMBAT" short_description="берсерк">Превращает отряд существ в берсерков. Такой отряд считает всех других существ и все боевые машины своими личными врагами и нападает на ближайшего противника с удвоенной яростью. Заклинание не действует на нежить, элементалей и механических существ.</variable>
+  <variable name="SPELL_BLIND" category="ID_SPELL_COMBAT" short_description="ослепление">Ослепляет выбранного противника так, что он не может двигаться, атаковать или использовать какие-либо умения. Ослепление исчезает, как только на существо нападут. Заклинание не действует на нежить, элементалей и механических существ. Время действия определяется «Колдовством».</variable>
+  <variable name="SPELL_HYPNOTIZE" category="ID_SPELL_COMBAT" short_description="подчинение">На время позволяет герою управлять вражеским отрядом. Отряд под действием этого заклинания не может контратаковать. Контроль над отрядом будет утерян, если герой возьмет под управление другой отряд. Заклинание не действует на нежить, элементалей и механических существ.</variable>
+  <variable name="SPELL_UNHOLY_WORD" category="ID_SPELL_COMBAT" short_description="нечестивое слово">Поражает все существа, не принадлежащие к фракциям Инферно и Некрополис</variable>
+  <variable name="SPELL_UNHOLY_WORD_HIT_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_BLESS" category="ID_SPELL_COMBAT" short_description="божественная сила">Заклинание помогает дружественным существам сражаться с большей отдачей, увеличивая значение минимального урона, который может нанести отряд. Время действия определяется «Колдовством».</variable>
+  <variable name="SPELL_HASTE" category="ID_SPELL_COMBAT" short_description="ускорение">Заставляет дружественных существ действовать чаще, увеличивая их «Инициативу».</variable>
+  <variable name="SPELL_STONESKIN" category="ID_SPELL_COMBAT" short_description="каменная кожа">Увеличивает защиту выбранных дружественных существ. Время действия определяется «Колдовством».</variable>
+  <variable name="SPELL_DISPEL" category="ID_SPELL_COMBAT" short_description="снятие чар">Рассеивает положительные чары с вражеских существ и отрицательные с дружественных. Однако чем слабее маг, тем меньше вероятность того, что ему удастся развеять чары, наложенные более сильным магом.</variable>
+  <variable name="SPELL_DISPEL_FAIL" category="" short_description=""></variable>
+  <variable name="SPELL_BLOODLUST" category="ID_SPELL_COMBAT" short_description="карающий удар">Под воздействием заклинания существа впадают в ярость, что увеличивает силу их атаки.</variable>
+  <variable name="SPELL_DEFLECT_ARROWS" category="ID_SPELL_COMBAT" short_description="уклонение">Позволяет выбранному дружественному отряду получать меньше урона от выстрелов.</variable>
+  <variable name="SPELL_DEFLECT_ARROWS_HIT_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_ANTI_MAGIC" category="ID_SPELL_COMBAT" short_description="антимания">Убирает положительные и отрицательные магические воздействия с целевого отряда и наделяет последний невосприимчивостью к будущим магическим воздействиям. Только для дружественных существ.</variable>
+  <variable name="SPELL_TELEPORT" category="ID_SPELL_COMBAT" short_description="телепорт">Телепортирует дружественный отряд в другую часть поля боя. Переносить существ за стены города способен лишь герой, обладающий навыком «Искусная магия Света».</variable>
+  <variable name="SPELL_TELEPORT_FINISH_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_CELESTIAL_SHIELD" category="ID_SPELL_COMBAT" short_description="небесный щит">Прикрывает целевой отряд щитом из магической энергии, который смягчает удар.</variable>
+  <variable name="SPELL_HOLY_WORD" category="ID_SPELL_COMBAT" short_description="святое слово">Наносит урон всем существам Инферно и Некрополиса.</variable>
+  <variable name="SPELL_HOLY_WORD_HIT_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_ARMAGEDDON_HIT_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_LAND_MINE" category="ID_SPELL_COMBAT" short_description="огненная ловушка">Помещает на выбранном участке поля боя магические взрывающиеся ловушки. Количество ловушек зависит от уровня навыка «Магия Призыва». Противник не сможет их увидеть.</variable>
+  <variable name="SPELL_WASP_SWARM" category="ID_SPELL_COMBAT" short_description="призыв осиного роя">Заклинание призывает рой насекомых, наносящих урон выбранным вражеским существам. Не действует на нежить, элементалей и механических существ. Если герой владеет магией Призыва, то рой вынудит вражеский отряд отвлечься и потерять часть своего хода.</variable>
+  <variable name="SPELL_PHANTOM" category="ID_SPELL_COMBAT" short_description="создание фантома">Дублирует выбранный дружественный отряд. Дубль не обладает теми же способностями, что и оригинал, и исчезает, если получает какой-либо урон (в 50% случаев бестелесность позволяет дублю не нести урон).</variable>
+  <variable name="SPELL_EARTHQUAKE" category="ID_SPELL_COMBAT" short_description="землятресение">Землетрясение повреждает стены города во время осады.</variable>
+  <variable name="SPELL_ANIMATE_DEAD" category="ID_SPELL_COMBAT" short_description="поднятие мертвых">Поднимает существ в целевом дружественном отряде. Неживые существа возвращаются к «жизни», все остальные существа воскрешаются только на время сражения. Каждое использование данного заклинания уменьшает жизнь целевого отряда на 20%.</variable>
+  <variable name="SPELL_SUMMON_ELEMENTALS" category="ID_SPELL_COMBAT" short_description="призыв элементалей">Заклинание призывает огненных, земных, водных или воздушных элементалей (в зависимости от места сражения), которые сражаются на стороне героя.</variable>
+  <variable name="SPELL_EFFECT_SUMMON_ELEMENTALS_AIR" category="ID_SUMMON" short_description="призыв воздушного элементала">Призывает воздушных элементалей.</variable>
+  <variable name="SPELL_EFFECT_SUMMON_ELEMENTALS_EARTH" category="ID_SUMMON" short_description="призыв земного элементала">Призывает земных элементалей.</variable>
+  <variable name="SPELL_EFFECT_SUMMON_ELEMENTALS_FIRE" category="ID_SUMMON" short_description="призыв огненного элементала">Призывает огненных элементалей.</variable>
+  <variable name="SPELL_EFFECT_SUMMON_ELEMENTALS_WATER" category="ID_SUMMON" short_description="призыв водного элементала">Призывает водных элементалей.</variable>
+  <variable name="SPELL_RESURRECT" category="ID_SPELL_COMBAT" short_description="воскрешение">Заклинание оживляет существ в выбранном дружественном отряде. Каждое использование этого заклинания уменьшает жизнь целевого отряда на 10%.</variable>
+  <variable name="SPELL_SUMMON_BOAT" category="ID_SPELL_ADVENTURE" short_description="вызов корабля">Заклинание вызывает морское судно. Срабатывает при выполнении двух условий: герой должен стоять на берегу, незанятое судно должно находиться в зоне действия заклинания.</variable>
+  <variable name="SPELL_DIMENSION_DOOR" category="ID_SPELL_ADVENTURE" short_description="астральные врата">Заклинание переносит героя и его армию в другую область карты.</variable>
+  <variable name="SPELL_TOWN_PORTAL" category="ID_SPELL_ADVENTURE" short_description="портал в город">Заклинание переносит героя в ближайший дружественный город (все единицы передвижения будут утрачены).</variable>
+  <variable name="SPELL_ENCOURAGE" category="ID_Hero_Special_Abilities" short_description="воодушевление">Особое боевое свойство, позволяющее воодушевлять войска на поле сражения, тем самым ускоряя наступление их очереди драться.</variable>
+  <variable name="SPELL_HOLY_CHARGE" category="ID_Hero_Special_Abilities" short_description="надзор">Выбранный отряд охраняется героем.</variable>
+  <variable name="SPELL_PRAYER" category="ID_Hero_Special_Abilities" short_description="молитва">Особое боевое умение. Временно улучшает «Боевой дух», «Инициативу», «Нападение» и «Защиту» войск героя.</variable>
+  <variable name="SPELL_DEMONIC_STRIKE_CAST" category="" short_description=""></variable>
+  <variable name="SPELL_DEMONIC_STRIKE" category="ID_Unique_Skill" short_description="знак проклятого">Повелитель демонов получает особое боевое умение наказывать вражеское существо, если оно атакует, парирует удар или творит какое-либо заклинание. После применения эффект умения длится до конца сражения. Если существо ничего не делает или передвигается не атакуя, оно не подвергнется действию умения.</variable>
+  <variable name="SPELL_CONSUME_CORPSE" category="ID_Unique_Skill" short_description="пожиратель душ">Повелитель демонов получает особое боевое умение восстанавливать свой запас маны, пожирая трупы павших существ. Поглощенные трупы исчезают с поля боя.</variable>
+  <variable name="SPELL_SPIRIT_LINK" category="ID_Unique_Skill" short_description="знак некроманта">Эта способность связывает некроманта и существ. Если связанное существо получает урон, некромант насыщается страданиями существа, и его запас маны увеличивается.</variable>
+  <variable name="SPELL_DEATH_SCREAM" category="ID_Unique_Skill" short_description="крик баньши">Особая боевая способность. Временно снижает боевой дух, удачу и инициативу живых вражеских войск.</variable>
+  <variable name="SPELL_SNIPE_DEAD" category="ID_Unique_Skill" short_description="смертельный выстел">Это умение позволяет рейнджеру атаковать на поле боя любое вражеское существо. Герой наносит существам +3 ед. урона от своего уровня. Если существо присутствует в списке заклятых врагов рейнджера, то при нанесении критического удара урон удваивается, и после этого минимум одно существо всегда умирает.</variable>
+  <variable name="SPELL_MULTISHOT" category="ID_Unique_Skill" short_description="ливень из стрел">Это умение позволяет рейнджеру атаковать всех вражеских существ, которые представлены в его списке заклятых врагов. Герой наносит им +3 ед. урона от своего «Нападения».</variable>
+  <variable name="SPELL_IMBUE_ARROW" category="ID_Unique_Skill" short_description="заколдованная стрела">Умение, которое позволяет рейнджеру зачаровывать свои стрелы. После выстрела рейнджера («Ливень из стрел» или обычная атака героя) цель получает урон не только от попадания стрелы, но и от заклинания, которым последняя зачарована. На эти заклинания расходуется мана героя. Действие умения продлится до конца схватки или пока у рейнджера не закончится мана.</variable>
+  <variable name="SPELL_ABILITY_MAGIC_BOND" category="ID_ПЕРКА_ГЕРОЯ" short_description="знак волшебника (Маг)">Особое боевое умение. Колдун связывает себя с жертвой с помощью «Знака волшебника» до конца сражения, благодаря чему любые последующие заклинания, направленные против жертвы, бьют по ней с удвоенной силой и требуют столько маны, сколько требуется для удвоения эффекта. Более того, каждое заклинание, направленное против другого существа, также воздействуют и на нее, если это возможно. Если маны не хватает, усиления не происходит.</variable>
+  <variable name="SPELL_ABILITY_MELT_ARTIFACT" category="ID_ПЕРКА_ГЕРОЯ" short_description="поглощение артефакта (Маг)">Особое боевое умение. Позволяет герою уничтожать в бою мини-артефакты, переданные дружественным существам, чтобы восполнить запас маны.</variable>
+  <variable name="SPELL_ABILITY_COUNTERSPELL" category="ID_ПЕРКА_ГЕРОЯ" short_description="контрзаклинание">Особое боевое умение, гасящее любые последствия следующего заклинания противника, но расходующее в два раза больше маны, чем потребовалось для этого заклинания.</variable>
+  <variable name="SPELL_ABILITY_UNSUMMON" category="ID_Hero_Special_Abilities" short_description="изгнание">Особое боевое умение. Случайным образом отзывает часть отряда, который был призван.</variable>
+  <variable name="SPELL_ABILITY_DARK_RITUAL" category="ID_Hero_Special_Abilities" short_description="темный ритуал">Герой весь день выполняет ритуал и восстанавливает свой запас маны. Этот навык можно использовать только в начале дня.</variable>
+  <variable name="SPELL_SKILL_OFFENCE1" category="ID_Skill_Common" short_description="основы нападения">Урон, наносимый существами в ближнем бою, увеличивается на 5%.</variable>
+  <variable name="SPELL_SKILL_OFFENCE2" category="ID_Skill_Common" short_description="развитое нападение">Урон, наносимый существами в ближнем бою, увеличивается на 10%.</variable>
+  <variable name="SPELL_SKILL_OFFENCE3" category="ID_Skill_Common" short_description="искусное нападение">Урон, наносимый существами в ближнем бою, увеличивается на 15%.</variable>
+  <variable name="SPELL_SKILL_ARCHERY" category="ID_Skill_Common" short_description="стрельба">Урон, наносимый стрельбой, увеличивается на 20%.</variable>
+  <variable name="SPELL_SKILL_FRENZY" category="ID_Skill_Common" short_description="боевое безумие">Минимальный и максимальный урон, наносимый каждым существом под командованием героя, увеличивается на 1. Умение придется кстати, если в армии героя много существ низкого уровня.</variable>
+  <variable name="SPELL_SKILL_DEFENCE1" category="ID_Skill_Common" short_description="основы защиты">Навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 10%.</variable>
+  <variable name="SPELL_SKILL_DEFENCE2" category="ID_Skill_Common" short_description="развитая защита">Навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 20%.</variable>
+  <variable name="SPELL_SKILL_DEFENCE3" category="ID_Skill_Common" short_description="искусная защита">Навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 30%.</variable>
+  <variable name="SPELL_SKILL_PROTECTION" category="ID_Skill_Common" short_description="отражение">Умение, которое уменьшает урон, наносимый вашим существам магическими атаками, на 15%.</variable>
+  <variable name="SPELL_SKILL_EVASION" category="ID_Skill_Common" short_description="уклонение">Умение, которое уменьшает урон, наносимый вашим существам стрелками, на 20%.</variable>
+  <variable name="SPELL_SKILL_TOUGHNESS" category="ID_Skill_Common" short_description="стойкость">Количество единиц жизни всех ваших существ увеличивается на 2 (особенно выгодно использовать в случае большой армии).</variable>
+  <variable name="SPELL_SKILL_LUCK1" category="ID_Skill_Common" short_description="призрачная удача">Удача всех существ в армии героя увеличивается на 1 ед.</variable>
+  <variable name="SPELL_SKILL_LUCK2" category="ID_Skill_Common" short_description="большая удача">Удача всех существ в армии героя увеличивается на 2 ед.</variable>
+  <variable name="SPELL_SKILL_LUCK3" category="ID_Skill_Common" short_description="постоянная удача">Удача всех существ в армии героя увеличивается на 3 ед.</variable>
+  <variable name="SPELL_SKILL_RESISTANCE" category="ID_Skill_Common" short_description="магическое сопротивление">Умение, которое усиливает сопротивление магии для всех существ в армии героя на 15%. Существует большая вероятность того, что на существ не подействуют заклинания противника.</variable>
+  <variable name="SPELL_SKILL_LUCKY_STRIKE" category="ID_Skill_Common" short_description="солдатская удача">Гарантируется, что полезные умения существ в армии героя (такие, как «Оглушающий удар» латника) будут использоваться чаще.</variable>
+  <variable name="SPELL_SKILL_LEADERSHIP1" category="ID_Skill_Common" short_description="основы лидерства">Навык, который увеличивает боевой дух всех существ в армии героя на 1 ед.</variable>
+  <variable name="SPELL_SKILL_LEADERSHIP2" category="ID_Skill_Common" short_description="развитое лидерство">Навык, который увеличивает боевой дух всех существ в армии героя на 2 ед.</variable>
+  <variable name="SPELL_SKILL_LEADERSHIP3" category="ID_Skill_Common" short_description="искусное лидерство">Навык, который увеличивает боевой дух всех существ в армии героя на 3 ед.</variable>
+  <variable name="SPELL_SKILL_WAR_MACHINES1" category="ID_Skill_Common" short_description="основы управления машинами">Боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 30%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 1 ед.</variable>
+  <variable name="SPELL_SKILL_WAR_MACHINES2" category="ID_Skill_Common" short_description="развитое управление машинами">Боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 40%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает, вдобавок она приобретает способность снимать отрицательные эффекты 1-го уровня. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 2 ед.</variable>
+  <variable name="SPELL_SKILL_WAR_MACHINES3" category="ID_Skill_Common" short_description="искусное управление машинами">Боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 50%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает, вдобавок она приобретает способность снимать отрицательные эффекты вплоть до 3-го уровня. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 3 ед.</variable>
+  <variable name="SPELL_SKILL_FIRST_AID" category="ID_Skill_Common" short_description="первая помощь">Умение, которое позволяет управлять палаткой первой помощи. Если в бою палатка была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="SPELL_SKILL_BALLISTA" category="ID_Skill_Common" short_description="баллиста">Умение, которое позволяет управлять баллистой вручную, к тому же она получает один дополнительный выстрел. Если в бою баллиста была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="SPELL_SKILL_CATAPULT" category="ID_Skill_Common" short_description="катапульта">Умение, которое позволяет управлять катапультой вручную, к тому же она получает один дополнительный выстрел. Если в бою тележка с боеприпасами была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="SPELL_SKILL_DEMONIC_FIRE" category="ID_Skill_Unique" short_description="адский огонь">Существам под командованием повелителя демонов даруется 30%-ный шанс нанести дополнительный огненный урон во время атаки. Величина урона зависит от «Колдовства» героя. На поддержку работы данного умения расходуется мана.</variable>
+  <variable name="SPELL_SKILL_ELVEN_VOLLEY" category="ID_Hero_Special_Abilities" short_description="безжалостные стрелы">В начале каждой битвы ливень из стрел захлестывает ряды противника. Нанесенный урон зависит от уровня героя. (Лишь стрелки Лесного Союза способны на это.)</variable>
+  <variable name="SPELL_SKILL_MATRON_SALVO" category="см №254 :( =ID_Hero_Special_Abilities" short_description="шабаш ведьм">У сумеречных ведьм и владычиц тени есть шанс сделать дополнительный выстрел по цели героя. Чем выше уровень героя, тем больше шанс.</variable>
+  <variable name="SPELL_SKILL_ANCIENT_SMITHY" category="ID_Skill_Common" short_description="огненная ярость">Отряды под командованиям героя наносят вражеским существам дополнительный урон стихией Огня.</variable>
+  <variable name="SPELL_SKILL_FIRE_PROTECTION" category="ID_Skill_Common" short_description="защита от огня">Существа под управлением героя получают только 50% урона от огненных атак и невосприимчивы к действию умения «Повелитель огня».</variable>
+  <variable name="SPELL_SPEC_JOUSTER" category="ID_Hero_Specializations" short_description="капитан рыцарей">С ростом уровня героя рыцари и паладины в его армии получают дополнительные преимущества. Эффект способности «Надзор» увеличивается.</variable>
+  <variable name="SPELL_SPEC_PEASANTS" category="ID_Hero_Specializations" short_description="любимец народа">Все крестьяне и ополченцы в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого. К тому же все крестьяне ежедневно приносят в казну королевства +1 золотой сверх того, что позволяет способность «Налогоплательщик».</variable>
+  <variable name="SPELL_SPEC_ARCHERS" category="ID_Hero_Specializations" short_description="командир лучников">Все лучники и арбалетчики в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_FOOTMEN" category="ID_Hero_Specializations" short_description="командир латников">Все латники и мечники в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_GRIFFINS" category="ID_Hero_Specializations" short_description="дрессировщик грифонов">Все обычные и королевские грифоны в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого. Обычные грифоны получают способность «Удар с небес».</variable>
+  <variable name="SPELL_SPEC_ARTILLERYMAN" category="ID_Hero_Specializations" short_description="осадный инженер">Баллисты получают +1 ед. к нападению на каждые два уровня героя. Шанс катапульты поразить стену увеличивается на 2% за каждый уровень героя.</variable>
+  <variable name="SPELL_SPEC_FURIOUS" category="ID_Hero_Specializations" short_description="аура скорости">Инициатива всех сущест в армии героя увеличивается на 1% за каждый уровень героя.</variable>
+  <variable name="SPELL_SPEC_BOMBARDIER" category="ID_Hero_Specializations" short_description="железная дева">Выпущенный из баллисты снаряд при попадании разрывается, как огненный шар. Ударная сила огненного шара увеличивается на +1 ед. за каждые пять уровней героя.</variable>
+  <variable name="SPELL_SPEC_IMPREGNABLE" category="ID_Hero_Specializations" short_description="разрушитель заклинаний">Все существа в армии героя сразу получают 5% магического сопротивления плюс 1% за каждый уровень героя.</variable>
+  <variable name="SPELL_SPEC_FLAGBEARER_OF_DARKNESS" category="ID_Hero_Specializations" short_description="избранник Хаоса">Удача всех войск героя увеличивается на 1 ед. Вдобавок вражеский герой не может использовать в бою способность «Тактика».</variable>
+  <variable name="SPELL_SPEC_HOUNDS" category="ID_Hero_Specializations" short_description="хозяин гончих">Все адские гончие и церберы в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_SUCCUBUSES" category="ID_Hero_Specializations" short_description="искушение">Все суккубы и демонессы в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_BLADE_MASTER" category="ID_Hero_Specializations" short_description="мастер клинка">Все танцующие с клинками и танцующие со смертью в армии героя получают +1 ед. к нападению и защите за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_ELVES" category="ID_Hero_Specializations" short_description="искусный охотник">Все эльфийские стрелки и мастера лука в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_UNICORNS" category="ID_Hero_Specializations" short_description="дитя единорога">Все обычные и боевые единороги в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_ELVEN_FURY" category="ID_Hero_Specializations" short_description="эльфийская ярость">Танцующие с клинками, танцующие со смертью, эльфийские стрелки, мастера лука, друиды и верховные друиды получают способность «Ярость».</variable>
+  <variable name="SPELL_SPEC_FOREST_GUARDIAN" category="ID_Hero_Specializations" short_description="меч Силанны">Все существа Лесного Союза под командованием героя наносят заклятому врагу на 2% больше урона за каждый уровень героя.</variable>
+  <variable name="SPELL_SPEC_ZOMBIES" category="ID_Hero_Specializations" short_description="повелитель зомби">Все обычные и чумные зомби в армии героя получают +1 ед. к нападению и защите за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_VAMPIRES" category="ID_Hero_Specializations" short_description="принцесса вампиров">Все обычные и высшие вампиры в армии героя получают +1 ед. к нападению и защите за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_EMPIRIC" category="ID_Hero_Specializations" short_description="бальзамировщик">С каждым новым уровнем героя палатка первой помощи будет исцелять на 5 ед. урона больше. Также увеличится урон, если есть способность «Чумная палатка».</variable>
+  <variable name="SPELL_SPEC_SOULHUNTER" category="ID_Hero_Specializations" short_description="ловец душ">Каждый раз, когда группа вражеских существ умирает, она на время сражения заменяется группой дружественных привидений. Число привидений зависит от уровня героя.</variable>
+  <variable name="SPELL_SPEC_MASTER_OF_ELEMENTS" category="ID_Hero_Specializations" short_description="хозяин элементалей">Каждый раз, когда умирает дружественный отряд, группа элементалей вступает в бой на стороне героя. Число элементалей зависит от уровня героя. Вдобавок увеличивается мощь заклинаний «Призыв элементалей» и «Призыв феникса».</variable>
+  <variable name="SPELL_SPEC_GREMLINS" category="ID_Hero_Specializations" short_description="хозяин гремлинов">Обычные и старшие гремлины в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_GOLEMS" category="ID_Hero_Specializations" short_description="творец големов">Железные и стальные големы в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_MAGES" category="ID_Hero_Specializations" short_description="наставник">Мастер магии. Эффективность магов и архимагов возрастает в зависимости от уровня героя.</variable>
+  <variable name="SPELL_SPEC_PRUDENT" category="ID_Hero_Specializations" short_description="ужасающий">Чем выше уровень героя, тем сильнее уменьшается инициатива отрядов противника в бою.</variable>
+  <variable name="SPELL_SPEC_EVASIVE" category="ID_Hero_Specializations" short_description="танцующий в сумерках">Стрельба наносит меньший урон. Величина уменьшения зависит от уровня героя.</variable>
+  <variable name="SPELL_SPEC_RIDERS" category="ID_Hero_Specializations" short_description="заводчик ящеров">Особая атака наездников «Укус ящера» наносит больше урона. Чем выше уровень героя, тем больше урон.</variable>
+  <variable name="SPELL_SPEC_MATRON_SALVO" category="ID_Hero_Specializations" short_description="шабаш ведьм">У сумеречных ведьм и владычиц тени есть шанс сделать дополнительный выстрел по цели героя. Чем выше уровень героя, тем больше шанс.</variable>
+  <variable name="SPELL_SPEC_SAVAGE" category="ID_Hero_Specializations" short_description="черная рука">Лазутчики и ассасины в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_WITCHES" category="ID_Hero_Specializations" short_description="кровавая госпожа">Бестии и фурии в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_SPEC_MINOTAURS" category="ID_Hero_Specializations" short_description="рабовладелец">Все минотавры и минотавры-стражи в армии героя получают +1 ед. к защите и нападению за каждые два уровня героя, начиная с первого.</variable>
+  <variable name="SPELL_TOWN_OFFENCE_P1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_M1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_DEFENCE_P1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_DEFENCE_M1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_DEFENCE_P1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_DEFENCE_M1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_P2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_M2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_DEFENCE_P2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_DEFENCE_M2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_DEFENCE_P2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_OFFENCE_DEFENCE_M2" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_LUCK_P1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_LUCK_M1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_MORALE_P1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_MORALE_M1" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_ELVEN_CAPITAL" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_WALLS" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_TOWERS" category="ID_TownEffects" short_description=""></variable>
+  <variable name="SPELL_TOWN_UNHOLY_TEMPLE" category="ID_TownEffects" short_description="храм Нижнего мира">Атакующие получают штраф — параметр «Боевой дух» уменьшается на -2 ед.</variable>
+  <variable name="SPELL_TOWN_DARK_GUARDIAN" category="ID_TownEffects" short_description="мать Тьмы">Усиливает характеристику героя «Колдовство».</variable>
+  <variable name="SPELL_TOWN_SPARKLING_FOUNTAIN" category="ID_TownEffects" short_description="сверкающий фонтан">Защищающиеся войска становятся удачливее.</variable>
+  <variable name="SPELL_TOWN_DIETY_OF_FIRE" category="ID_TownEffects" short_description="божество огня">Усиливает характеристику героя «Колдовство».</variable>
+  <variable name="SPELL_TOWN_INFERNAL_LOOM" category="ID_TownEffects" short_description="врата Хаоса">Атакующие получают штраф — параметр «Удача» уменьшается на -2 ед.</variable>
+  <variable name="SPELL_ABILITY_BATTLE_DIVE" category="ID_Creature_Abilities" short_description="удар с небес">Существа атакуют с воздуха выбранный участок поля боя, нанося любому существу, находящемуся на этом участке, двойной урон, включая дружественных. После атаки существо возвращается на случайную клетку поля.</variable>
+  <variable name="SPELL_ABILITY_BATTLE_DIVE_FINISH" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_LAY_HANDS" category="ID_Creature_Abilities" short_description="возложение рук"></variable>
+  <variable name="SPELL_ABILITY_RESURRECT_ALLIES" category="ID_Creature_Abilities" short_description="воскрешение союзников">Существа один раз способны воскресить дружественный отряд, если клетка не была занята другим существом.</variable>
+  <variable name="SPELL_ABILITY_SCATTER_SHOT" category="ID_Creature_Abilities" short_description="стрельба навесом">Выстрел, накрывающий всех существ (включая дружественных), находящихся в пределах некоторой площади (3 на 3 клетки). Величина урона, наносимого каждому существу, равна половине урона от точного выстрела.</variable>
+  <variable name="SPELL_ABILITY_GATING" category="ID_Creature_Abilities" short_description="открытие врат">Отряд обладает возможностью перенестись в ад и возвратиться оттуда с подкреплением. Каждый отряд может открыть врата в ад только один раз за сражение. Прибывшие существа становятся частью отряда, открывшего врата, и после битвы исчезают.</variable>
+  <variable name="SPELL_ABILITY_FEAR" category="ID_Creature_Abilities" short_description="страх">Нападая, существо может напугать врага. Испуганные существа не отвечают на атаки и пытаются бежать. Эта способность не влияет на невосприимчивость существ к заклинаниям управления разумом.</variable>
+  <variable name="SPELL_ABILITY_SUMMON_BALOR" category="ID_Creature_Abilities" short_description="призыв пещерных владык">Призывает на поле боя пещерных владык.</variable>
+  <variable name="SPELL_ABILITY_EXPLOSION" category="ID_Creature_Abilities" short_description="взрыв">Один раз за сражение существо может взорваться, нанося урон огнем всем отрядам, стоящим на соседних с ним клетках.</variable>
+  <variable name="SPELL_ABILITY_EXPLOSION_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_CHAIN_SHOT_END_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_MANA_DESTROY" category="ID_Creature_Abilities" short_description="поглотитель маны">Существо уничтожает часть маны вражеского героя в начале боя. Количество уничтоженной маны зависит от числа существ.</variable>
+  <variable name="SPELL_ABILITY_MANA_STEAL" category="ID_Creature_Abilities" short_description="истощение маны">Когда враг, обладающий маной, нападает на существ, они крадут у него по одной единице маны на существо в отряде. За каждую украденную единицу маны одно павшее существо в группе возвращается к жизни.</variable>
+  <variable name="SPELL_ABILITY_LIFE_DRAIN" category="ID_Creature_Abilities" short_description="осушение">Во время атаки существа из отряда восстанавливают свое здоровье в размере половины урона, причиненного противником. Восстановленное здоровье может воскресить павших существ из отряда.</variable>
+  <variable name="SPELL_ABILITY_MANA_DRAIN" category="ID_Creature_Abilities" short_description="истощение маны">Когда враг, обладающий маной, нападает на существ, они крадут у него по одной единице маны на существо в отряде. За каждую украденную единицу маны одно павшее существо в группе возвращается к жизни.</variable>
+  <variable name="SPELL_ABILITY_DEATH_CLOUD" category="ID_Creature_Abilities" short_description="смертоносное облако">При атаке издалека существо наносит урон цели, а также половинный урон всем существам на соседних клетках, не принадлежащим к фракции Некрополис.</variable>
+  <variable name="SPELL_ABILITY_HARM_TOUCH" category="ID_Creature_Abilities" short_description="губительная хватка">Во время атаки существа с любого расстояния всегда убивают минимум одно существо противника. Заклинание также снимает все положительные магические эффекты, действующие на отряд противника.</variable>
+  <variable name="SPELL_ABILITY_MANA_FEED" category="ID_Creature_Abilities" short_description="передача маны">Используя это умение, существа могут отдавать часть своей маны герою.</variable>
+  <variable name="SPELL_ABILITY_ENTANGLING_ROOTS" category="ID_Creature_Abilities" short_description="оплетающие корни">Во время атаки существо опутывает противника корнями, после чего последний лишается возможности двигаться.</variable>
+  <variable name="SPELL_ABILITY_REPAIR" category="ID_Creature_Abilities" short_description="починка (старшие гремлины)">Починка различных механизмов на поле боя.</variable>
+  <variable name="SPELL_ABILITY_RANDOM_CAST_DARK" category="ID_Creature_Abilities" short_description="случайное заклинание магии Тьмы (архимаги)">Использование случайного заклинания магии Тьмы.</variable>
+  <variable name="SPELL_ABILITY_RANDOM_CAST_DARK_LIGHT" category="ID_Creature_Abilities" short_description="случайное заклинание магии Света (архимаги)">Использование случайного заклинания магии Света.</variable>
+  <variable name="SPELL_ABILITY_DASH" category="ID_Creature_Abilities" short_description="натиск (раджа Ракшас)">После использования этой возможности существо пропускает один ход, но после этого ходит чаще.</variable>
+  <variable name="SPELL_ABILITY_DASH_EFFECT" category="" short_description=""></variable>
+  <variable name="SPELL_REMOTE_CONTROL" category="ID_Hero_Special_Abilities" short_description="власть над машинами">В начале боя одна из вражеских боевых машин переходит под управление героя.</variable>
+  <variable name="SPELL_EFFECT_ARMOR_CRUSHING" category="ID_Hero_Special_Abilities" short_description="сокрушение доспеха">Каждый удар уменьшает защиту противника.</variable>
+  <variable name="SPELL_ABILITY_POISONOUS_ATTACK" category="ID_Creature_Abilities" short_description="атака ядом (ассасины)">Во время атаки существа также отравляют противника. Отравленный враг получает урон в течение трех ходов.</variable>
+  <variable name="SPELL_LIZARD_BITE_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_REGENRATION" category="ID_Creature_Abilities" short_description="восстановление"></variable>
+  <variable name="SPELL_EFFECT_REBIRTH" category="ID_Creature_Abilities" short_description="возрождение">После смерти существо может воскреснуть. Число оживших существ равно числу погибших.</variable>
+  <variable name="SPELL_ABILITY_FROST_BREATH" category="ID_Creature_Abilities" short_description="морозное дыхание">Когда существо защищается в ближнем бою, его огненный щит наносит определенный урон атакующему, вне зависимости от наличия у существа способности отражать удары.</variable>
+  <variable name="SPELL_EFFECT_BAD_LUCK" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_GOOD_LUCK" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_BAD_MORALE" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_GOOD_MORALE" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FIRST_AID_TENT_HEAL" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_CLERIC_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_COMBAT_HIT_00" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_COMBAT_HIT_01" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_COMBAT_HIT_02" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_WAR_MACHINE_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FIRST_AID_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FIRE_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_BASH_HIT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_SUN_FIRE" category="ID_Hero_Special_Abilities" short_description="взрыв маны">Как только существа из армии противника собираются сотворить заклинание, их обжигает огонь. Нанесенный урон зависит от уровня героя.</variable>
+  <variable name="SPELL_EFFECT_SOIL_BURN" category="ID_Hero_Special_Abilities" short_description="проклятая земля">Как только существа из армии противника меняют местоположение, их обжигает огонь. Нанесенный урон зависит от уровня героя.</variable>
+  <variable name="SPELL_EFFECT_CATAPULT_CHARGE_EXPLOSION" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FROZEN" category="ID_SPELL_COMBAT" short_description="замораживание">Отряд заморожен.</variable>
+  <variable name="SPELL_EFFECT_FIRE_DAMAGE" category="ID_SPELL_COMBAT" short_description="огонь">Огонь.</variable>
+  <variable name="SPELL_EFFECT_LAND_MINE_EXPLOSION" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_PHANTOM_OUT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FIRE_SHIELD" category="ID_Creature_Abilities_Neutrals" short_description="морозное дыхание">Надо=Огненный щит</variable>
+  <variable name="SPELL_EFFECT_DIMENSION_DOOR_END" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_CHILLING_BONES" category="ID_Skill_Common" short_description="могильный холод">Умение, которое увеличивает защиту нежити под командованием некроманта с помощью мощных ледяных чар. Любое существо, вступившее в ближний бой с зачарованными воинами, получит урон льдом.</variable>
+  <variable name="SPELL_DEBUG_TELEPORT" category="ID_Debug_Spells" short_description="Debug Teleport">Allow Hero cover long distances on adventure map without restriction.</variable>
+  <variable name="SPELL_ABILITY_ENRAGED" category="ID_Creature_Abilities" short_description="ярость">Разъяренные существа получают бонус к нападению за своих павших товарищей.</variable>
+  <variable name="SPELL_MASS_CURSE" category="ID_SPELL_COMBAT" short_description="ослабление (общее)">Заклинание уменьшает величину максимального урона, который может нанести отряд. Время действия определяется «Колдовством». Эффект заклинания распространяется на все вражеские отряды.</variable>
+  <variable name="SPELL_MASS_DISRUPTING_RAY" category="ID_SPELL_COMBAT" short_description="разрушающий луч (общее)">Заклинание уничтожает доспех целевого вражеского отряда, уменьшая его защиту. Заклинание можно насылать на один и тот же отряд несколько раз, но защита последнего не может быть меньше нуля. Эффект заклинания распространяется на некоторую область поля боя.</variable>
+  <variable name="SPELL_MASS_SLOW" category="ID_SPELL_COMBAT" short_description="замедление (общее)">Уменьшает «Инициативу» вражеского отряда, заставляя его реже действовать. Эффект заклинания распространяется на все дружественные отряды.</variable>
+  <variable name="SPELL_MASS_FORGETFULNESS" category="ID_SPELL_COMBAT" short_description="рассеянность (общее)">Заклинание заставляет отряд существ забыть, что они делают на поле боя. Некоторые из существ забудут выстрелить или нанести ответный удар. Заклинание не действует на нежить, элементалей и механических существ. Заклинание действует на все отряды противника.</variable>
+  <variable name="SPELL_MASS_PLAGUE" category="ID_SPELL_COMBAT" short_description="чума (общее)">Заклинание насылает чуму на отряд противника. Существа несут урон каждый раз, когда предпринимают какое-либо действие. Заклинание не действует на нежить, элементалей и механических существ. Заклинание действует на некоторую область поля боя.</variable>
+  <variable name="SPELL_MASS_WEAKNESS" category="ID_SPELL_COMBAT" short_description="немощность (общее)">Заклинание ослабляет вражеских существ, уменьшая их «Нападение». Эффект заклинания распространяется на все вражеские отряды.</variable>
+  <variable name="SPELL_MASS_BLESS" category="ID_SPELL_COMBAT" short_description="божественная сила (общее)">Заклинание помогает дружественным существам сражаться с большей отдачей, увеличивая значение минимального урона, который может нанести отряд. Время действия определяется «Колдовством». Заклинание действует на все дружественные отряды.</variable>
+  <variable name="SPELL_MASS_DISPEL" category="ID_SPELL_COMBAT" short_description="снятие чар (общее)">Рассеивает положительные чары с вражеских существ и отрицательные с дружественных. Однако слабый маг не сможет развеять чары сильного. Эффект заклинания распространяется на некоторую область поля боя.</variable>
+  <variable name="SPELL_MASS_STONESKIN" category="ID_SPELL_COMBAT" short_description="каменная кожа (общее)">Увеличивает защиту выбранных дружественных существ. Время действия определяется «Колдовством». Эффект заклинания распространяется на все дружественные отряды.</variable>
+  <variable name="SPELL_MASS_DEFLECT_ARROWS" category="ID_SPELL_COMBAT" short_description="уклонение (общее)">Позволяет всем дружественным отрядам получать меньше урона от выстрелов.</variable>
+  <variable name="SPELL_MASS_BLOODLUST" category="ID_SPELL_COMBAT" short_description="карающий удар (общее)">Под воздействием заклинания существа впадают в ярость, что увеличивает силу их атаки. Заклинание действует на все отряды.</variable>
+  <variable name="SPELL_MASS_HASTE" category="ID_SPELL_COMBAT" short_description="ускорение (общее)">Заставляет дружественных существ действовать чаще, увеличивая их «Инициативу». Заклинание действует на все дружественные отряды.</variable>
+  <variable name="SPELL_ABILITY_CALL_LIGHTNING" category="ID_Creature_Abilities" short_description="удар молнией (титаны)">Дистанционный удар молнией.</variable>
+  <variable name="SPELL_EMPOWERED_MAGIC_ARROW" category="ID_SPELL_COMBAT" short_description="магическая стрела (усиленное)">Волшебная стрела наносит отрядам противника магический урон. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_MAGIC_FIST" category="ID_SPELL_COMBAT" short_description="волшебный кулак (усиленное)">Создает волшебный кулак, который наносит существам противника физический урон. Это заклинание игнорирует магическую защиту и сопротивление магии. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_LIGHTNING_BOLT" category="ID_SPELL_COMBAT" short_description="молния (усиленное)">Поражает вражеский отряд молнией. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_ICE_BOLT" category="ID_SPELL_COMBAT" short_description="ледяная глыба (усиленное)">Это заклинание обрушивает на вражеский отряд ледяные глыбы. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_FIREBALL" category="ID_SPELL_COMBAT" short_description="огненный шар (усиленное)">Наносит урон огнем всем существам в целевой области. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_FROST_RING" category="ID_SPELL_COMBAT" short_description="кольцо холода (усиленное)">Заклинание наносит урон льдом всем существам, окружающим его область действия. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_CHAIN_LIGHTNING" category="ID_SPELL_COMBAT" short_description="цепь молний (усиленное)">Молния наносит удар по целевому отряду, а затем перекидывается на соседний, нанося ему половину урона от причиненного ранее. Это заклинание может поразить до четырех целей. Молнии могут перекинуться и на отряды героя, сотворившего заклинание. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_METEOR_SHOWER" category="ID_SPELL_COMBAT" short_description="метеоритный дождь (усиленное)">Заклинание наносит серьезный урон всем существам в целевой области с помощью стихии Земли. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_IMPLOSION" category="ID_SPELL_COMBAT" short_description="шок земли (усиленное)">Наносит вражескому отряду урон с помощью стихии Земли. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_ARMAGEDDON" category="ID_SPELL_COMBAT" short_description="армагеддон (усиленное)">Наносит урон всем существам и боевым машинам на поле сражения. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_EMPOWERED_STONE_SPIKES" category="ID_SPELL_COMBAT" short_description="каменные шипы (усиленное)">Наносит урон всем существам в целевой области, используя стихию Земли. Усиленное заклинание наносит на 50% больше урона, но расходует в два раза больше маны.</variable>
+  <variable name="SPELL_SUMMON_CREATURES" category="ID_SPELL_ADVENTURE" short_description="вызов подкреплений">Заклинание вызывает войска из ближайшего города. (Для этого используется 75% очков перемещения героя.)</variable>
+  <variable name="SPELL_CONJURE_PHOENIX" category="ID_SPELL_COMBAT" short_description="призыв феникса">Заклинание призывает на время сражения феникса, который сражается на стороне героя. Игрок может вызывать только одного феникса. Сила феникса зависит от «Колдовства» и уровня героя.</variable>
+  <variable name="SPELL_FIREWALL" category="ID_SPELL_COMBAT" short_description="cтена огня">Заклинание создает стену пламени на выбранной области поля боя. Огонь наносит урон всем существам в этой области в течение нескольких ходов.</variable>
+  <variable name="SPELL_STONE_SPIKES" category="ID_SPELL_COMBAT" short_description="каменные шипы">Наносит урон всем существам в целевой области, используя стихию Земли.</variable>
+  <variable name="SPELL_UBER_CHAIN_LIGHTNING" category="ID_SPELL_COMBAT" short_description="дьявольская цепь">Наносит удары молниями по нескольким соседствующим отрядам существ, начиная с выбранного. Величина урона определяется «Колдовством».</variable>
+  <variable name="SPELL_BOSS_FIREWALL" category="" short_description=""></variable>
+  <variable name="SPELL_TIME_SHIFT" category="ID_Hero_Special_Abilities" short_description="сдвиг времени">Способность «Сдвиг времени»</variable>
+  <variable name="SPELL_EFFECT_GUARDIAN_ANGEL" category="" short_description=""></variable>
+  <variable name="SPELL_GHOST_DISPELL" category="" short_description=""></variable>
+  <variable name="SPELL_GHOST_GUARD" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_WOUND" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_BERSERKER_RAGE" category="ID_Creature_Abilities" short_description="ярость берсерка (берсерк)">При использовании этой способности «Защита» существа временно снижается до нуля, «Нападение» увеличивается на количество единиц защиты. Существо автоматически атакует ближайшего противника, не подвергаясь ответному удару. Однако если в пределах области перемещения нет вражеских существ, оно атакует ближайший дружественный отряд.</variable>
+  <variable name="SPELL_EFFECT_MARK_OF_FIRE" category="ID_Hero_Special_Abilities" short_description="знак огня"></variable>
+  <variable name="SPELL_ABILITY_STORMBOLT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_MAGMA_SHIELD" category="ID_Creature_Abilities" short_description="лавовый щит (лавовый дракон)">Когда на существо нападают в ближнем бою, атакующий получает урон огнем, величина которого зависит от силы атакующего.</variable>
+  <variable name="SPELL_RUNE_OF_CHARGE" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_BERSERKING" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_MAGIC_CONTROL" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_EXORCISM" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_ELEMENTAL_IMMUNITY" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_STUNNING" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_BATTLERAGE" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_ETHEREALNESS" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_REVIVE" category="" short_description=""></variable>
+  <variable name="SPELL_RUNE_OF_DRAGONFORM" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_REFRESH_RUNE" category="" short_description=""></variable>
+  <variable name="SPELL_SPEC_BORDERGUARD" category="" short_description=""></variable>
+  <variable name="SPELL_SPEC_AXE_MASTER" category="" short_description=""></variable>
+  <variable name="SPELL_SPEC_BEAR_RAIDERS" category="" short_description=""></variable>
+  <variable name="SPELL_SPEC_MAGISTER" category="" short_description=""></variable>
+  <variable name="SPELL_SPEC_DEFENDER" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_DWARVEN_LUCK" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_OFFENSIVE_FORMATION" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_DEFENSIVE_FORMATION" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_DISTRACT" category="" short_description=""></variable>
+  <variable name="SPELL_SKILL_ABSOLUTE_PROTECTION" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_SET_AFIRE" category="" short_description=""></variable>
+  <variable name="SPELL_ABILITY_AGILITY" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_FINE_RUNE" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_STRONG_RUNE" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_BATTLE_FRENZY" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_RUNIC_ATTUNEMENT" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_MASTER_OF_INITIATIVE" category="" short_description=""></variable>
+  <variable name="SPELL_SORROW" category="" short_description=""></variable>
+  <variable name="SPELL_VAMPIRISM" category="" short_description=""></variable>
+  <variable name="SPELL_DEEP_FREEZE" category="" short_description=""></variable>
+  <variable name="SPELL_REGENERATION" category="" short_description=""></variable>
+  <variable name="SPELL_DIVINE_VENGEANCE" category="" short_description=""></variable>
+  <variable name="SPELL_ARCANE_CRYSTAL" category="" short_description=""></variable>
+  <variable name="SPELL_SUMMON_HIVE" category="" short_description=""></variable>
+  <variable name="SPELL_BLADE_BARRIER" category="" short_description=""></variable>
+  <variable name="SPELL_UBER_METEOR_SHOWER" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_PREPARATION" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_EXPLODING_CORPSES" category="" short_description=""></variable>
+  <variable name="SPELL_EFFECT_MASTER_OF_LIGHTNING" category="ID_Hero_Special_Abilities" short_description="повелитель бурь">У заклинаний «Молния» и «Цепь молний» (только для первой цели) появляется оглушающий эффект — т.е. ход отряда существ, в который попала молния, начинается позднее, чем обычно.</variable>
+  <variable name="SPELL_TOWN_BLAZING_ANVIL" category="ID_TownEffects" short_description="пылающая наковальня">Увеличивает «Защиту» и «Колдовство» обороняющихся войск на +6.</variable>
+  <variable name="PLAYER_NONE" category="ID_ИГРОКА" short_description="нет игрока">Нет.</variable>
+  <variable name="PLAYER_1" category="ID_ИГРОКА" short_description="1-й игрок">1-й игрок (красный)</variable>
+  <variable name="PLAYER_2" category="ID_ИГРОКА" short_description="2-й игрок">2-й игрок (синий)</variable>
+  <variable name="PLAYER_3" category="ID_ИГРОКА" short_description="3-й игрок">3-й игрпок (зеленый)</variable>
+  <variable name="PLAYER_4" category="ID_ИГРОКА" short_description="4-й игрок">4-й игрок (желтый)</variable>
+  <variable name="PLAYER_5" category="ID_ИГРОКА" short_description="5-й игрок">5-й игрок (оранжевый)</variable>
+  <variable name="PLAYER_6" category="ID_ИГРОКА" short_description="6-й игрок">6-й игрок (бирюзовый)</variable>
+  <variable name="PLAYER_7" category="ID_ИГРОКА" short_description="7-й игрок">7-й игрок (пурпурный)</variable>
+  <variable name="PLAYER_8" category="ID_ИГРОКА" short_description="8-й игрок">8-й игрок (коричневый)</variable>
+  <variable name="DAY" category="ID_ИГРОВОГО_ВРЕМЕНИ" short_description="день">Нет.</variable>
+  <variable name="WEEK" category="ID_ИГРОВОГО_ВРЕМЕНИ" short_description="неделя">Нет.</variable>
+  <variable name="MONTH" category="ID_ИГРОВОГО_ВРЕМЕНИ" short_description="месяц">Нет.</variable>
+  <variable name="DAY_OF_WEEK" category="ID_ИГРОВОГО_ВРЕМЕНИ" short_description="день недели">Нет.</variable>
+  <variable name="ABSOLUTE_DAY" category="ID_ИГРОВОГО_ВРЕМЕНИ" short_description="абсолютный день">Нет.</variable>
+  <variable name="FILTER_HEROES" category="ID_ФИЛЬТРОВ" short_description="отбор героев">Нет.</variable>
+  <variable name="FILTER_OBJECTS" category="ID_ФИЛЬТРОВ" short_description="отбор объектов">Нет.</variable>
+  <variable name="FILTER_REGIONS" category="ID_ФИЛЬТРОВ" short_description="отбор регионов">Нет.</variable>
+  <variable name="FILTER_OBJECTIVES" category="ID_ФИЛЬТРОВ" short_description="отбор заданий">Нет.</variable>
+  <variable name="PLAYER_NOT_IN_GAME" category="ID_СТАТУС ИГРОКА" short_description="игрок вне игры">Нет.</variable>
+  <variable name="PLAYER_ACTIVE" category="ID_СТАТУС ИГРОКА" short_description="игрок активен">Нет.</variable>
+  <variable name="PLAYER_WON" category="ID_СТАТУС ИГРОКА" short_description="игрок победил">Нет.</variable>
+  <variable name="PLAYER_LOST" category="ID_СТАТУС ИГРОКА" short_description="игрок проиграл">Нет.</variable>
+  <variable name="WOOD" category="ID_РЕСУРСОВ" short_description="древесина">Нет.</variable>
+  <variable name="ORE" category="ID_РЕСУРСОВ" short_description="руда">Нет.</variable>
+  <variable name="MERCURY" category="ID_РЕСУРСОВ" short_description="ртуть">Нет.</variable>
+  <variable name="CRYSTAL" category="ID_РЕСУРСОВ" short_description="кристаллы">Нет.</variable>
+  <variable name="SULFUR" category="ID_РЕСУРСОВ" short_description="сера">Нет.</variable>
+  <variable name="GEM" category="ID_РЕСУРСОВ" short_description="самоцветы">Нет.</variable>
+  <variable name="GOLD" category="ID_РЕСУРСОВ" short_description="золото">Нет.</variable>
+  <variable name="OBJECTIVE_SCENARIO_INFO" category="ID_ЗАДАНИЙ" short_description="информация задания">Нет.</variable>
+  <variable name="OBJECTIVE_UNKNOWN" category="ID_ЗАДАНИЙ" short_description="задание неизвестно">Нет.</variable>
+  <variable name="OBJECTIVE_ACTIVE" category="ID_ЗАДАНИЙ" short_description="задание активно">Нет.</variable>
+  <variable name="OBJECTIVE_COMPLETED" category="ID_ЗАДАНИЙ" short_description="задание выполнено">Нет.</variable>
+  <variable name="OBJECTIVE_FAILED" category="ID_ЗАДАНИЙ" short_description="задание провалено">Нет.</variable>
+  <variable name="GROUND" category="ID_УРОВНЯ_КАРТЫ" short_description="поверхность">Нет.</variable>
+  <variable name="UNDERGROUND" category="ID_УРОВНЯ_КАРТЫ" short_description="подземелье">Нет.</variable>
+  <variable name="STAT_EXPERIENCE" category="ID_СТАТА_ГЕРОЯ" short_description="показатель опыта">Нет.</variable>
+  <variable name="STAT_ATTACK" category="ID_СТАТА_ГЕРОЯ" short_description="показатель атаки">Нет.</variable>
+  <variable name="STAT_DEFENCE" category="ID_СТАТА_ГЕРОЯ" short_description="показатель защиты">Нет.</variable>
+  <variable name="STAT_SPELL_POWER" category="ID_СТАТА_ГЕРОЯ" short_description="показатель колдовства">Нет.</variable>
+  <variable name="STAT_KNOWLEDGE" category="ID_СТАТА_ГЕРОЯ" short_description="показатель знания">Нет.</variable>
+  <variable name="STAT_LUCK" category="ID_СТАТА_ГЕРОЯ" short_description="показатель боевого духа">Нет.</variable>
+  <variable name="STAT_MORALE" category="ID_СТАТА_ГЕРОЯ" short_description="показатель морали">Нет.</variable>
+  <variable name="STAT_MOVE_POINTS" category="ID_СТАТА_ГЕРОЯ" short_description="показатель пунктов перемещения">Нет.</variable>
+  <variable name="STAT_MANA_POINTS" category="ID_СТАТА_ГЕРОЯ" short_description="показатель пунктов маны">Нет.</variable>
+  <variable name="ARTIFACT_SWORD_OF_RUINS" category="ID_АРТЕФАКТА" short_description="меч мощи">Добавляет +2 к «Нападению» героя.</variable>
+  <variable name="ARTIFACT_GREAT_AXE_OF_GIANT_SLAYING" category="ID_АРТЕФАКТА" short_description="секира горного короля">Добавляет +4 к «Нападению» героя.</variable>
+  <variable name="ARTIFACT_WAND_OF_X" category="ID_АРТЕФАКТА" short_description="палочка с заклинанием &lt;value=spell_name&gt;">Позволяет творить заклинание &lt;value=spell_name&gt;. Палочка может использоваться ограниченное число раз, однако ее можно перезарядить в Гильдии магов (&lt;value=charges_cur&gt;/&lt;value=charges_max&gt;).</variable>
+  <variable name="ARTIFACT_UNICORN_HORN_BOW" category="ID_АРТЕФАКТА" short_description="лук из рога единорога">Уничтожает штрафы за расстояние для всех стрелков в армии героя.</variable>
+  <variable name="ARTIFACT_TITANS_TRIDENT" category="ID_АРТЕФАКТА" short_description="трезубец титанов">Усиливает заклинания, воздействующие с помощью молний, на 50%.</variable>
+  <variable name="ARTIFACT_STAFF_OF_VEXINGS" category="ID_АРТЕФАКТА" short_description="посох преисподней">Уменьшает инициативу вражеских существ на 20%.</variable>
+  <variable name="ARTIFACT_SHACKLES_OF_WAR" category="ID_АРТЕФАКТА" short_description="кандалы неизбежности">Не позволяет вам и вашему противнику покинуть поле боя.</variable>
+  <variable name="ARTIFACT_FOUR_LEAF_CLOVER" category="ID_АРТЕФАКТА" short_description="четырехлистный клевер">Увеличивает удачу на +1.</variable>
+  <variable name="ARTIFACT_ICEBERG_SHIELD" category="ID_АРТЕФАКТА" short_description="ледяной щит">При применении добавляет +2 к «Защите» героя и дарует 50% защиту от заклинаний стихии Огня.</variable>
+  <variable name="ARTIFACT_GOLDEN_SEXTANT" category="ID_АРТЕФАКТА" short_description="секстант морских  эльфов">Позволяет герою быстрее путешествовать по морю.</variable>
+  <variable name="ARTIFACT_CROWN_OF_COURAGE" category="ID_АРТЕФАКТА" short_description="корона льва">Увеличивает «Боевой дух» и «Удачу» героя на +2.</variable>
+  <variable name="ARTIFACT_CROWN_OF_MANY_EYES" category="ID_АРТЕФАКТА" short_description="корона всевидящего">Позволяет герою видеть дальше.</variable>
+  <variable name="ARTIFACT_PLATE_MAIL_OF_STABILITY" category="ID_АРТЕФАКТА" short_description="доспехи забытого героя">Добавляет +2 к основным характеристикам героя и дарует 20%-ное сопротивление магии армии героя.</variable>
+  <variable name="ARTIFACT_BREASTPLATE_OF_PETRIFIED_WOOD" category="ID_АРТЕФАКТА" short_description="нагрудник огромной мощи">Добавляют +2 к «Колдовству» героя.</variable>
+  <variable name="ARTIFACT_PEDANT_OF_MASTERY" category="ID_АРТЕФАКТА" short_description="кулон мастерства">Дарует герою дополнительный уровень к основному навыку. Этот уровень даруется, даже если герой имеет навык высшего уровня.</variable>
+  <variable name="ARTIFACT_NECKLACE_OF_BRAVERY" category="ID_АРТЕФАКТА" short_description="ошейник льва">Увеличивает боевой дух на +1.</variable>
+  <variable name="ARTIFACT_WEREWOLF_CLAW_NECKLACE" category="ID_АРТЕФАКТА" short_description="ожерелье Кровавого Когтя">Добавляет +1 ед. урона всем существам в армии героя.</variable>
+  <variable name="ARTIFACT_EVERCOLD_ICICLE" category="ID_АРТЕФАКТА" short_description="кулон ледяных объятий">Усиливает все заклинания с действием замораживания на 50%.</variable>
+  <variable name="ARTIFACT_NECKLACE_OF_POWER" category="ID_АРТЕФАКТА" short_description="ожерелье победы">Добавляет +2 к «Нападению» и «Колдовству» героя.</variable>
+  <variable name="ARTIFACT_RING_OF_LIGHTING_PROTECTION" category="ID_АРТЕФАКТА" short_description="кольцо защиты от молний">Дарует 50%-ную защиту от заклинаний, использующих молнию.</variable>
+  <variable name="ARTIFACT_RING_OF_LIFE" category="ID_АРТЕФАКТА" short_description="кольцо жизненной силы">Увеличивает максимальную величину ед. жизни всех существ в армии героя на +2.</variable>
+  <variable name="ARTIFACT_RING_OF_HASTE" category="ID_АРТЕФАКТА" short_description="кольцо скорости">Увеличивает инициативу всех существ в армии героя на 20%.</variable>
+  <variable name="ARTIFACT_NIGHTMARISH_RING" category="ID_АРТЕФАКТА" short_description="кольцо сломленного духа">Уменьшает боевой дух вражеских существ на -2.</variable>
+  <variable name="ARTIFACT_BOOTS_OF_SPEED" category="ID_АРТЕФАКТА" short_description="сапоги путешественника">Увеличивают дальность передвижения героя по земле.</variable>
+  <variable name="ARTIFACT_GOLDEN_HORSESHOE" category="ID_АРТЕФАКТА" short_description="золотая подкова">Увеличивает удачу на +2.</variable>
+  <variable name="ARTIFACT_WAYFARER_BOOTS" category="ID_АРТЕФАКТА" short_description="сапоги открытого пути">Позволяют герою проходить по пересеченной местности без штрафов.</variable>
+  <variable name="ARTIFACT_BOOTS_OF_INTERFERENCE" category="ID_АРТЕФАКТА" short_description="сапоги магической защиты">Даруют герою 10% сопротивления к магии.</variable>
+  <variable name="ARTIFACT_ENDLESS_SACK_OF_GOLD" category="ID_АРТЕФАКТА" short_description="сума бесконечного золота">Ежедневно добавляет в вашу казну +1000 золотых.</variable>
+  <variable name="ARTIFACT_ENDLESS_BAG_OF_GOLD" category="ID_АРТЕФАКТА" short_description="мешочек бесконечного золота">Ежедневно добавляет в вашу казну 250 золотых.</variable>
+  <variable name="ARTIFACT_ANGEL_WINGS" category="ID_АРТЕФАКТА" short_description="крылья ангела">Позволяют герою парить над землей.</variable>
+  <variable name="ARTIFACT_LION_HIDE_CAPE" category="ID_АРТЕФАКТА" short_description="накидка с гривой льва">Увеличивает боевой дух на +2.</variable>
+  <variable name="ARTIFACT_PHOENIX_FEATHER_CAPE" category="ID_АРТЕФАКТА" short_description="накидка из перьев феникса">Усиливает заклинания стихии Огня на 50%.</variable>
+  <variable name="ARTIFACT_CLOAK_OF_MOURNING" category="ID_АРТЕФАКТА" short_description="плащ Смертоносной Тени">Уменьшает «Боевой дух» и «Удачу» существ противника на -2.</variable>
+  <variable name="ARTIFACT_HELM_OF_ENLIGHTMENT" category="ID_АРТЕФАКТА" short_description="тюрбан просвещенности">Весь опыт, получаемый героем, увеличивается на 10%.</variable>
+  <variable name="ARTIFACT_CHAIN_MAIL_OF_ENLIGHTMENT" category="ID_АРТЕФАКТА" short_description="кольчуга просвещенности">Весь опыт, полученный героем, увеличивается на 20%.</variable>
+  <variable name="ARTIFACT_DRAGON_SCALE_ARMOR" category="ID_АРТЕФАКТА" short_description="доспехи из чешуи дракона">Добавляет +3 к «Нападению» героя и увеличивает «Инициативу» всех больших существ в армии героя на 5%.</variable>
+  <variable name="ARTIFACT_DRAGON_SCALE_SHIELD" category="ID_АРТЕФАКТА" short_description="щит из чешуи дракона">Добавляет +3 к «Защите» героя и увеличивает «Инициативу» всех маленьких существ в армии героя на 5%.</variable>
+  <variable name="ARTIFACT_DRAGON_BONE_GRAVES" category="ID_АРТЕФАКТА" short_description="поножи из кости дракона">Добавляют +3 к «Колдовству» героя и на 10% увеличивают «Инициативу» всех существ из армии героя, способных сражаться только в ближнем бою.</variable>
+  <variable name="ARTIFACT_DRAGON_WING_MANTLE" category="ID_АРТЕФАКТА" short_description="мантия из крыльев дракона">Добавляет +3 к «Знанию» героя и увеличивает инициативу всех летающих существ в армии героя на 10%.</variable>
+  <variable name="ARTIFACT_DRAGON_TEETH_NECKLACE" category="ID_АРТЕФАКТА" short_description="ожерелье из зубов дракона">Добавляет +3 к «Колдовству» героя и увеличивает инициативу всех колдунов в армии героя на 10%.</variable>
+  <variable name="ARTIFACT_DRAGON_TALON_CROWN" category="ID_АРТЕФАКТА" short_description="корона из когтей дракона">Добавляет +3 к «Знанию» героя и увеличивает «Инициативу» боевых машин в армии героя на 10%.</variable>
+  <variable name="ARTIFACT_DRAGON_EYE_RING" category="ID_АРТЕФАКТА" short_description="кольцо &quot;Глаз дракона&quot;">Добавляет +1 ко всем характеристикам героя и увеличивает «Инициативу» всех стрелков в армии героя на 10%.</variable>
+  <variable name="ARTIFACT_DRAGON_FLAME_TONGUE" category="ID_АРТЕФАКТА" short_description="пламенный язык дракона">Добавляет +2 к «Нападению» и «Защите» героя. Дарует 50% защиты от заклинаний, использующих холод.</variable>
+  <variable name="ARTIFACT_ROBE_OF_MAGI" category="ID_АРТЕФАКТА" short_description="халат Сар-Иссы">Добавляет +6 к «Колдовству» героя.</variable>
+  <variable name="ARTIFACT_STAFF_OF_MAGI" category="ID_АРТЕФАКТА" short_description="посох Сар-Иссы">Уничтожает сопротивление противника к магии, однако невосприимчивость к магии будет действовать и дальше.</variable>
+  <variable name="ARTIFACT_CROWN_OF_MAGI" category="ID_АРТЕФАКТА" short_description="корона Сар-Иссы">Добавляет +6 к «Знанию» героя.</variable>
+  <variable name="ARTIFACT_RING_OF_MAGI" category="ID_АРТЕФАКТА" short_description="кольцо Сар-Иссы">Уменьшает стоимость всех заклинаний героя наполовину.</variable>
+  <variable name="ARTIFACT_DWARVEN_MITHRAL_CUIRASS" category="ID_АРТЕФАКТА" short_description="кираса короля гномов">Добавляет +4 к «Защите» героя и делает всех существ в армии героя невосприимчивыми в заклинанию «Шок Земли».</variable>
+  <variable name="ARTIFACT_DWARVEN_MITHRAL_GREAVES" category="ID_АРТЕФАКТА" short_description="поножи короля гномов">Добавляет +4 к «Нападению» героя и делает всех существ в армии героя невосприимчивыми к заклинанию «Замедление».</variable>
+  <variable name="ARTIFACT_DWARVEN_MITHRAL_HELMET" category="ID_АРТЕФАКТА" short_description="шлем короля гномов">Добавляет +4 к «Знанию» героя и делает всех существ в армии героя невосприимчивыми к заклинанию «Ослепление».</variable>
+  <variable name="ARTIFACT_DWARVEN_MITHRAL_SHIELD" category="ID_АРТЕФАКТА" short_description="щит короля гномов">Добавляет +4 к «Защите» героя и делает всех существ героя невосприимчивыми к заклинанию «Берсерк».</variable>
+  <variable name="ARTIFACT_SCROLL_OF_SPELL_X" category="ID_АРТЕФАКТА" short_description="магический свиток с заклинанием &lt;value=spell_name&gt;">Позволяет сотворить заклинание &lt;value=spell_name&gt;.</variable>
+  <variable name="ARTIFACT_GRAAL" category="ID_АРТЕФАКТА" short_description="Слеза Асхи">Отнесите Слезу Асхи в нужный вам город, и жители города возведут великолепное строение, куда поместят Слезу. Впоследствии это принесет городу большие выгоды.</variable>
+  <variable name="ARTIFACT_BOOTS_OF_LEVITATION" category="ID_АРТЕФАКТА" short_description="сапоги левитации">Позволяют герою парить над водой.</variable>
+  <variable name="ARTIFACT_SKULL_HELMET" category="ID_АРТЕФАКТА" short_description="шлем некроманта">Увеличивает «Знание» героя на +2.</variable>
+  <variable name="ARTIFACT_VALORIOUS_ARMOR" category="ID_АРТЕФАКТА" short_description="доспехи бесстрашия">Добавляют +1 к «Боевому духу» и «Защите» героя.</variable>
+  <variable name="ARTIFACT_BOOTS_OF_SWIFTNESS" category="ID_АРТЕФАКТА" short_description="сапоги странника">Увеличивают скорость всех существ на +1.</variable>
+  <variable name="ARTIFACT_MOONBLADE" category="ID_АРТЕФАКТА" short_description="лунный клинок">Увеличивает «Нападение» героя на +3.</variable>
+  <variable name="ARTIFACT_RING_OF_CELERITY" category="ID_АРТЕФАКТА" short_description="кольцо стремительности">Увеличивает инициативу всех отрядов во время боя на 10%.</variable>
+  <variable name="ARTIFACT_BAND_OF_CONJURER" category="ID_АРТЕФАКТА" short_description="пояс элементалей">Позволяет пользоваться заклинанием «Призыв элементалей». При сотворении данного заклинания увеличивает «Колдовство» героя на +4.</variable>
+  <variable name="ARTIFACT_EARTHSLIDERS" category="ID_АРТЕФАКТА" short_description="изумрудные туфли">Добавляет +50% урона к заклинаниям стихии Земли.</variable>
+  <variable name="ARTIFACT_RIGID_MANTLE" category="ID_АРТЕФАКТА" short_description="плащ Силанны">Уменьшает урон от вражеских заклинаний стихии Земли на 50%.</variable>
+  <variable name="ARTIFACT_JINXING_BAND" category="ID_АРТЕФАКТА" short_description="проклятое кольцо">Уменьшает удачу противника на -2.</variable>
+  <variable name="ARTIFACT_BONESTUDDED_LEATHER" category="ID_АРТЕФАКТА" short_description="туника из плоти">Увеличивает «Колдовство» героя на +3, но уменьшает его «Боевой дух» на -1.</variable>
+  <variable name="ARTIFACT_WISPERING_RING" category="ID_АРТЕФАКТА" short_description="кольцо предостережения">Увеличивает «Нападение» и «Защиту» героя на +2, но уменьшает скорость всех существ в армии героя на -1.</variable>
+  <variable name="ARTIFACT_HELM_OF_CHAOS" category="ID_АРТЕФАКТА" short_description="шлем Хаоса">Увеличивает «Знание» героя на +3, но уменьшает его «Защиту» на -1.</variable>
+  <variable name="ARTIFACT_TWISTING_NEITHER" category="ID_АРТЕФАКТА" short_description="кулон Поглощения">Герой получает 1 ед. маны за каждые 2 ед. маны, потраченные вражеским героем.</variable>
+  <variable name="ARTIFACT_SANDALS_OF_THE_SAINT" category="ID_АРТЕФАКТА" short_description="сандалии Святого">Увеличивают все характеристики героя на +1.</variable>
+  <variable name="ARTIFACT_SHAWL_OF_GREAT_LICH" category="ID_АРТЕФАКТА" short_description="плащ Сандро">Обращает вражескую невосприимчивость к заклинаниям управления разумом.</variable>
+  <variable name="ARTIFACT_RING_OF_DEATH" category="ID_АРТЕФАКТА" short_description="кольцо грешников">Невосприимчивость к заклинанию «Святое слово».</variable>
+  <variable name="ARTIFACT_NECROMANCER_PENDANT" category="ID_АРТЕФАКТА" short_description="амулет некроманта">Навык «Некромантия» +10%.</variable>
+  <variable name="ARTIFACT_FREIDA" category="ID_АРТЕФАКТА" short_description="Фрида">«Натиск и скорость» — вот девиз Фриды. Когда она училась в Имперском Колледже Стратегии, то часто удивляла инструкторов смелыми решениями, основанными на форсированных маршах, неожиданных атаках и стремительных фланговых обходах. Фрида всегда с нетерпением ждет следующего сражения, чтобы попробовать некоторые вариации своих любимых тактик. Хотя некоторые шепчут, что она повысилась в звании благодаря своему отцу Годрику, череда побед и несомненное лидерство заставляют замолчать даже самых циничных критиков.</variable>
+  <variable name="ARTIFACT_RING_OF_THE_SHADOWBRAND" category="ID_АРТЕФАКТА" short_description="кольцо заклейменных Тенью">Кольцо вождя клана.</variable>
+  <variable name="ARTIFACT_OGRE_CLUB" category="ID_АРТЕФАКТА" short_description="дубина людоеда">Увеличивает «Нападение» на +5, но снижает «Инициативу» всех существ в армии героя на -5%.</variable>
+  <variable name="ARTIFACT_OGRE_SHIELD" category="ID_АРТЕФАКТА" short_description="щит людоеда">Увеличивает «Защиту» на +5, но снижает «Инициативу» всех существ в армии героя на -5%.</variable>
+  <variable name="ARTIFACT_TOME_OF_DESTRUCTION" category="ID_АРТЕФАКТА" short_description="том магии Хаоса">Позволяет сотворять все заклинания магии Хаоса, не имея никакого навыка в этой школе.</variable>
+  <variable name="ARTIFACT_TOME_OF_LIGHT_MAGIC" category="ID_АРТЕФАКТА" short_description="том магии Света">Позволяет сотворять все заклинания магии Света, не имея никакого навыка в этой школе.</variable>
+  <variable name="ARTIFACT_TOME_OF_DARK_MAGIC" category="ID_АРТЕФАКТА" short_description="том магии Тьмы">Позволяет сотворять все заклинания магии Тьмы, не имея никакого навыка в этой школе.</variable>
+  <variable name="ARTIFACT_TOME_OF_SUMMONING_MAGIC" category="ID_АРТЕФАКТА" short_description="том магии Призыва">Позволяет сотворять все заклинания магии Призыва, не имея никакого навыка в этой школе.</variable>
+  <variable name="ARTIFACT_BEGINNER_MAGIC_STICK" category="ID_АРТЕФАКТА" short_description="волшебная палочка новичка">Увеличивает «Колдовство» на +2.</variable>
+  <variable name="ARTIFACT_RUNIC_WAR_AXE" category="ID_АРТЕФАКТА" short_description="рунный боевой топор">Увеличивает «Нападение» и «Колдовство» героя на +2.</variable>
+  <variable name="ARTIFACT_RUNIC_WAR_HARNESS" category="ID_АРТЕФАКТА" short_description="рунная боевая упряжь">Увеличивает «Защиту» и «Знание» героя на +2.</variable>
+  <variable name="ARTIFACT_SKULL_OF_MARKAL" category="ID_АРТЕФАКТА" short_description="череп Маркела">Увеличивает «Колдовство» и «Знание» героя на +5, но снижает «Боевой дух» на -2.</variable>
+  <variable name="ARTIFACT_BEARHIDE_WRAPS" category="ID_АРТЕФАКТА" short_description="тайные защитные покровы">Увеличивает «Защиту» героя на +1 и добавляет дополнительно 25% к «Защите» от ледяного урона.</variable>
+  <variable name="ARTIFACT_DWARVEN_SMITHY_HUMMER" category="ID_АРТЕФАКТА" short_description="гномий кузнечный молот">Увеличивает «Нападение» героя на +3 и дарует дополнительную 25%-ную защиту от огня.</variable>
+  <variable name="ARTIFACT_RUNE_OF_FLAME" category="ID_АРТЕФАКТА" short_description="руна пламени">Увеличивает «Колдовство» героя на +1 и дарует заклинание &lt;value=spell_name&gt;.</variable>
+  <variable name="ARTIFACT_TAROT_DECK" category="ID_АРТЕФАКТА" short_description="колода Таро">Увеличивает «Удачу» и «Знание» героя на +1.</variable>
+  <variable name="SKILL_LOGISTICS" category="ID_СКИЛЛА_ГЕРОЯ" short_description="логистика">Основы: навык, который увеличивает дальность перемещения героя по суше на 10%. Развитая: навык, который увеличивает дальность перемещения героя по суше на 20%. Искусная: навык, который увеличивает дальность перемещения героя по суше на 30%.</variable>
+  <variable name="SKILL_WAR_MACHINES" category="ID_СКИЛЛА_ГЕРОЯ" short_description="управление машинами">Основы: боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 30%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 1 ед. Развитое: боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 40%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает, вдобавок она приобретает способность снимать отрицательные эффекты 1-го уровня. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 2 ед. Искусное: боевые машины становятся эффективнее. Нападение, защита и урон баллист увеличиваются. У катапульт вырастает урон и появляется 50%-ная вероятность уничтожить цель. Целительная сила палатки первой помощи возрастает, вдобавок она приобретает способность снимать отрицательные эффекты вплоть до 3-го уровня. Тележка с боеприпасами получает способность увеличивать нападение стрелков в армии героя на 3 ед.</variable>
+  <variable name="SKILL_LEARNING" category="ID_СКИЛЛА_ГЕРОЯ" short_description="образование">Начальное: герой получает +1 ед. к одной из своих основных характеристик за каждый четвертый уровень, включая уже полученные, и 5%-ную надбавку к опыту, приобретенному в сражении. Среднее: герой получает +1 ед. к одной из своих основных характеристик за каждый третий уровень, включая уже полученные, и 10%-ную надбавку к опыту, приобретенному в сражении. Высшее: герой получает +1 ед. к одной из своих основных характеристик за каждый второй уровень, включая уже полученные, и 15%-ную надбавку к опыту, приобретенному в сражении.</variable>
+  <variable name="SKILL_LEADERSHIP" category="ID_СКИЛЛА_ГЕРОЯ" short_description="лидерство">Основы: навык, который увеличивает боевой дух всех существ в армии героя на 1 ед. Развитое: навык, который увеличивает боевой дух всех существ в армии героя на 2 ед. Искусное: навык, который увеличивает боевой дух всех существ в армии героя на 3 ед.</variable>
+  <variable name="SKILL_LUCK" category="ID_СКИЛЛА_ГЕРОЯ" short_description="удача">Призрачная: удача всех существ в армии героя увеличивается на 1 ед. Большая: удача всех существ в армии героя увеличивается на 2 ед. Постоянная: удача всех существ в армии героя увеличивается на 2 ед.</variable>
+  <variable name="SKILL_OFFENCE" category="ID_СКИЛЛА_ГЕРОЯ" short_description="нападение">Основы: урон, наносимый существами в ближнем бою, увеличивается на 5%. Развитое: урон, наносимый существами в ближнем бою, увеличивается на 10%. Искусное: урон, наносимый существами в ближнем бою, увеличивается на 15%.</variable>
+  <variable name="SKILL_DEFENCE" category="ID_СКИЛЛА_ГЕРОЯ" short_description="защита">Основы: навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 10%. Развитое: навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 20%. Искусное: навык, который уменьшает урон, наносимый вашим воинам в ближнем бою, на 30%.</variable>
+  <variable name="SKILL_SORCERY" category="ID_СКИЛЛА_ГЕРОЯ" short_description="чародейство">Основы: скорость, с которой герой творит заклинания в бою, увеличивается. Время наступления следующего хода героя уменьшается на 10%. Развитое: скорость, с которой герой творит заклинания в бою, увеличивается. Интервал между двумя последовательными сотворениями заклинаний уменьшается на 20%. Искусное: скорость, с которой герой творит заклинания в бою, увеличивается. Интервал между двумя последовательными сотворениями заклинаний уменьшается на 30%.</variable>
+  <variable name="SKILL_DESTRUCTIVE_MAGIC" category="ID_СКИЛЛА_ГЕРОЯ" short_description="магия Хаоса">Основы: навык, который позволяет герою изучать заклинания магии Хаоса третьего круга и увеличивает их общую эффективность. Развитая: навык, который позволяет герою изучать заклинания магии Хаоса четвертого круга. Магия Хаоса работает еще эффективнее. Искусная: навык, который позволяет герою изучать заклинания магии Хаоса пятого круга. Магия Хаоса работает максимально эффективно.</variable>
+  <variable name="SKILL_DARK_MAGIC" category="ID_СКИЛЛА_ГЕРОЯ" short_description="магия Тьмы">Основы: навык, который позволяет герою изучать заклинания магии Тьмы третьего круга и увеличивает их общую эффективность. Развитая: навык, который позволяет герою изучать заклинания магии Тьмы четвертого круга. Магия Тьмы работает еще эффективнее. Искусная: навык, который позволяет герою изучать заклинания магии Тьмы пятого круга. Магия  Тьмы работает максимально эффективно.</variable>
+  <variable name="SKILL_LIGHT_MAGIC" category="ID_СКИЛЛА_ГЕРОЯ" short_description="магия Света">Основы: навык, который позволяет герою изучать заклинания магии Света третьего круга и увеличивает их общую эффективность. Сильная: навык, который позволяет герою изучать заклинания магии Света четвертого круга. Магия Света работает еще эффективнее. Искусная: навык, который позволяет герою изучать заклинания магии Света пятого круга. Магия  Света работает максимально эффективно.</variable>
+  <variable name="SKILL_SUMMONING_MAGIC" category="ID_СКИЛЛА_ГЕРОЯ" short_description="магия Призыва">Основы: навык, который позволяет герою изучать заклинания магии Призыва третьего круга и увеличивает их общую эффективность. Сильная: навык, который позволяет герою изучать заклинания магии Призыва четвертого круга. Магия Призыва работает еще эффективнее. Искусная: навык, который позволяет герою изучать заклинания магии Призыва пятого круга. Магия Призыва работает максимально эффективно.</variable>
+  <variable name="SKILL_TRAINING" category="ID_СКИЛЛА_ГЕРОЯ" short_description="контрудар">Уникальный навык рыцаря.</variable>
+  <variable name="SKILL_GATING" category="ID_СКИЛЛА_ГЕРОЯ" short_description="открытие врат">Уникальный навык повелителя демонов.</variable>
+  <variable name="SKILL_NECROMANCY" category="ID_СКИЛЛА_ГЕРОЯ" short_description="некромантия">Уникальный навык некроманта.</variable>
+  <variable name="SKILL_AVENGER" category="ID_СКИЛЛА_ГЕРОЯ" short_description="мститель">Уникальный навык рейнджера.</variable>
+  <variable name="SKILL_ARTIFICIER" category="ID_СКИЛЛА_ГЕРОЯ" short_description="мастер артефактов">Уникальный навык мага.</variable>
+  <variable name="SKILL_INVOCATION" category="ID_СКИЛЛА_ГЕРОЯ" short_description="неодолимая магия">Уникальный навык чернокнижника.</variable>
+  <variable name="PERK_PATHFINDING" category="ID_ПЕРКА_ГЕРОЯ" short_description="нахождение пути (логистика)">Штрафы за перемещение по пересеченной местности уменьшатся на 50%.</variable>
+  <variable name="PERK_SCOUTING" category="ID_ПЕРКА_ГЕРОЯ" short_description="разведка (логистика)">Герой получает +4 ед. к своему радиусу обзора и теперь способен видеть точное число существ в нейтральных отрядах, вражеских армиях и гарнизонах, если они находятся в пределах этого радиуса.</variable>
+  <variable name="PERK_NAVIGATION" category="ID_ПЕРКА_ГЕРОЯ" short_description="навигация (логистика)">Дальность перемещения героя по морю увеличивается на 50%.</variable>
+  <variable name="PERK_FIRST_AID" category="ID_ПЕРКА_ГЕРОЯ" short_description="первая помощь (управление машинами)">Умение, которое позволяет управлять палаткой первой помощи. Если в бою палатка была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="PERK_BALLISTA" category="ID_ПЕРКА_ГЕРОЯ" short_description="баллиста (управление машинами)">Умение, которое позволяет управлять баллистой вручную, к тому же она получает один дополнительный выстрел. Если в бою баллиста была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="PERK_CATAPULT" category="ID_ПЕРКА_ГЕРОЯ" short_description="катапульта (управление машинами)">Умение, которое позволяет управлять катапультой вручную, к тому же она получает один дополнительный выстрел. Если в бою тележка с боеприпасами была уничтожена, то после сражения она будет восстановлена.</variable>
+  <variable name="PERK_INTELLIGENCE" category="ID_ПЕРКА_ГЕРОЯ" short_description="притяжение магии (образование)">Умение, которое увеличивает максимально возможный запас маны на 50%.</variable>
+  <variable name="PERK_SCHOLAR" category="ID_ПЕРКА_ГЕРОЯ" short_description="ученый (образование)">Умение, которое позволяет героям учить друг у друга различные заклинания.</variable>
+  <variable name="PERK_EAGLE_EYE" category="ID_ПЕРКА_ГЕРОЯ" short_description="разгадка тайного (образование)">Умение, которое позволяет герою выучить неизвестное заклинание, использованное в бою существом или вражеским героем (герой сможет выучить заклинание, только если у него развита соответствующая школа и в ней достигнут соответствующий уровне).</variable>
+  <variable name="PERK_RECRUITMENT" category="ID_ПЕРКА_ГЕРОЯ" short_description="сбор войск (лидерство)">Умение, которое увеличивает недельный прирост существ 1-, 2- и 3-го уровня на +3, +2 и +1 ед. соответственно. Чтобы эффект возымел действие, герой должен находиться в городе в последний день недели.</variable>
+  <variable name="PERK_ESTATES" category="ID_ПЕРКА_ГЕРОЯ" short_description="управление казной (лидерство)">Герой ежедневно жертвует в казну 250 золотых.</variable>
+  <variable name="PERK_DIPLOMACY" category="ID_ПЕРКА_ГЕРОЯ" short_description="дипломатия (лидерство)">Умение, которое позволяет герою договариваться с враждебными существами. Увеличивает шансы на присоединение существ и уменьшает их плату за это.</variable>
+  <variable name="PERK_RESISTANCE" category="ID_ПЕРКА_ГЕРОЯ" short_description="магическое сопротивление (удача)">Умение, которое усиливает сопротивление магии для всех существ в армии героя на 15%. Существует большая вероятность того, что на существ не подействуют заклинания противника.</variable>
+  <variable name="PERK_LUCKY_STRIKE" category="ID_ПЕРКА_ГЕРОЯ" short_description="солдатская удача (удача)">Гарантируется, что полезные умения существ в армии героя (такие, как «Оглушающий удар» латника) будут использоваться чаще.</variable>
+  <variable name="PERK_FORTUNATE_ADVENTURER" category="ID_ПЕРКА_ГЕРОЯ" short_description="удача в пути (удача)">Во время путешествий герой находит больше золота и ресурсов и в целом становится удачливее</variable>
+  <variable name="PERK_TACTICS" category="ID_ПЕРКА_ГЕРОЯ" short_description="тактика (нападение)">Увеличивает область для расстановки войск на боевой арене на один ряд.</variable>
+  <variable name="PERK_ARCHERY" category="ID_ПЕРКА_ГЕРОЯ" short_description="стрельба (нападение)">Урон, наносимый стрельбой, увеличивается на 20%.</variable>
+  <variable name="PERK_FRENZY" category="ID_ПЕРКА_ГЕРОЯ" short_description="боевое безумие (нападение)">Минимальный и максимальный урон, наносимый каждым существом под командованием героя, увеличивается на 1. Умение придется кстати, если в армии героя много существ низкого уровня.</variable>
+  <variable name="PERK_PROTECTION" category="ID_ПЕРКА_ГЕРОЯ" short_description="отражение (защита)">Умение, которое уменьшает урон, наносимый вашим существам магическими атаками, на 15%.</variable>
+  <variable name="PERK_EVASION" category="ID_ПЕРКА_ГЕРОЯ" short_description="уклонение (защита)">Умение, которое уменьшает урон, наносимый вашим существам стрелками, на 20%.</variable>
+  <variable name="PERK_TOUGHNESS" category="ID_ПЕРКА_ГЕРОЯ" short_description="стойкость (защита)">Количество единиц жизни всех ваших существ увеличивается на 2 (особенно выгодно использовать в случае большой армии).</variable>
+  <variable name="PERK_MYSTICISM" category="ID_ПЕРКА_ГЕРОЯ" short_description="восполнение маны (чародейство)">Восполнение маны удваивается.</variable>
+  <variable name="PERK_WISDOM" category="ID_ПЕРКА_ГЕРОЯ" short_description="мудрость (чародейство)">Позволяет герою выучить заклинания третьего круга вне зависимости от достигнутого уровня в конкретной школе магии.</variable>
+  <variable name="PERK_ARCANE_TRAINING" category="ID_ПЕРКА_ГЕРОЯ" short_description="тайные знания (чародейство)">Для всех заклинаний количество затрачиваемой маны уменьшается на 20%.</variable>
+  <variable name="PERK_MASTER_OF_ICE" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель холода (магия Хаоса)">У заклинаний «Ледяная глыба» и «Кольцо холода» появляется замораживающий эффект. Замороженный отряд теряет способность действовать.</variable>
+  <variable name="PERK_MASTER_OF_FIRE" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель огня (магия Хаоса)">Умение, которое позволяет заклинаниям «Огненный шар» и «Армагеддон» повреждать доспех. Существа, на которых подействовали эти заклинания, лишаются 50% защиты на один ход.</variable>
+  <variable name="PERK_MASTER_OF_LIGHTNINGS" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель бурь (магия Хаоса)">У заклинаний «Молния» и «Цепь молний» (только для первой цели) появляется оглушающий эффект — т.е. ход отряда существ, в который попала молния, начинается позднее, чем обычно.</variable>
+  <variable name="PERK_MASTER_OF_CURSES" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель проклятий (магия Тьмы)">Умение, которое распространяет эффект заклинаний «Ослабление» и «Немощность» на всех, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы.</variable>
+  <variable name="PERK_MASTER_OF_MIND" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель разума (магия Тьмы)">Умение, которое распространяет эффект заклинаний «Замедление» и «Рассеянность» на всех, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы.</variable>
+  <variable name="PERK_MASTER_OF_SICKNESS" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель боли (магия Тьмы)">Умение, которое заставляет действовать заклинания «Чума» и «Разрушающий луч» в определенной области, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы. Добавляет +4 к «Колдовству» для заклинания «Нечестивое слово».</variable>
+  <variable name="PERK_MASTER_OF_BLESSING" category="ID_ПЕРКА_ГЕРОЯ" short_description="дарующий благословение (магия Света)">Умение, которое распространяет эффект заклинаний «Божественная сила» на всех и заставляет действовать заклинание «Снятие чар» в определенной области, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы.</variable>
+  <variable name="PERK_MASTER_OF_ABJURATION" category="ID_ПЕРКА_ГЕРОЯ" short_description="дарующий защиту (магия Света)">Умение, которое распространяет эффект заклинаний «Уклонение» и «Каменная кожа» на всех, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы.</variable>
+  <variable name="PERK_MASTER_OF_WRATH" category="ID_ПЕРКА_ГЕРОЯ" short_description="гнев праведный (магия Света)">Умение, которое распространяет эффект заклинаний «Карающий удар» и «Ускорение» на всех, но удваивает количество используемой на них маны. Для сотворения этих заклинаний герой тратит только половину своей инициативы. Добавляет +4 к «Колдовству» для заклинания «Святое слово».</variable>
+  <variable name="PERK_MASTER_OF_QUAKES" category="ID_ПЕРКА_ГЕРОЯ" short_description="хозяин земли (магия Призыва)">Действие заклинаний «Огненная ловушка» и «Землетрясение» усиливается (для этих заклинаний «Колдовство» увеличивается на +4).</variable>
+  <variable name="PERK_MASTER_OF_CREATURES" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель чар (магия Призыва)">Действие заклинаний «Призыв феникса» и «Призыв элементалей» усиливается (для этих заклинаний «Колдовство» увеличивается на +4).</variable>
+  <variable name="PERK_MASTER_OF_ANIMATION" category="ID_ПЕРКА_ГЕРОЯ" short_description="повелитель жизни (магия Призыва)">Действие заклинаний «Волшебный кулак» и «Поднятие мертвых» усиливается (для этих заклинаний «Колдовство» увеличивается на 4 ед.).</variable>
+  <variable name="PERK_HOLY_CHARGE" category="ID_ПЕРКА_ГЕРОЯ" short_description="надзор (Рыцарь)">Рыцарь получает особый боевой навык охранять один из своих отрядов до конца сражения, нанося урон вражеским существам, атакующим данный отряд.</variable>
+  <variable name="PERK_PRAYER" category="ID_ПЕРКА_ГЕРОЯ" short_description="молитва (Рыцарь)">Рыцарь получает особое боевое умение временно поднимать боевой дух и усиливать инициативу, нападение и защиту своих войск.</variable>
+  <variable name="PERK_EXPERT_TRAINER" category="ID_ПЕРКА_ГЕРОЯ" short_description="опытный военачальник (Рыцарь)">Затраты на обучение войск в городах Ордена Порядка на 10% меньше обычных. Чтобы это умение подействовало, рыцарь должен находиться в городе, где построены тренировочные залы.</variable>
+  <variable name="PERK_CONSUME_CORPSE" category="ID_ПЕРКА_ГЕРОЯ" short_description="пожиратель душ (Повелитель демонов)">Повелитель демонов получает особое боевое умение восстанавливать свой запас маны, пожирая трупы павших существ. Поглощенные трупы исчезают с поля боя.</variable>
+  <variable name="PERK_DEMONIC_FIRE" category="ID_ПЕРКА_ГЕРОЯ" short_description="адский огонь (Повелитель демонов)">Существам под командованием повелителя демонов даруется 30%-ный шанс нанести дополнительный огненный урон во время атаки. Величина урона зависит от «Колдовства» героя. На поддержку работы данного умения расходуется мана.</variable>
+  <variable name="PERK_DEMONIC_STRIKE" category="ID_ПЕРКА_ГЕРОЯ" short_description="знак проклятого (Повелитель демонов)">Повелитель демонов получает особое боевое умение наказывать вражеское существо, если оно атакует, парирует удар или творит какое-либо заклинание. После применения эффект умения длится до конца сражения. Если существо ничего не делает или передвигается не атакуя, оно не подвергнется действию умения.</variable>
+  <variable name="PERK_RAISE_ARCHERS" category="ID_ПЕРКА_ГЕРОЯ" short_description="подъем лучников (Некромант)">Позволяет некроманту поднимать костяных лучников вместо костяных воинов.</variable>
+  <variable name="PERK_NO_REST_FOR_THE_WICKED" category="ID_ПЕРКА_ГЕРОЯ" short_description="вечное рабство (Некромант)">Некромант получает способность поднимать после боя один из своих отрядов нежити.</variable>
+  <variable name="PERK_DEATH_SCREAM" category="ID_ПЕРКА_ГЕРОЯ" short_description="крик баньши (Некромант)">Герою даруется способность лично взывать к смерти во время боя. У всех вражеских существ из плоти и крови боевой дух и удача уменьшаются на -1 ед., инициатива на 10%.</variable>
+  <variable name="PERK_MULTISHOT" category="ID_ПЕРКА_ГЕРОЯ" short_description="ливень из стрел (Рейнджер)">Это умение позволяет рейнджеру атаковать всех вражеских существ, которые представлены в его списке заклятых врагов. Герой наносит им +3 ед. урона от своего «Нападения».</variable>
+  <variable name="PERK_SNIPE_DEAD" category="ID_ПЕРКА_ГЕРОЯ" short_description="смертельный выстрел">Это умение позволяет рейнджеру атаковать на поле боя любое вражеское существо. Герой наносит существам +3 ед. урона от своего уровня. Если существо присутствует в списке заклятых врагов рейнджера, то при нанесении критического удара урон удваивается, и после этого минимум одно существо всегда умирает.</variable>
+  <variable name="PERK_IMBUE_ARROW" category="ID_ПЕРКА_ГЕРОЯ" short_description="заколдованная стрела">Умение, которое позволяет рейнджеру зачаровывать свои стрелы. После выстрела рейнджера («Ливень из стрел» или обычная атака героя) цель получает урон не только от попадания стрелы, но и от заклинания, которым последняя зачарована. На эти заклинания расходуется мана героя. Действие умения продлится до конца схватки или пока у рейнджера не закончится мана.</variable>
+  <variable name="PERK_MAGIC_BOND" category="ID_ПЕРКА_ГЕРОЯ" short_description="знак волшебника (Маг)">Особое боевое умение. Колдун связывает себя с жертвой с помощью «Знака волшебника» до конца сражения, благодаря чему любые последующие заклинания, направленные против жертвы, бьют по ней с удвоенной силой и требуют столько маны, сколько требуется для удвоения эффекта. Более того, каждое заклинание, направленное против другого существа, также воздействуют и на нее, если это возможно. Если маны не хватает, усиления не происходит.</variable>
+  <variable name="PERK_MELT_ARTIFACT" category="ID_ПЕРКА_ГЕРОЯ" short_description="поглощение артефакта (Маг)">Особое боевое умение. Позволяет герою уничтожать в бою мини-артефакты, переданные дружественным существам, чтобы восполнить запас маны.</variable>
+  <variable name="PERK_MAGIC_MIRROR" category="ID_ПЕРКА_ГЕРОЯ" short_description="волшебное зеркало (Маг)">Каждое заклинание противника, наносящее урон или накладывающее проклятие, имеет шанс отразиться в другую цель, включая существ врага.</variable>
+  <variable name="PERK_EMPOWERED_SPELLS" category="ID_ПЕРКА_ГЕРОЯ" short_description="волна Аркан (Чернокнижник)">Герой получает возможность наносить с помощью заклинаний на 50% больше урона, расходуя при этом вдвое больше маны.</variable>
+  <variable name="PERK_DARK_RITUAL" category="ID_ПЕРКА_ГЕРОЯ" short_description="темный ритуал (Чернокнижник)">Особое умение, применимое только во время путешествий. Герой проводит весь день, совершая ритуал, и тем самым восполняет свой запас маны. Может проводиться только с начала дня.</variable>
+  <variable name="PERK_ELEMENTAL_VISION" category="ID_ПЕРКА_ГЕРОЯ" short_description="чувство стихий (Чернокнижник)">Позволяет чернокнижнику видеть стихии, связанные с вражеским существом, и наносить усиленный урон заклинаниями магии Хаоса, принадлежащими к противоположным стихиям.</variable>
+  <variable name="KNIGHT_FEAT_ROAD_HOME" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="родные земли">Все существа в армии героя (рыцаря или рейнджера) получают +1 ед. к скорости перемещения, если сражение происходит на земле, покрытой травой.</variable>
+  <variable name="KNIGHT_FEAT_TRIPLE_BALLISTA" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="скорострельная баллиста">Баллиста получает еще один дополнительный выстрел (до трех последовательных выстрелов).</variable>
+  <variable name="KNIGHT_FEAT_ENCOURAGE" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="воодушевление">Рыцарь получает особое боевое умение воодушевлять свои войска на поле боя, что позволяет им делать свои ходы быстрее.</variable>
+  <variable name="KNIGHT_FEAT_RETRIBUTION" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="воздаяние">Чем выше боевой дух существ под командованием героя, тем больший урон они нанесут врагу.</variable>
+  <variable name="KNIGHT_FEAT_HOLD_GROUND" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="глухая оборона">При использовании приказа «Оборона» у войск под командованием героя увеличивается защита на 60%.</variable>
+  <variable name="KNIGHT_FEAT_GUARDIAN_ANGEL" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="ангел-хранитель">Когда все воины рыцаря падут в битве, ангел, призванный на поле боя, воскресит самый мощный отряд существ, а затем исчезнет.</variable>
+  <variable name="KNIGHT_FEAT_STUDENT_AWARD" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="выпускник">Столь увлеченно учившемуся герою даруется +2 ед. «Знания» и дополнительно +1000 ед. опыта.</variable>
+  <variable name="KNIGHT_FEAT_GRAIL_VISION" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="покровительство Асхи">Теперь герой «сердцем чувствует», где находится Слеза Асхи. Попытки выкопать Слезу там, где она примерно находится, обычно заканчиваются успехом.</variable>
+  <variable name="KNIGHT_FEAT_CASTER_CERTIFICATE" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="тайное преимущество">За достижения на поле чародейства «Колдовство» героя увеличивается на +2 ед., и он получает премию в 100 ед. маны.</variable>
+  <variable name="KNIGHT_FEAT_ANCIENT_SMITHY" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="огненная ярость">Отряды под командованиям героя наносят вражеским существам дополнительный урон стихией Огня.</variable>
+  <variable name="KNIGHT_FEAT_PARIAH" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="падший рыцарь">Посвятив себя изучению всех секретов магии Тьмы, рыцарь становится изгоем. У войск под командованием рыцаря снижается боевой дух на 1 ед., но действие всех заклинаний Темной магии становится мощнее (+5 ед. к эффективному «Колдовству» для этих заклинаний).</variable>
+  <variable name="KNIGHT_FEAT_ELEMENTAL_BALANCE" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="стихийное равновесие">Превосходное знание магии Призыва позволяет герою уравновешивать ситуацию в сражениях против опытных призывающих. Каждый раз, когда противник использует заклинание «Призыв элементалей», у  героя появляется такая же группа элементалей противоположной стихии, которая сражается на его стороне. Если в армии героя присутствуют фениксы, их отряд дублируется.</variable>
+  <variable name="KNIGHT_FEAT_ABSOLUTE_CHARGE" category="ID_ФИТА_ГЕРОЯ_РЫЦАРЬ" short_description="неумолимая сила">Действие умения «Надзор» наносит тройной урон.</variable>
+  <variable name="DEMON_FEAT_QUICK_GATING" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="быстрое открытие врат">Повелитель демонов усовершенствовал принцип переноса существ из ада. Время до наступления следующего хода отряда, открывшего врата, уменьшится в два раза.</variable>
+  <variable name="DEMON_FEAT_MASTER_OF_SECRETS" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="хранитель тайного">Благодаря глубокому постижению тайн сотворения заклинаний герой получает +2 ед. к «Колдовству».</variable>
+  <variable name="DEMON_FEAT_TRIPLE_CATAPULT" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="серный дождь">Катапульта получает еще один дополнительный выстрел.</variable>
+  <variable name="DEMON_FEAT_GATING_MASTERY" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="хозяин врат">Умение «Открытие врат» призывает на 20% существ больше, чем обычно.</variable>
+  <variable name="DEMON_FEAT_CRITICAL_GATING" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="широкие врата ада">Существует 10-35%-ный шанс (в зависимости от удачи героя), что призванный отряд будет в два раза больше, чем обычно.</variable>
+  <variable name="DEMON_FEAT_CRITICAL_STRIKE" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="дьявольский удар">Дьявольский удар усиливает умение «Знак проклятого». Существует вероятность в 40%, что «Знак проклятого», сотворенный повелителем демонов, нанесет цели двойной урон.</variable>
+  <variable name="DEMON_FEAT_DEMONIC_RETALIATION" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="огненное возмездие">Благодаря «Огненному возмездию» действие умения «Адский огонь» распространяется не только на атакующие, но и на оборонительные удары отрядов под командованием повелителя демонов.</variable>
+  <variable name="DEMON_FEAT_EXPLODING_CORPSES" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="взрывающиеся трупы">Когда повелитель демонов поглощает трупы, чтобы восстановить запас маны, они взрываются, нанося урон всем существам, включая дружественные, которые стоят рядом.</variable>
+  <variable name="DEMON_FEAT_DEMONIC_FLAME" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="иссушающее пламя">«Иссушающее пламя» усиливает умение «Адский огонь». Огненный урон, наносимый вражескому существу с помощью умения «Адский огонь», увеличивается на 50%.</variable>
+  <variable name="DEMON_FEAT_WEAKENING_STRIKE" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="ослабляющий удар">Ослабляющий удар усиливает умение «Надзор» у рыцаря и «Знак проклятого» у повелителя демонов. Теперь оно не только наносит цели урон, но также проклинает с помощью заклинания «Ослабление».</variable>
+  <variable name="DEMON_FEAT_FIRE_PROTECTION" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="защита от огня">Существа под управлением героя получают только 50% урона от огненных атак и невосприимчивы к действию умения «Повелитель огня».</variable>
+  <variable name="DEMON_FEAT_FIRE_AFFINITY" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="огненные воины">Герою даруется заклинание «Призыв элементалей». Вне зависимости от обстоятельств это заклинание вызовет огненных элементалей. Существ будет на 40% больше, чем обычно.</variable>
+  <variable name="DEMON_FEAT_ABSOLUTE_GATING" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="зов Ургаша">Перенос через адские врата теперь производится мгновенно.</variable>
+  <variable name="NECROMANCER_FEAT_DEATH_TREAD" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="поступь смерти">Во время осады вражеского замка все существа в армии героя получают +4 ед. к скорости.</variable>
+  <variable name="NECROMANCER_FEAT_LAST_AID" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="чумная палатка">Палатка первой помощи получает способность наносить урон живым вражеским существам.</variable>
+  <variable name="NECROMANCER_FEAT_LORD_OF_UNDEAD" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="повелитель мертвых">Некромант получает +1 ед. к «Знанию» благодаря глубокому постижению смерти. Навык «Некромантия» увеличивается на 5%.</variable>
+  <variable name="NECROMANCER_FEAT_HERALD_OF_DEATH" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="вестник смерти">Все нейтральные существа, которые присоединяются к армии некроманта, будут преобразованы в нежить соответствующего уровня.</variable>
+  <variable name="NECROMANCER_FEAT_DEAD_LUCK" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="смертельная неудача">Герой получает умение воздействовать на удачу вражеских существ. Удача всех воинов противника уменьшается на 1 ед.</variable>
+  <variable name="NECROMANCER_FEAT_CHILLING_STEEL" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="холодная сталь">Герой зачаровывает оружие всех существ в своей армии так, что они могут наносить дополнительный урон льдом.</variable>
+  <variable name="NECROMANCER_FEAT_CHILLING_BONES" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="могильный холод">Умение, которое увеличивает защиту нежити под командованием некроманта с помощью мощных ледяных чар. Любое существо, вступившее в ближний бой с зачарованными воинами, получит урон льдом.</variable>
+  <variable name="NECROMANCER_FEAT_SPELLPROOF_BONES" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="защита нежити от магии">Урон, нанесенный заклинаниями магии Хаоса всем существам под командованием некроманта, снижается на 20%.</variable>
+  <variable name="NECROMANCER_FEAT_DEADLY_COLD" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="смертельный холод">Умение, которое увеличивает мощь заклинаний «Ледяная глыба» и «Кольцо холода», творимых некромантом. Эти заклинания убивают на одно существо больше, если у отряда существ нет невосприимчивости к холоду.</variable>
+  <variable name="NECROMANCER_FEAT_SPIRIT_LINK" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="духовная связь">Это боевое умение связывает души некроманта и существ до конца сражения. Если связанное существо получает урон, некромант насыщается страданиями существа, и его запас маны увеличивается.</variable>
+  <variable name="NECROMANCER_FEAT_TWILIGHT" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="сумерки">Для всех заклинаний магии Света и магии Тьмы «Колдовство» героя увеличивается на +3 ед.</variable>
+  <variable name="NECROMANCER_FEAT_HAUNT_MINE" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="обитаемые шахты">После захвата шахты некромант населяет ее привидениями, число которых будет зависеть от номера недели.</variable>
+  <variable name="NECROMANCER_FEAT_ABSOLUTE_FEAR" category="ID_ФИТА_ГЕРОЯ_ПОВЕЛИТЕЛЬ ДЕМОНОВ" short_description="крик ужаса">Особое умение «Крик баньши» вдобавок будет понижать боевой дух противника на -6 ед.</variable>
+  <variable name="RANGER_FEAT_DISGUISE_AND_RECKON" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="бесшумный преследователь">Враг увидит, что отряды под командованием героя состоят только из самых сильных существ, присутствующих в его героя, и не узнает их численности. Также эта способность позволяет увидеть боевой настрой нейтральных существ и увеличить поле обзора героя на 12 клеток.</variable>
+  <variable name="RANGER_FEAT_IMBUE_BALLISTA" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="заколдованная баллиста">Умение «Заколдованная стрела» теперь будет влиять на баллисту. Все снаряды баллисты будут нести чары рейнджера, поэтому запас маны последнего будет уменьшаться.</variable>
+  <variable name="RANGER_FEAT_CUNNING_OF_THE_WOODS" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="лесное коварство">Шанс нанести критический удар, используя навык «Мститель», увеличивается на +10%.</variable>
+  <variable name="RANGER_FEAT_FOREST_GUARD_EMBLEM" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="лесной лидер">Умение, которое добавляет +2 ед. к нападению рейнджера. Танцующие со смертью присоединяются к армии рейнджера, чтобы послужить его делу. Число танцующих со смертью зависит от номера недели.</variable>
+  <variable name="RANGER_FEAT_ELVEN_LUCK" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="эльфийская удача">Удачная атака существ из армии героя наносит на 25% больше урона, чем обычная удачная атака.</variable>
+  <variable name="RANGER_FEAT_FOREST_RAGE" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="лесная ярость">Все существа Лесного Союза в армии рейнджера получают +1 ед. к максимальному урону.</variable>
+  <variable name="RANGER_FEAT_LAST_STAND" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="битва до последнего">Войска под командованием героя одарены изумительной выносливостью. Если вражеские существа атакуют отряд героя и убивают всех воинов, последний из отряда остается в живых с 1 ед. жизни.</variable>
+  <variable name="RANGER_FEAT_INSIGHTS" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="тайное откровение">К «Колдовству» героя добавляется +2 ед. Герой также получает новое заклинание в свою колдовскую книгу.</variable>
+  <variable name="RANGER_FEAT_SUN_FIRE" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="взрыв маны">Герой с помощью сил природы воздействует на вражеских колдунов. Как только отряды из армии противника сотворяют заклинание, они несут десятикратный урон от уровня героя.</variable>
+  <variable name="RANGER_FEAT_SOIL_BURN" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="проклятая земля">Герой с помощью сил природы оказывает воздействие на отряды, которые сражаются в ближнем бою. Каждый раз при передвижении они несут урон. Величина этого урона зависит от уровня героя.</variable>
+  <variable name="RANGER_FEAT_STORM_WIND" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="штормовой ветер">Рейнджер взывает к силам природы, и они откликаются на зов, уменьшая инициативу и скорость летающих существ противника на 1 ед.</variable>
+  <variable name="RANGER_FEAT_FOG_VEIL" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="туманная завеса">Герой взывает к силам природы, чтобы они помогли ему справиться со стрелками. У всех вражеских стрелков инициатива и наносимый урон снижаются на 10%.</variable>
+  <variable name="RANGER_FEAT_ABSOLUTE_LUCK" category="ID_ФИТА_ГЕРОЯ_РЕЙНДЖЕР" short_description="истинная удача">Существам в армии героя всегда везет во время атаки.</variable>
+  <variable name="WIZARD_FEAT_MARCH_OF_THE_MACHINES" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="марш големов">У всех големов под командованием героя скорость и инициатива увеличится на +2 ед.</variable>
+  <variable name="WIZARD_FEAT_REMOTE_CONTROL" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="власть над машинами">В начале боя одна из вражеских боевых машин переходит под ваше командование.</variable>
+  <variable name="WIZARD_FEAT_ACADEMY_AWARD" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="колдовская награда">Герой получает +2 ед. к «Колдовству» и в качестве единовременной платы 1000 золотых.</variable>
+  <variable name="WIZARD_FEAT_ARTIFICIAL_GLORY" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="преданность машин">На боевые машины и големов всегда действует эффект положительного боевого духа.</variable>
+  <variable name="WIZARD_FEAT_SPOILS_OF_WAR" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="трофеи">Выйдя из сражения победителем, герой получает трофеи — немного золота и ресурсов.</variable>
+  <variable name="WIZARD_FEAT_WILDFIRE" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="огненные стрелы">Баллиста под командованием героя игнорирует защиту противника и наносит дополнительный огненный урон.</variable>
+  <variable name="WIZARD_FEAT_SEAL_OF_PROTECTION" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="сопротивление">Герой получает +2 ед. к защите.</variable>
+  <variable name="WIZARD_FEAT_COUNTERSPELL" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="контрзаклинание">Особое боевое умение, гасящее любые последствия следующего заклинания противника, но расходующее в два раза больше маны, чем потребовалось для этого заклинания.</variable>
+  <variable name="WIZARD_FEAT_MAGIC_CUSHION" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="истощение магии">Урон, наносимый вражескими заклинаниями, снижается на 20%.</variable>
+  <variable name="WIZARD_FEAT_SUPRESS_DARK" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="печать Тьмы">Вражеский герой вынужден тратить в два раза больше маны, чтобы использовать в бою заклинания магии Тьмы.</variable>
+  <variable name="WIZARD_FEAT_SUPRESS_LIGHT" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="печать Света">Вражеский герой вынужден тратить в два раза больше маны, чтобы использовать в бою заклинания магии Света.</variable>
+  <variable name="WIZARD_FEAT_UNSUMMON" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="изгнание">Особое боевое умение. Изгоняет часть призванных существ. Количество изгнанных сущест зависит от уровня героя.</variable>
+  <variable name="WIZARD_FEAT_ABSOLUTE_WIZARDY" category="ID_ФИТА_ГЕРОЯ_МАГ" short_description="колдовское всеведение">Все заклинания, которые существуют, будут записаны в колдовскую книгу героя, и при сотворении их сила будет наивысшей.</variable>
+  <variable name="WARLOCK_FEAT_TELEPORT_ASSAULT" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="внезапная атака">Герой получает заклинание «Телепорт». При сотворении этого заклинания у перенесенных существ увеличивается инициатива.</variable>
+  <variable name="WARLOCK_FEAT_SHAKE_GROUND" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="сотрясение земли">Герой получает заклинание «Землетрясение», которое не только разрушает стены, но и ранит и оглушает всех существ, находящихся за крепостной стеной.</variable>
+  <variable name="WARLOCK_FEAT_DARK_REVELATION" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="темное откровение">Герой получает право на дополнительное повышение уровня.</variable>
+  <variable name="WARLOCK_FEAT_FAST_AND_FURIOUS" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="аура скорости">Скорость передвижения в бою у всех существ в армии героя увеличивается на +1 ед.</variable>
+  <variable name="WARLOCK_FEAT_LUCKY_SPELLS" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="удачливый чародей">Теперь удача может повернуться так, что разрушительные заклинания, творимые героем, нанесут в два раза больше урона.</variable>
+  <variable name="WARLOCK_FEAT_POWER_OF_HASTE" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="волшебство скорости">Герой получает заклинание «Ускорение (общее)» и способность творить его, не тратя маны.</variable>
+  <variable name="WARLOCK_FEAT_POWER_OF_STONE" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="прочность камня">Герой получает заклинание «Каменная кожа (общее)» и способность творить его, не используя ману.</variable>
+  <variable name="WARLOCK_FEAT_CHAOTIC_SPELLS" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="изменчивая мана">Благодаря этому навыку количество маны, используемой в заклинаниях, случайным образом уменьшается. Снижение может составлять до 50% и определяется уже во время сотворения заклятия.</variable>
+  <variable name="WARLOCK_FEAT_SECRETS_OF_DESTRUCTION" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="тайны Хаоса">Герой получает +2 ед. к «Знанию» и одно случайное заклинание 1-, 2- или 3-го круга магии Хаоса, которого не было в его книге заклинаний.</variable>
+  <variable name="WARLOCK_FEAT_PAYBACK" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="темное восполнение">Если заклинание не подействовало на отряд существ благодаря их сопротивлению магии, то герою возвращается вся потраченная на заклятие мана, и его следующий ход наступает раньше.</variable>
+  <variable name="WARLOCK_FEAT_ELITE_CASTERS" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="тайны Света">Колдуны, состоящие в армии героя, потратят только половину маны, которая требуется на создание заклинания.</variable>
+  <variable name="WARLOCK_FEAT_ELEMENTAL_OVERKILL" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="экзорцизм">Все заклинания магии Хаоса, сотворенные героем, наносят призванным существам двойной урон.</variable>
+  <variable name="WARLOCK_FEAT_ABSOLUTE_CHAINS" category="ID_ФИТА_ГЕРОЯ_ЧЕРНОКНИЖНИК" short_description="ярость стихий">«Цепь элементов» наносит двойной урон.</variable>
+  <variable name="HERO_SKILL_RUNELORE" category="ID_СКИЛЛА ГЕРОЯ_РУННЫЙ МАСТЕР" short_description="знание рун">Основы: позволяет в сражении накладывать магические руны 1-2-го кругов на своих существ, временно давая им новые способности и изменяя характеристики. Развитое: позволяет в сражении накладывать магические руны 3-4-го кругов на своих существ, временно давая им новые способности и изменяя характеристики. Совершенное: позволяет в сражении накладывать магические руны 5-го круга на своих существ, временно давая им новые способности и изменяя характеристики. Абсолютное: позволяет накладывать руны без затрат дерева и руды.</variable>
+  <variable name="HERO_SKILL_REFRESH_RUNE" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="обновленная руна">Позволяет обновить ранее начертанную руну (случайную, если их несколько) на выбранном существе, продлевая ее действие и затрачивая на это только 50% «Инициативы».</variable>
+  <variable name="HERO_SKILL_STRONG_RUNE" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="величайшая руна">Позволяет использовать руну второй раз. Количество потребляемых ресурсов увеличится в три раза.</variable>
+  <variable name="HERO_SKILL_FINE_RUNE" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="завершенная руна">Дает 50%-ный шанс не тратить ресурсы на введение в действие руны.</variable>
+  <variable name="HERO_SKILL_QUICKNESS_OF_MIND" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="острый ум (логистика)">В начале сражения герой получает 25%-ный бонус к «Инициативе».</variable>
+  <variable name="HERO_SKILL_RUNIC_MACHINES" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="рунные машины (управление машинами)">«Инициатива» всех боевых машин увеличивается на +3.</variable>
+  <variable name="HERO_SKILL_TAP_RUNES" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="рунный откат (образование)">Возвращает некоторое количество маны (в зависимости от «Колдовства») каждый раз, когда используется какая-либо руна.</variable>
+  <variable name="HERO_SKILL_RUNIC_ATTUNEMENT" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="рунная гармония (лидерство)">Увеличивает «Боевой дух» существа на +2 на один ход после использования руны.</variable>
+  <variable name="HERO_SKILL_DWARVEN_LUCK" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="гномья удача (удача)">Шанс отразить заклинание противника удваивается.</variable>
+  <variable name="HERO_SKILL_OFFENSIVE_FORMATION" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="атакующий хирд (нападение)">Когда отряды гномов стоят близко друг к другу, величина «Нападения» армии героя увеличивается.</variable>
+  <variable name="HERO_SKILL_DEFENSIVE_FORMATION" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="оборонительный хирд (защита)">Когда отряды гномов стоят близко друг к другу, величина «Защиты» армии героя увеличивается.</variable>
+  <variable name="HERO_SKILL_DISTRACT" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="отвлечение (чародейство)">Вражеский герой получит 20%-ный штраф к «Инициативе» после сотворения любого заклинания во время сражения.</variable>
+  <variable name="HERO_SKILL_SET_AFIRE" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="пирокинез (магия Хаоса)">Огненные заклинания, сотворяемые героем в сражении, будут воспламенять врагов, нанося жертве 100% от величины текущего урона в течение следующих 3 ходов.</variable>
+  <variable name="HERO_SKILL_SHRUG_DARKNESS" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="слабость Тьмы (магия Тьмы)">Эффективность заклинаний магии Тьмы, сотворяемых противником, будет такой, словно его «Колдовство» вполовину меньше.</variable>
+  <variable name="HERO_SKILL_ETERNAL_LIGHT" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="вечный Свет (магия Света)">Заклинания магии Света, сотворенные героем, невозможно развеять.</variable>
+  <variable name="HERO_SKILL_RUNIC_ARMOR" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="рунный щит (магия Призыва)">Герой получает заклинание «Небесный щит» и при его сотворении +4 к «Колдовству».</variable>
+  <variable name="HERO_SKILL_ABSOLUTE_PROTECTION" category="ID_ФИТА _ГЕРОЯ_РУННЫЙ_ЖРЕЦ" short_description="абсолютная защита">Обычные атаки против существ героя будут всегда заканчиваться неудачей. Удачливые атаки всегда будут превращаться в обычные. Если противник обладает навыком «Истинная удача», то оба навыка погашают друг друга.</variable>
+  <variable name="TOWN_HEAVEN" category="ID_ГОРОДА" short_description="Орден Порядка">Нет.</variable>
+  <variable name="TOWN_PRESERVE" category="ID_ГОРОДА" short_description="Лесной Союз">Нет.</variable>
+  <variable name="TOWN_ACADEMY" category="ID_ГОРОДА" short_description="Академия Волшебства">Нет.</variable>
+  <variable name="TOWN_DUNGEON" category="ID_ГОРОДА" short_description="Лига Теней">Нет.</variable>
+  <variable name="TOWN_NECROMANCY" category="ID_ГОРОДА" short_description="Некрополис">Нет.</variable>
+  <variable name="TOWN_INFERNO" category="ID_ГОРОДА" short_description="Инферно">Нет.</variable>
+  <variable name="TOWN_FORTRESS" category="ID_ГОРОДА" short_description="Подгорный Народ">Нет.</variable>
+  <variable name="TOWN_BUILDING_TOWN_HALL" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="ратуша">Ратуша открывает новые возможности для строительства и ежедневно приносит в казну 1000 золотых.</variable>
+  <variable name="TOWN_BUILDING_FORT" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="форт">Стены форта обеспечивают защиту вашему городу.</variable>
+  <variable name="TOWN_BUILDING_MARKETPLACE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="рынок">На рынке вы сможете купить и продать ресурсы (чем больше у вас рынков, тем выгоднее обменный курс).</variable>
+  <variable name="TOWN_BUILDING_SHIPYARD" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="верфь">Верфь позволяет вам строить корабли.</variable>
+  <variable name="TOWN_BUILDING_TAVERN" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="таверна">В таверне можно нанять героев. К тому же боевой дух защитников города увеличивается на +1.</variable>
+  <variable name="TOWN_BUILDING_BLACKSMITH" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="кузница">В кузнице можно купить тележку с боеприпасами. Другие боевые машины продаются по тройной цене.</variable>
+  <variable name="TOWN_BUILDING_MAGIC_GUILD" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="гильдия магов">Позволяет герою изучать заклинания, хранящиеся здесь.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_1" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 1-го уровня">Позволяет герою нанимать в городе существ 1-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_2" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 2-го уровня">Позволяет герою нанимать в городе существ 2-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_3" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 3-го уровня">Позволяет герою нанимать в городе существ 3-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_4" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 4-го уровня">Позволяет герою нанимать в городе существ 4-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_5" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 5-го уровня">Позволяет герою нанимать в городе существ 5-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_6" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 6-го уровня">Позволяет герою нанимать в городе существ 6-го уровня.</variable>
+  <variable name="TOWN_BUILDING_DWELLING_7" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жилище существ 7-го уровня">Позволяет герою нанимать в городе существ 7-го уровня.</variable>
+  <variable name="TOWN_BUILDING_GRAIL" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="Слеза Асхи (Грааль)">Позволяет возвести в городе уникальное сооружение.</variable>
+  <variable name="TOWN_BUILDING_WONDER" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description=""></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_0" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 0"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_1" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 1"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_2" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 2"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_3" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 3"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_4" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 4"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_5" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 5"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_6" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 6"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_7" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 7"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_8" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 8"></variable>
+  <variable name="TOWN_BUILDING_SPECIAL_9" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="специальное строение 9"></variable>
+  <variable name="TOWN_BUILDING_HAVEN_TRAINING_GROUNDS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="тренировочные залы (Город Ордена Порядка)">Тренировочные залы позволяют использовать особое умение «Подготовка». Герой может подготовить из войск низшего звена войска высшего звена.</variable>
+  <variable name="TOWN_BUILDING_HAVEN_MONUMENT_TO_FALLEN_HEROES" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="зал героев (Город Ордена Порядка)">Зал героев поддерживает особое умение «Подготовка» и снижает цену подготовки на 40%.</variable>
+  <variable name="TOWN_BUILDING_HAVEN_HOSPITAL" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description=""></variable>
+  <variable name="TOWN_BUILDING_HAVEN_STABLE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="конюшни (Город Ордена Порядка)">Конюшни увеличивают до конца недели дальность перемещения любому герою, посетившему город.</variable>
+  <variable name="TOWN_BUILDING_HAVEN_FARMS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="фермы (Город Ордена Порядка)">Фермы увеличивают прирост крестьян или ополченцев на +5 в неделю.</variable>
+  <variable name="TOWN_BUILDING_INFERNO_INFERNAL_LOOM" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="врата Хаоса (Город Инферно)">Врата Хаоса увеличивают число перенесенных через врата ада существ на 10%. Удача вражеских героев, осаждающих город, уменьшается на  -2 ед.</variable>
+  <variable name="TOWN_BUILDING_INFERNO_ORDER_OF_FIRE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="порождение Хаоса (Город Инферно)">Порождение Хаоса увеличивает еженедельный прирост демонов или огненных демонов на +2.</variable>
+  <variable name="TOWN_BUILDING_INFERNO_HALLS_OF_HORROR" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="залы ужаса (Город Инферно)">Залы ужаса увеличивают еженедельный прирост адских жеребцов и кошмаров на +1.</variable>
+  <variable name="TOWN_BUILDING_INFERNO_SACRIFICIAL_PIT" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жертвенная яма (Город Инферно)">В этом здании можно принести в жертву существ и получить за это дополнительный опыт.</variable>
+  <variable name="TOWN_BUILDING_DUNGEON_ALTAR_OF_ELEMENTS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="алтарь элементов (Город Лиги Теней)">Поддерживает способность «Цепь элементов». Отображает элементы, из которых состоит существо, что позволяет планировать атаки, наносящие больше урона. Существа с противоположными элементами наносят врагу больший урон.</variable>
+  <variable name="TOWN_BUILDING_DUNGEON_RITUAL_PIT" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="жертвенная яма (Город Лиги Теней)">Может увеличить прирост фурий и бестий, минотавров и минотавров-стражей. Здесь можно принести в жертву существ, что способно случайным образом увеличить прирост существ.</variable>
+  <variable name="TOWN_BUILDING_DUNGEON_TRADE_GUILD" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="торговая гильдия (Город Лиги Теней)">Здесь можно купить артефакты. В начале каждой недели гильдия приносит случайный ресурс.</variable>
+  <variable name="TOWN_BUILDING_DUNGEON_TREASURE_DIG_SITE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="алтарь первородных элементов (Город Лиги Теней)">Улучшение алтаря элементов. Поддерживает способность «Цепь элементов». Урон от воздействия на цепи элементов увеличивается на 10%. Чем больше у вас будет алтарей, тем сильнее станет ваше преимущество.</variable>
+  <variable name="TOWN_BUILDING_DUNGEON_HALL_OF_INTRIGUE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="палаты интриги (Город Лиги Теней)">«Знание» всех чернокнижников увеличивается на +1 (совокупно с другими замками).</variable>
+  <variable name="TOWN_BUILDING_ACADEMY_LIBRARY" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="библиотека (Город Академии Волшебства)">Раскрывает одно дополнительное заклинание для каждого круга гильдии магов.</variable>
+  <variable name="TOWN_BUILDING_ACADEMY_ARCANE_FORGE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="кузница артефактов (Город Академии Волшебства)">Позволяет ковать особое снаряжение для существ (т.е. поддерживает умение «Мастер артефактов»).</variable>
+  <variable name="TOWN_BUILDING_ACADEMY_ARTIFACT_MERCHANT" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="лавка артефактов (Город Академии Волшебства)">Здесь продаются артефакты.</variable>
+  <variable name="TOWN_BUILDING_ACADEMY_TREASURE_CAVE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="сокровищница (Город Академии Волшебства)">Увеличивает прирост джиннов/султанов джиннов на +2 в неделю и ежедневно приносит 500 золотых.</variable>
+  <variable name="TOWN_BUILDING_ACADEMY_ELEMENTAL_ENCLAVE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description=""></variable>
+  <variable name="TOWN_BUILDING_PRESERVE_AVENGERS_GUILD" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="гильдия рейнджеров (Город Лесного Союза)">Поддерживает особое умение «Заклятый враг». Позволяет выбрать заклятого врага.</variable>
+  <variable name="TOWN_BUILDING_PRESERVE_AVENGERS_BROTHERHOOD" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="братство рейнджеров (Город Лесного Союза)">Улучшение гильдии мстителей. Поддерживает особое умение «Заклятый враг», увеличивая шанс нанесения критического удара заклятому врагу на +10%.</variable>
+  <variable name="TOWN_BUILDING_PRESERVE_MYSTIC_POND" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="таинственный пруд (Город Лесного Союза)">В начале каждой недели приносит несколько случайных ресурсов.</variable>
+  <variable name="TOWN_BUILDING_PRESERVE_SPARKLING_FONTAINS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="саверкающий фонтан (Город Лесного Союза)">Добавляет +2 к удаче обороняющейся армии.</variable>
+  <variable name="TOWN_BUILDING_PRESERVE_BLOOMING_GROVE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="цветущая роща (Город Лесного Союза)">Увеличивает еженедельный прирост фей и дриад на +4.</variable>
+  <variable name="TOWN_BUILDING_PRESERVE_TREANT_SAMPLING" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="саженцы энтов (Город Лесного Союза)">Увеличивает еженедельный прирост энтов на +1.</variable>
+  <variable name="TOWN_BUILDING_NECROMANCY_AMPLIFIER" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="костяной столп (Некрополис)">Добавляет 10% к навыку «Некромантия» всем героям-некромантам игрока (кумулятивен для всех городов), т.е. поддерживает особое умение некроманта.</variable>
+  <variable name="TOWN_BUILDING_NECROMANCY_UNHOLY_TEMPLE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="храм нижнего мира (Некрополис)">Уменьшает боевой дух атакующих на -2 ед., позволяет превращать чуждых Некрополису существ в нежить (согласно уровню существа, если в городе возведено соответствующее строение).</variable>
+  <variable name="TOWN_BUILDING_NECROMANCY_UNEARHED_GRAVES" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="разоренные могилы (Некрополис)">Увеличивает еженедельный прирост костяных воинов и лучников на +6.</variable>
+  <variable name="TOWN_BUILDING_NECROMANCY_DRAGON_TOMBSTONE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="надгробие дракона (Некрополис)">Увеличивает еженедельный прирост костяных и призрачных драконов на +1.</variable>
+  <variable name="TOWN_BUILDING_NECROMANCY_SHROUD_OF_DARKNESS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description=""></variable>
+  <variable name="TOWN_BUILDING_FORTRESS_RUNIC_SHRINE" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="школа Рун (Город Северных Кланов)">Позволяет герою изучить магические руны различных кругов.</variable>
+  <variable name="TOWN_BUILDING_FORTRESS_ARENA" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="школа Рун (Город Северных Кланов)">Борцовская арена обеспечивает прирост костоломов и берсерков на +4 в неделю.</variable>
+  <variable name="TOWN_BUILDING_FORTRESS_GUARDPOST" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="школа Рун (Город Северных Кланов)">Во время обороны города сторожевая башня позволяет вам добавить дополнительный отряд.</variable>
+  <variable name="TOWN_BUILDING_FORTRESS_RUNIC_STONEWORKS" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="школа Рун (Город Северных Кланов)">Когда наложены магические скрепы, стены города становятся крепче и, значит, их сложнее разрушить во время осады.</variable>
+  <variable name="TOWN_BUILDING_FORTRESS_RUNIC_ACADEMY" category="ID_ГОРОДСКОЙ_ПОСТРОЙКИ" short_description="школа Рун (Город Северных Кланов)">Святыня обеспечивает прирост жрецов и высших жрецов на +1 в неделю.</variable>
+  <variable name="MONSTER_MOOD_FRIENDLY" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="настроение дружественное">Нет.</variable>
+  <variable name="MONSTER_MOOD_AGGRESSIVE" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="настроение агрессивное">Нет.</variable>
+  <variable name="MONSTER_MOOD_HOSTILE" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="настроение враждебное">Нет.</variable>
+  <variable name="MONSTER_MOOD_WILD" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="настроение непримиримое">Нет.</variable>
+  <variable name="MONSTER_COURAGE_ALWAYS_JOIN" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="склонен всегда присоединяться">Нет.</variable>
+  <variable name="MONSTER_COURAGE_ALWAYS_FIGHT" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="склонен всегда сражаться">Нет.</variable>
+  <variable name="MONSTER_COURAGE_CAN_FLEE_JOIN" category="ID_НАСТРОЕНИЯ_МОНСТРА" short_description="склонен присоединиться с вероятностью">Нет.</variable>
+  <variable name="RED_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (красный)">Нет.</variable>
+  <variable name="BLUE_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (синий)">Нет.</variable>
+  <variable name="GREEN_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (зеленый)">Нет.</variable>
+  <variable name="YELLOW_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (желтый)">Нет.</variable>
+  <variable name="ORANGE_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (оранжевый)">Нет.</variable>
+  <variable name="TEAL_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (бирюзовый)">Нет.</variable>
+  <variable name="PURPLE_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (пурпурный)">Нет.</variable>
+  <variable name="TAN_KEY" category="ID_СТРАЖА_ГРАНИЦЫ" short_description="страж границы (коричневый)">Нет.</variable>
+  <variable name="NEW_DAY_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;начало каждого дня&quot;">Триггер будет вызываться по наступлении каждого нового дня.</variable>
+  <variable name="WAR_FOG_ENTER_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;вступление героя в область &quot;тумана войны&quot;">Триггер вызывается, когда какой-либо герой вступает в область «тумана войны».</variable>
+  <variable name="PLAYER_ADD_HERO_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;получение игроком нового героя&quot;">Триггер вызывается, когда игрок nPlayerID получает нового героя.</variable>
+  <variable name="PLAYER_REMOVE_HERO_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;потеря игроком героя&quot;">Триггер вызывается, когда игрок nPlayerID теряет героя.</variable>
+  <variable name="OBJECTIVE_STATE_CHANGE_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;изменение задания&quot;">Триггер вызывается, когда состояние задания sObjectiveID для какого-либо игрока меняется.</variable>
+  <variable name="OBJECT_TOUCH_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;посещение игроком объекта&quot;">Триггер вызывается, когда игрок посещает героем в объект с именем sObjectID.</variable>
+  <variable name="OBJECT_CAPTURE_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;смена владельца объекта&quot;">Триггер вызывается, когда объект с именем sObjectID сменил владельца.</variable>
+  <variable name="TOWN_HERO_DEPLOY_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;оставление героем города&quot;">Триггер вызывается, когда герой покидает город.</variable>
+  <variable name="REGION_ENTER_AND_STOP_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;остановка героя в регионе&quot;">Трггер вызывается, когда какой-либо герой завершает ход в регионе с именем sRegionName.</variable>
+  <variable name="REGION_ENTER_WITHOUT_STOP_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;попадание героя в регион&quot;">Триггер вызывается, когда какой-либо герой попадает в регион с именем sRegionName и не заканчивает в нем ход.</variable>
+  <variable name="HERO_LEVELUP_TRIGGER" category="ID_ТРИГГЕРА" short_description="&quot;повышение уровня героя&quot;">Триггер вызывается, когда герой с именем sHeroName повышает уровень.</variable>
+  <variable name="ATTACKER" category="ID_СТОРОНЫ_БОЯ" short_description="атакующая сторона">Нет.</variable>
+  <variable name="DEFENDER" category="ID_СТОРОНЫ_БОЯ" short_description="защищающаяся сторона">Нет.</variable>
+  <variable name="HERO" category="ID_ЮНИТА" short_description="герой">Нет.</variable>
+  <variable name="CREATURE" category="ID_ЮНИТА" short_description="существо">Нет.</variable>
+  <variable name="WAR_MACHINE" category="ID_ЮНИТА" short_description="боевая машина">Нет.</variable>
+  <variable name="BUILDING" category="ID_ЮНИТА" short_description="строение">Нет.</variable>
+  <variable name="BUILDING_WALL" category="ID_СТРОЕНИЯ" short_description="стена">Нет.</variable>
+  <variable name="BUILDING_GATE" category="ID_СТРОЕНИЯ" short_description="ворота">Нет.</variable>
+  <variable name="BUILDING_LEFT_TOWER" category="ID_СТРОЕНИЯ" short_description="левая башня">Нет.</variable>
+  <variable name="BUILDING_BIG_TOWER" category="ID_СТРОЕНИЯ" short_description="центральная башня">Нет.</variable>
+  <variable name="BUILDING_MOAT" category="ID_СТРОЕНИЯ" short_description="ров">Нет.</variable>
+  <variable name="BUILDING_RIGHT_TOWER" category="ID_СТРОЕНИЯ" short_description="правая башня">Нет.</variable>
+  <variable name="BUILDING_MAGIC_WALL" category="ID_СТРОЕНИЯ" short_description="магическая стена">Нет.</variable>
+  <variable name="INVISIBLE" category="ID_АНИМАЦИИ" short_description="невидимость объекта">Объект становится невидимым.</variable>
+  <variable name="IDLE" category="ID_АНИМАЦИИ" short_description="циклическая анимация">Анимация играется циклически до тех пор, пока не будет заменена какой-либо другой анимацией.</variable>
+  <variable name="ONESHOT_STILL" category="ID_АНИМАЦИИ" short_description="однократная анимация с остановкой">Анимация проигрывается однократно, по окончании объект остается в позе последнего кадра анимации.</variable>
+  <variable name="ONESHOT" category="ID_АНИМАЦИИ" short_description="однократная анимация с продолжением">Анимация проигрывается однократно, по окончании для объекта запускается его стандартная IDLE-анимация.</variable>
+  <variable name="MOVE" category="ID_АНИМАЦИИ" short_description="пространственная анимация">Анимация проигрывается циклически по пути в пространстве, по окончании – стандартная IDLE-анимация.</variable>
+  <variable name="NON_ESSENTIAL" category="ID_АНИМАЦИИ" short_description="анимация на &quot;свободном&quot; объекте">То же, что ONESHOT, но анимация играется только в том случае, если объект не "занят", то есть если на объекте не играется ничего, кроме IDLE- анимации.</variable>
+  <variable name="MODE_NORMAL" category="ID_РЕЖИМ_БОЯ" short_description="обычный режим боя">Нет.</variable>
+  <variable name="MODE_MANUAL" category="ID_РЕЖИМ_БОЯ" short_description="запрет &quot;автобоя&quot;">Нет.</variable>
+  <variable name="MODE_AUTO" category="ID_РЕЖИМ_БОЯ" short_description="&quot;автобой&quot;">Нет.</variable>
+  <variable name="OBJECT_HERO" category="ID_ТИП_ОБЪЕКТА" short_description="тип объекта: герой">Нет.</variable>
+</lib>

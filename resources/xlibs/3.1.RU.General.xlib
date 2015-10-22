@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<lib name="3.1 ОБЩЕИГРОВЫЕ [RU]">
+  <function name="ceil" category="" short_description="Возвращает ближайшее верхнее целое значение для n (пример: ceil(2.25) вернёт 3, ceil(-7.1) вернёт -8)">  <param name="n" category="" short_description=""></param>
+  </function>
+  <function name="_ERRORMESSAGE" category="" short_description="Функция выдает в консоль сообщение об ошибке sMsg, эмулируя ошибку скрипта">  <param name="sMsg" category="" short_description="Сообщение об ошибке"></param>
+  </function>
+  <function name="clearMessage" category="" short_description="Очищает от текста предназначенный для вывода tutorial-сообщений элемент"></function>
+  <function name="doFile" category="" short_description="Функция загружает (и выполняет) файл скрипта карты, лежащий по указанному пути">  <param name="FileName" category="" short_description="Имя файла скрипта карты (*.lua)"></param>
+  </function>
+  <function name="ExecConsoleCommand|consoleCmd" category="" short_description="Выполнить консольную команду">  <param name="input-string" category="" short_description="Строка ввода консольной команды"></param>
+  </function>
+  <function name="errorHook" category="" short_description="Позволяет установить перехватчик ошибки">  <param name="sFunctionName" category="" short_description="Имя функции"></param>
+  </function>
+  <function name="ExitGame" category="" short_description="Выводит из игры, возвращая игрока на рабочий стол. При этом игра сохранена не будет"></function>
+  <function name="floor" category="" short_description="Возвращает ближайшее нижнее целое значение для n (пример: floor(1.75) вернёт 1, floor(-3.7) вернёт -3)">  <param name="n" category="" short_description=""></param>
+  </function>
+  <function name="frac" category="" short_description="Возвращает дробную часть числа (пример: frac(1.23) вернёт 0.23)">  <param name="n" category="" short_description=""></param>
+  </function>
+  <function name="GetDifficulty" category="" short_description="Определяет уровень сложности игры"></function>
+  <function name="GetGameVar" category="" short_description="Возвращает значение общеигровой переменной name">  <param name="name" category="" short_description=""></param>
+  </function>
+  <function name="GetMapDataPath" category="" short_description="Возвращает путь к карте"></function>
+  <function name="intg" category="" short_description="Округляет n в сторону ближайшего целого (пример: intg(4.5) вернёт 5)">  <param name="n" category="" short_description=""></param>
+  </function>
+  <function name="IsTutorialItemEnabled" category="" short_description="Выясняет, будет ли выведен элемент tutorial-а">  <param name="name" category="" short_description="Имя элемента tutorial-а"></param>
+  </function>
+  <function name="IsTutorialMessageBoxOpen" category="" short_description="Возвращает true, если на экране присутствует выведенное функцией TutorialMessageBox окно"></function>
+  <function name="length" category="" short_description="Определяет количество элементов в указанном массиве array">  <param name="array" category="" short_description=""></param>
+  </function>
+  <function name="Load" category="" short_description="Загружает игру из указанного файла">  <param name="FileName" category="" short_description="Имя указанного в свойствах карты (resources-&gt;saveFilenames) текстового файла в котором находится локализуемое имя файла сохранения игры"></param>
+  </function>
+  <function name="mod" category="" short_description="Возвращает остаток от деления x на y">  <param name="x" category="" short_description=""></param>
+    <param name="y" category="" short_description=""></param>
+  </function>
+  <function name="parse" category="" short_description="Возвращает функцию, которая интерпретирует строку sToEval">  <param name="sToEval" category="" short_description="Строка для интерпретации"></param>
+  </function>
+  <function name="postEvent" category="" short_description="Посылает сообщение, задаваемое event-name, через общий механизм рассылки сообщений">  <param name="event-name" category="" short_description="Должен быть строкой с именем сообщения, например: postEvent(&quot;Combat_Retreat&quot;)"></param>
+    <param name="arg1 = -1" category="" short_description="Аргумент 1"></param>
+    <param name="arg2 = -1" category="" short_description="Аргумент 2"></param>
+  </function>
+  <function name="print" category="" short_description="Выводит текстовое представление аргумента(-ов) в консоль"></function>
+  <function name="random" category="" short_description="Возвращает случайное целое число в диапазоне от 0 до (top-1)">  <param name="top" category="" short_description="Аргумент функции, должен быть положительным целым числом"></param>
+  </function>
+  <function name="round" category="" short_description="Возвращает целую часть числа (пример: round(1.23) вернёт 1)">  <param name="n" category="" short_description=""></param>
+  </function>
+  <function name="Save" category="" short_description="Сохраняет игру в указанный файл">  <param name="FileName" category="" short_description="Имя указанного в свойствах карты (resources-&gt;saveFilenames) текстового файла в котором находится локализуемое имя файла сохранения игры"></param>
+  </function>
+  <function name="SetGameVar" category="" short_description="Меняет значение общеигровой переменной с именем name на value">  <param name="name" category="" short_description="Общеигровая переменная"></param>
+    <param name="value" category="" short_description="Значение общеигровой переменной"></param>
+  </function>
+  <function name="showMessage" category="" short_description="Выводит текст в предназначенном для этого элементе пользовательского интерфейса">  <param name="textID" category="" short_description="Численный идентификатор текста в игровой базе"></param>
+  </function>
+  <function name="sleep" category="" short_description="Останавливает работу текущего потока исполнения на указанное время. Время задается в игровых сегментах">  <param name="number-of-segments" category="" short_description="Значение параметра number-of-segments должно быть &gt;= 1"></param>
+  </function>
+  <function name="sqrt" category="" short_description="Возвращает квадратный корень из своего единственного аргумента">  <param name="x" category="" short_description="Аргумент - должен быть неотрицательным числом"></param>
+  </function>
+  <function name="startThread" category="" short_description="Запускает указанную функцию в новом потоке исполнения">  <param name="func" category="" short_description="Cкриптовая функция"></param>
+  </function>
+  <function name="toggleTutorialMode" category="" short_description="Включает отображение элементов пользовательского интерфейса">  <param name="enable" category="" short_description="true/ false"></param>
+  </function>
+  <function name="TutorialActivateHint" category="" short_description="Находит в UIConsts.tutorialOptions.hints элемент-дескриптор по строковому идентификатору stringID">  <param name="stringID" category="" short_description="Строковый идентификатор"></param>
+  </function>
+  <function name="TutorialMessageBox" category="" short_description="Находит в UIConsts.tutorialOptions.messages элемент по строковому идентификатору stringID">  <param name="stringID" category="" short_description="Строковый идентификатор"></param>
+  </function>
+  <function name="TutorialSetBlink" category="" short_description="Находит в UIConsts.tutorialOptions.blinks элемент-дескриптор по строковому идентификатору stringID">  <param name="stringID" category="" short_description="Строковый идентификатор"></param>
+    <param name="turnOn" category="" short_description="true/ false"></param>
+  </function>
+</lib>

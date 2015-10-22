@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<lib name="3.1 ГОРОДСКИЕ [RU]">
+  <function name="CreatureHired" category="" short_description="Отслеживает найм существа">  <param name="type" category="creatureID" short_description="Идентификатор типа существ"></param>
+    <param name="number" category="" short_description="Количество существ"></param>
+  </function>
+  <function name="HeroHired" category="" short_description="Отслеживает найм героя">  <param name="heroName" category="" short_description="Имя героя"></param>
+  </function>
+</lib>
