@@ -2,13 +2,13 @@
 
 Advanced lua-script editor for Heroes of Might and Magic V.
 
-# License
+## License
 
 http://opensource.org/licenses/GPL-3.0
 
-# Build Prerequisites
+## Build Prerequisites
 
-* CodeGear RAD Studio 2007 (http://embarcadero.com)
+* CodeGear Delphi 2007 (http://embarcadero.com)
 * VirtualTreeview 4.8.6 (http://www.soft-gems.net)
 * Jedi Code Library 2.1.1 (http://sourceforge.net/projects/jcl)
 * Jedi VCL 3.3.9 (http://sf.net/projects/jvcl)
@@ -18,7 +18,7 @@ http://opensource.org/licenses/GPL-3.0
 * TurboPower Abbrevia 3.0.5 (http://sourceforge.net/projects/tpabbrevia)
 * ATBinHex 2.6.0 (http://atviewer.sourceforge.net)
 
-# Third Party Libraries/Resources
+## Third Party Libraries/Resources
 
 * FastCode 0.6.4 (http://fastcode.sourceforge.net)
 * FastMove 3.0.3 (http://fastcode.sourceforge.net)
@@ -30,7 +30,7 @@ http://opensource.org/licenses/GPL-3.0
 * Hunspell DLL (http://hunspell.sourceforge.net)
 * OpenOffice.org Dictionaries (http://www.openoffice.org)
 
-# Contact
+## Contact
 
 * Web: http://hmm5.sklabs.ru
 * Mail: HSerg@sklabs.ru
