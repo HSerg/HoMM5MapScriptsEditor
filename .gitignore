@@ -53,3 +53,5 @@ __history/
 
 # Castalia statistics file
 *.stat
+
+.svn/
